@@ -28,13 +28,13 @@ export const Header = ({ data }: { data?: HeaderData }) => {
       <div className="flex items-center justify-between h-20 lg:h-24">
 
         {/* Logo */}
-        <div className="relative h-full w-72 sm:w-80 lg:w-96 xl:w-[34rem]">
+        <div className="relative h-full w-[280px] sm:w-[340px] lg:w-[420px] xl:w-[38rem]">
           <div
             className="absolute top-0 left-0 w-full h-full bg-[var(--color-primary)]"
             style={{ clipPath: 'polygon(0 0, 100% 0, 85% 100%, 0% 100%)' }}
           />
           <div
-            className="absolute top-0 left-0 w-[98%] h-full bg-[#1a202c] flex items-center pl-4 sm:pl-8 lg:pl-12"
+            className="absolute top-0 left-0 w-[98%] h-full bg-[#1a202c] flex items-center pl-4 sm:pl-8 lg:pl-12 pr-8 lg:pr-16"
             style={{ clipPath: 'polygon(0 0, 100% 0, 85% 100%, 0% 100%)' }}
           >
             <Link href="/" className="relative z-10 block">

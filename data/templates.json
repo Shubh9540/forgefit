@@ -1,83 +1,5 @@
 {
   "common": {
-    "pages": {
-      "home": {
-        "components": [
-          {
-            "key": "TopBar",
-            "component": "ForgeFitTopBar1"
-          },
-          {
-            "key": "Header",
-            "component": "ForgeFitHeader1"
-          },
-          {
-            "key": "HeroSection",
-            "component": "ForgeFitHero1"
-          },
-          {
-            "key": "AboutUs",
-            "component": "ForgeFitAbout1"
-          },
-          {
-            "key": "TrainingPrograms",
-            "component": "ForgeFitTraining1"
-          },
-          {
-            "key": "ProcessSection",
-            "component": "ForgeFitProcess1"
-          },
-          {
-            "key": "Testimonials",
-            "component": "ForgeFitTestimonials1"
-          },
-          {
-            "key": "Counter",
-            "component": "ForgeFitCounter1"
-          },
-          {
-            "key": "BlogSection",
-            "component": "ForgeFitBlog1"
-          },
-          {
-            "key": "Footer",
-            "component": "Footer"
-          }
-        ]
-      },
-      "about": {
-        "components": [
-          {
-            "key": "TopBar",
-            "component": "ForgeFitTopBar1"
-          },
-          {
-            "key": "Header",
-            "component": "ForgeFitHeader1"
-          },
-          {
-            "key": "Breadcrumb",
-            "component": "about"
-          },
-          {
-            "key": "AboutPageContent",
-            "component": "ForgeFitAboutPageContent1"
-          },
-          {
-            "key": "ProcessSection",
-            "component": "ForgeFitProcess1"
-          },
-          {
-            "key": "Testimonials",
-            "component": "ForgeFitTestimonials1"
-          },
-          {
-            "key": "Footer",
-            "component": "Footer"
-          }
-        ]
-      }
-    },
     "globalUI": {
       "loading": "Loading...",
       "notFound": {
@@ -89,69 +11,122 @@
       }
     },
     "breadcrumbs": {
-      "about": {
+      "AboutBreadcrumb": {
         "title": "About Us",
+        "bgImage": "/main logo/breadcrumb.jpg",
         "paths": [
-          { "label": "Home", "url": "/" },
-          { "label": "About Us" }
-        ],
-        "bgImage": "/main logo/breadcrumb.jpg"
+          {
+            "label": "Home",
+            "url": "/"
+          },
+          {
+            "label": "About Us"
+          }
+        ]
       },
-      "services": {
+      "WhyChooseUsBreadcrumb": {
+        "title": "Why Choose Us",
+        "bgImage": "/main logo/breadcrumb.jpg",
+        "paths": [
+          {
+            "label": "Home",
+            "url": "/"
+          },
+          {
+            "label": "Why Choose Us"
+          }
+        ]
+      },
+      "ServicesBreadcrumb": {
         "title": "Our Programs",
+        "bgImage": "/main logo/breadcrumb.jpg",
         "paths": [
-          { "label": "Home", "url": "/" },
-          { "label": "Our Programs" }
-        ],
-        "bgImage": "/main logo/breadcrumb.jpg"
+          {
+            "label": "Home",
+            "url": "/"
+          },
+          {
+            "label": "Our Programs"
+          }
+        ]
       },
-      "blog": {
+      "BlogBreadcrumb": {
         "title": "Our Blog",
+        "bgImage": "/main logo/breadcrumb.jpg",
         "paths": [
-          { "label": "Home", "url": "/" },
-          { "label": "Our Blog" }
-        ],
-        "bgImage": "/main logo/breadcrumb.jpg"
+          {
+            "label": "Home",
+            "url": "/"
+          },
+          {
+            "label": "Our Blog"
+          }
+        ]
       },
-      "contact": {
+      "ContactBreadcrumb": {
         "title": "Contact Us",
+        "bgImage": "/main logo/breadcrumb.jpg",
         "paths": [
-          { "label": "Home", "url": "/" },
-          { "label": "Contact Us" }
-        ],
-        "bgImage": "/main logo/breadcrumb.jpg"
+          {
+            "label": "Home",
+            "url": "/"
+          },
+          {
+            "label": "Contact Us"
+          }
+        ]
       },
-      "gallery": {
+      "GalleryBreadcrumb": {
         "title": "Our Gallery",
+        "bgImage": "/main logo/breadcrumb.jpg",
         "paths": [
-          { "label": "Home", "url": "/" },
-          { "label": "Our Gallery" }
-        ],
-        "bgImage": "/main logo/breadcrumb.jpg"
+          {
+            "label": "Home",
+            "url": "/"
+          },
+          {
+            "label": "Our Gallery"
+          }
+        ]
       },
-      "pricing": {
+      "PricingBreadcrumb": {
         "title": "Membership Plans",
+        "bgImage": "/main logo/breadcrumb.jpg",
         "paths": [
-          { "label": "Home", "url": "/" },
-          { "label": "Membership Plans" }
-        ],
-        "bgImage": "/main logo/breadcrumb.jpg"
+          {
+            "label": "Home",
+            "url": "/"
+          },
+          {
+            "label": "Membership Plans"
+          }
+        ]
       },
-      "testimonials": {
+      "TestimonialsBreadcrumb": {
         "title": "Success Stories",
+        "bgImage": "/main logo/breadcrumb.jpg",
         "paths": [
-          { "label": "Home", "url": "/" },
-          { "label": "Success Stories" }
-        ],
-        "bgImage": "/main logo/breadcrumb.jpg"
+          {
+            "label": "Home",
+            "url": "/"
+          },
+          {
+            "label": "Success Stories"
+          }
+        ]
       },
-      "faqs": {
+      "FAQBreadcrumb": {
         "title": "FAQs",
+        "bgImage": "/main logo/breadcrumb.jpg",
         "paths": [
-          { "label": "Home", "url": "/" },
-          { "label": "FAQs" }
-        ],
-        "bgImage": "/main logo/breadcrumb.jpg"
+          {
+            "label": "Home",
+            "url": "/"
+          },
+          {
+            "label": "FAQs"
+          }
+        ]
       }
     },
     "Footer": {
@@ -159,69 +134,304 @@
       "logoAlt": "ForgeFit Logo",
       "description": "At ForgeFit, we believe in a stronger, healthier and happier you. Our goal is to make fitness simple, effective and accessible for everyone.",
       "socialLinks": [
-        { "id": "fb", "icon": "FaFacebookF", "url": "#" },
-        { "id": "ig", "icon": "FaInstagram", "url": "#" },
-        { "id": "yt", "icon": "FaYoutube", "url": "#" },
-        { "id": "li", "icon": "FaLinkedinIn", "url": "#" }
+        {
+          "id": "fb",
+          "icon": "FaFacebookF",
+          "url": "#"
+        },
+        {
+          "id": "ig",
+          "icon": "FaInstagram",
+          "url": "#"
+        },
+        {
+          "id": "yt",
+          "icon": "FaYoutube",
+          "url": "#"
+        },
+        {
+          "id": "li",
+          "icon": "FaLinkedinIn",
+          "url": "#"
+        }
       ],
       "columns": [
         {
           "id": "quick-links",
           "title": "Quick Links",
           "links": [
-            { "id": "ql-1", "label": "Home", "url": "/" },
-            { "id": "ql-2", "label": "About Us", "url": "/about" },
-            { "id": "ql-3", "label": "Our Programs", "url": "/services" },
-            { "id": "ql-4", "label": "Success Stories", "url": "/testimonials" },
-            { "id": "ql-5", "label": "Blog", "url": "/blog" },
-            { "id": "ql-6", "label": "Contact Us", "url": "/contact" }
+            {
+              "id": "ql-1",
+              "label": "Home",
+              "url": "/"
+            },
+            {
+              "id": "ql-2",
+              "label": "About Us",
+              "url": "/about"
+            },
+            {
+              "id": "ql-3",
+              "label": "Our Programs",
+              "url": "/services"
+            },
+            {
+              "id": "ql-4",
+              "label": "Success Stories",
+              "url": "/testimonials"
+            },
+            {
+              "id": "ql-5",
+              "label": "Blog",
+              "url": "/blog"
+            },
+            {
+              "id": "ql-6",
+              "label": "Contact Us",
+              "url": "/contact"
+            }
           ]
         },
         {
           "id": "our-programs",
           "title": "Our Programs",
           "links": [
-            { "id": "op-1", "label": "Personal Training", "url": "/services" },
-            { "id": "op-2", "label": "Strength Training", "url": "/services" },
-            { "id": "op-3", "label": "Weight Loss Program", "url": "/services" },
-            { "id": "op-4", "label": "Muscle Building", "url": "/services" },
-            { "id": "op-5", "label": "Yoga & Mobility", "url": "/services" },
-            { "id": "op-6", "label": "Nutrition Guidance", "url": "/services" }
+            {
+              "id": "op-1",
+              "label": "Personal Training",
+              "url": "/services"
+            },
+            {
+              "id": "op-2",
+              "label": "Strength Training",
+              "url": "/services"
+            },
+            {
+              "id": "op-3",
+              "label": "Weight Loss Program",
+              "url": "/services"
+            },
+            {
+              "id": "op-4",
+              "label": "Muscle Building",
+              "url": "/services"
+            },
+            {
+              "id": "op-5",
+              "label": "Yoga & Mobility",
+              "url": "/services"
+            },
+            {
+              "id": "op-6",
+              "label": "Nutrition Guidance",
+              "url": "/services"
+            }
           ]
         },
         {
           "id": "support",
           "title": "Support",
           "links": [
-            { "id": "sup-1", "label": "FAQs", "url": "/faqs" },
-            { "id": "sup-2", "label": "Membership", "url": "/pricing" },
-            { "id": "sup-3", "label": "Privacy Policy", "url": "/privacy" },
-            { "id": "sup-4", "label": "Terms & Conditions", "url": "/terms" },
-            { "id": "sup-5", "label": "Refund Policy", "url": "/refund" },
-            { "id": "sup-6", "label": "Contact Support", "url": "/contact" }
+            {
+              "id": "sup-1",
+              "label": "FAQs",
+              "url": "/faqs"
+            },
+            {
+              "id": "sup-2",
+              "label": "Membership",
+              "url": "/pricing"
+            },
+            {
+              "id": "sup-3",
+              "label": "Privacy Policy",
+              "url": "/privacy"
+            },
+            {
+              "id": "sup-4",
+              "label": "Terms & Conditions",
+              "url": "/terms"
+            },
+            {
+              "id": "sup-5",
+              "label": "Refund Policy",
+              "url": "/refund"
+            },
+            {
+              "id": "sup-6",
+              "label": "Contact Support",
+              "url": "/contact"
+            }
           ]
         }
       ],
       "contact": {
         "title": "Get In Touch",
         "items": [
-          { "id": "ci-1", "icon": "FaMapMarkerAlt", "text": "123 Fitness Street,\nNew Delhi, India - 110001" },
-          { "id": "ci-2", "icon": "FaPhoneAlt", "text": "+91 98765 43210" },
-          { "id": "ci-3", "icon": "FaEnvelope", "text": "info@forgefit.com" },
-          { "id": "ci-4", "icon": "FaClock", "text": "Mon - Sat: 6:00 AM - 10:00 PM\nSunday: Closed" }
+          {
+            "id": "ci-1",
+            "icon": "FaMapMarkerAlt",
+            "text": "123 Fitness Street,\nNew Delhi, India - 110001"
+          },
+          {
+            "id": "ci-2",
+            "icon": "FaPhoneAlt",
+            "text": "+91 98765 43210"
+          },
+          {
+            "id": "ci-3",
+            "icon": "FaEnvelope",
+            "text": "info@forgefit.com"
+          },
+          {
+            "id": "ci-4",
+            "icon": "FaClock",
+            "text": "Mon - Sat: 6:00 AM - 10:00 PM\nSunday: Closed"
+          }
         ]
       },
       "copyright": "© 2026 ForgeFit All Rights Reserved. Powered by Lestow",
       "bottomCenterText": "FITNESS BEYOND LIMITS",
       "bottomLinks": [
-        { "id": "bl-1", "label": "Terms & Conditions", "url": "/terms" },
-        { "id": "bl-2", "label": "Privacy Policy", "url": "/privacy" },
-        { "id": "bl-3", "label": "Sitemap", "url": "/sitemap" }
+        {
+          "id": "bl-1",
+          "label": "Terms & Conditions",
+          "url": "/terms"
+        },
+        {
+          "id": "bl-2",
+          "label": "Privacy Policy",
+          "url": "/privacy"
+        },
+        {
+          "id": "bl-3",
+          "label": "Sitemap",
+          "url": "/sitemap"
+        }
       ]
     }
   },
   "categories": {
     "ForgeFit": {
+      "templateComponents": {
+        "ForgeFit": {
+          "shared": {
+            "TopBar": "ForgeFitTopBar1",
+            "Header": "ForgeFitHeader1",
+            "Footer": "Footer"
+          },
+          "pages": {
+            "home": {
+              "components": [
+                {
+                  "key": "TopBar",
+                  "component": "ForgeFitTopBar1"
+                },
+                {
+                  "key": "Header",
+                  "component": "ForgeFitHeader1"
+                },
+                {
+                  "key": "HeroSection",
+                  "component": "ForgeFitHero1"
+                },
+                {
+                  "key": "AboutUs",
+                  "component": "ForgeFitAbout1"
+                },
+                {
+                  "key": "TrainingPrograms",
+                  "component": "ForgeFitTraining1"
+                },
+                {
+                  "key": "ProcessSection",
+                  "component": "ForgeFitProcess1"
+                },
+                {
+                  "key": "Testimonials",
+                  "component": "ForgeFitTestimonials1"
+                },
+                {
+                  "key": "Counter",
+                  "component": "ForgeFitCounter1"
+                },
+                {
+                  "key": "BlogSection",
+                  "component": "ForgeFitBlog1"
+                },
+                {
+                  "key": "Footer",
+                  "component": "Footer"
+                }
+              ]
+            },
+            "about": {
+              "components": [
+                {
+                  "key": "TopBar",
+                  "component": "ForgeFitTopBar1"
+                },
+                {
+                  "key": "Header",
+                  "component": "ForgeFitHeader1"
+                },
+                {
+                  "key": "Breadcrumb",
+                  "component": "AboutBreadcrumb"
+                },
+                {
+                  "key": "AboutPageContent",
+                  "component": "ForgeFitAboutPageContent1"
+                },
+                {
+                  "key": "ProcessSection",
+                  "component": "ForgeFitProcess1"
+                },
+                {
+                  "key": "Testimonials",
+                  "component": "ForgeFitTestimonials1"
+                },
+                {
+                  "key": "Footer",
+                  "component": "Footer"
+                }
+              ]
+            },
+            "why-choose-us": {
+              "components": [
+                {
+                  "key": "TopBar",
+                  "component": "ForgeFitTopBar1"
+                },
+                {
+                  "key": "Header",
+                  "component": "ForgeFitHeader1"
+                },
+                {
+                  "key": "Breadcrumb",
+                  "component": "WhyChooseUsBreadcrumb"
+                },
+                {
+                  "key": "WhyChooseUsSection",
+                  "component": "ForgeFitWhyChooseUs1"
+                },
+                {
+                  "key": "ProcessSection",
+                  "component": "ForgeFitProcess1"
+                },
+                {
+                  "key": "Testimonials",
+                  "component": "ForgeFitTestimonials1"
+                },
+                {
+                  "key": "Footer",
+                  "component": "Footer"
+                }
+              ]
+            }
+          }
+        }
+      },
       "sections": {
         "TopBar": {
           "variants": {
@@ -273,7 +483,33 @@
                 {
                   "id": "nav-about",
                   "label": "About Us",
-                  "url": "/about"
+                  "subLinks": [
+                    {
+                      "id": "nav-about-overview",
+                      "label": "Overview",
+                      "url": "/about"
+                    },
+                    {
+                      "id": "nav-about-why",
+                      "label": "Why Choose Us",
+                      "url": "/why-choose-us"
+                    },
+                    {
+                      "id": "nav-about-mission",
+                      "label": "Mission & Vision",
+                      "url": "/mission-vision"
+                    },
+                    {
+                      "id": "nav-about-team",
+                      "label": "Our Team",
+                      "url": "/team"
+                    },
+                    {
+                      "id": "nav-about-team-detail",
+                      "label": "Team Details",
+                      "url": "/team/1"
+                    }
+                  ]
                 },
                 {
                   "id": "nav-programs",
@@ -431,6 +667,58 @@
               "experienceYears": "15",
               "experienceLabel": "YEARS OF\nEXPERIENCE",
               "bottomTags": ["FITNESS", "STRENGTH", "WELLNESS"]
+            }
+          }
+        },
+        "WhyChooseUs": {
+          "variants": {
+            "ForgeFitWhyChooseUs1": {
+              "subtitle": "WHY CHOOSE US",
+              "titlePart1": "BUILT FOR A",
+              "titleHighlight": "STRONGER YOU",
+              "description": "At ForgeFit, we focus on real people, real goals and real results. We provide the right environment, guidance and support to help you become the strongest version of yourself.",
+              "image": "/choose/why_choose.webp",
+              "imageAlt": "ForgeFit Athlete",
+              "scriptText": "Stronger\nToday\nBrighter\nTomorrow",
+              "bottomTagline": "FITNESS BEYOND LIMITS",
+              "features": [
+                {
+                  "id": "wc-1",
+                  "icon": "FaUsers",
+                  "title": "Expert Trainers",
+                  "description": "Learn from certified and experienced fitness professionals."
+                },
+                {
+                  "id": "wc-2",
+                  "icon": "FaClipboardList",
+                  "title": "Personalized Plans",
+                  "description": "Customized workout and nutrition plans tailored to your goals."
+                },
+                {
+                  "id": "wc-3",
+                  "icon": "FaDumbbell",
+                  "title": "Modern Equipment",
+                  "description": "Train with high-quality equipment in a clean and safe environment."
+                },
+                {
+                  "id": "wc-4",
+                  "icon": "FaChartLine",
+                  "title": "Real Results",
+                  "description": "Proven programs that help you see and feel the difference."
+                },
+                {
+                  "id": "wc-5",
+                  "icon": "FaHeartbeat",
+                  "title": "Supportive Community",
+                  "description": "Be part of a motivating community that keeps you going."
+                },
+                {
+                  "id": "wc-6",
+                  "icon": "FaShieldAlt",
+                  "title": "Your Wellbeing First",
+                  "description": "We focus on your long-term health, fitness and happiness."
+                }
+              ]
             }
           }
         },

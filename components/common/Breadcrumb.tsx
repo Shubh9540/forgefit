@@ -8,20 +8,19 @@ export const Breadcrumb = ({ data }: { data?: BreadcrumbData }) => {
 
   return (
     <section
-      className="relative w-full h-44 md:h-52 lg:h-60 flex items-center justify-center overflow-hidden"
-      style={{ backgroundImage: "url('/main logo/breadcrumb.jpg')" }}
+      className="relative w-full min-h-[250px] md:min-h-[350px] lg:min-h-[350px] flex items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: `url('${data.bgImage || '/main logo/breadcrumb.jpg'}')` }}
     >
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-[#051024]/70 z-0" />
+
 
       <div className="relative z-10 flex flex-col items-center justify-center text-center gap-4 px-4">
         {/* Page Title */}
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-black text-[var(--color-primary)] tracking-widest uppercase">
+        <h1 className="text-4xl md:text-5xl lg:text-[64px] font-black text-[var(--color-accent)] tracking-wide uppercase">
           {data.title}
         </h1>
 
         {/* Breadcrumb Paths */}
-        <nav className="flex items-center gap-2 text-sm text-white/80">
+        <nav className="flex items-center gap-2 text-base font-medium text-white">
           {data.paths.map((path, index) => {
             const isLast = index === data.paths.length - 1;
             return (
@@ -30,29 +29,28 @@ export const Breadcrumb = ({ data }: { data?: BreadcrumbData }) => {
                   path.url ? (
                     <Link
                       href={path.url}
-                      className="flex items-center gap-1 hover:text-[var(--color-primary)] transition-colors"
+                      className="flex items-center gap-1.5 hover:text-[var(--color-accent)] transition-colors"
                     >
-                      <FaHome className="text-xs" />
+                      <FaHome className="text-lg" />
                       <span>{path.label}</span>
                     </Link>
                   ) : (
-                    <span className="flex items-center gap-1">
-                      <FaHome className="text-xs" />
+                    <span className="flex items-center gap-1.5">
+                      <FaHome className="text-lg" />
                       <span>{path.label}</span>
                     </span>
                   )
-                ) : isLast ? (
-                  <span className="text-white/60">{path.label}</span>
                 ) : (
-                  <Link
-                    href={path.url || '#'}
-                    className="hover:text-[var(--color-primary)] transition-colors"
-                  >
-                    {path.label}
-                  </Link>
+                  <span className={isLast ? "text-white" : "hover:text-[var(--color-accent)] transition-colors cursor-pointer"}>
+                    {path.url && !isLast ? (
+                      <Link href={path.url}>{path.label}</Link>
+                    ) : (
+                      path.label
+                    )}
+                  </span>
                 )}
                 {!isLast && (
-                  <FaChevronRight className="text-[10px] text-white/40" />
+                  <span className="text-white mx-1">/</span>
                 )}
               </React.Fragment>
             );

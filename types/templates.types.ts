@@ -145,6 +145,29 @@ export interface ForgeFitAboutPageContentData {
 }
 
 // ------------------------------------------------------------
+// WHY CHOOSE US SECTION
+// ------------------------------------------------------------
+
+export interface WhyChooseUsFeature {
+  id: string;
+  icon: string;
+  title: string;
+  description: string;
+}
+
+export interface ForgeFitWhyChooseUsData {
+  subtitle: string;
+  titlePart1: string;
+  titleHighlight: string;
+  description: string;
+  image: string;
+  imageAlt: string;
+  scriptText: string;
+  bottomTagline: string;
+  features: WhyChooseUsFeature[];
+}
+
+// ------------------------------------------------------------
 // TRAINING PROGRAMS SECTION
 // ------------------------------------------------------------
 
@@ -396,28 +419,46 @@ export interface GlobalUIData {
 export interface ForgeFitTemplateData {
   common: {
     globalUI: GlobalUIData;
-    breadcrumbs: Record<string, BreadcrumbData>;
+    breadcrumbs: {
+      AboutBreadcrumb?: BreadcrumbData;
+      WhyChooseUsBreadcrumb?: BreadcrumbData;
+      ServicesBreadcrumb?: BreadcrumbData;
+      BlogBreadcrumb?: BreadcrumbData;
+      ContactBreadcrumb?: BreadcrumbData;
+      GalleryBreadcrumb?: BreadcrumbData;
+      PricingBreadcrumb?: BreadcrumbData;
+      TestimonialsBreadcrumb?: BreadcrumbData;
+      FAQBreadcrumb?: BreadcrumbData;
+      [key: string]: BreadcrumbData | undefined;
+    };
     Footer: ForgeFitFooterData;
   };
   categories: {
     ForgeFit: {
+      templateComponents?: {
+        ForgeFit?: {
+          shared?: Record<string, string>;
+          pages?: Record<string, { components: { key: string; component: string }[] }>;
+        };
+      };
       sections: {
-        TopBar:        { variants: Record<string, TopBarData> };
-        Header:        { variants: Record<string, HeaderData> };
-        Hero:          { variants: Record<string, ForgeFitHeroData> };
+        TopBar:            { variants: Record<string, TopBarData> };
+        Header:            { variants: Record<string, HeaderData> };
+        Hero:              { variants: Record<string, ForgeFitHeroData> };
         AboutUs:           { variants: Record<string, ForgeFitAboutData> };
         AboutPageContent:  { variants: Record<string, ForgeFitAboutPageContentData> };
-        Training:      { variants: Record<string, ForgeFitTrainingData> };
-        Process:       { variants: Record<string, ForgeFitProcessData> };
-        Counter:       { variants: Record<string, ForgeFitCounterData> };
-        Testimonials:  { variants: Record<string, ForgeFitTestimonialsData> };
-        Blog:          { variants: Record<string, ForgeFitBlogData> };
-        BlogDetail:    { variants: Record<string, ForgeFitBlogDetailData> };
-        Team:          { variants: Record<string, ForgeFitTeamData> };
-        TeamDetail:    { variants: Record<string, ForgeFitTeamDetailData> };
-        ServiceDetail: { variants: Record<string, ForgeFitServiceDetailData> };
-        Contact:       { variants: Record<string, ForgeFitContactData> };
-        Sitemap:       { variants: Record<string, ForgeFitSitemapData> };
+        WhyChooseUs:       { variants: Record<string, ForgeFitWhyChooseUsData> };
+        Training:          { variants: Record<string, ForgeFitTrainingData> };
+        Process:           { variants: Record<string, ForgeFitProcessData> };
+        Counter:           { variants: Record<string, ForgeFitCounterData> };
+        Testimonials:      { variants: Record<string, ForgeFitTestimonialsData> };
+        Blog:              { variants: Record<string, ForgeFitBlogData> };
+        BlogDetail:        { variants: Record<string, ForgeFitBlogDetailData> };
+        Team:              { variants: Record<string, ForgeFitTeamData> };
+        TeamDetail:        { variants: Record<string, ForgeFitTeamDetailData> };
+        ServiceDetail:     { variants: Record<string, ForgeFitServiceDetailData> };
+        Contact:           { variants: Record<string, ForgeFitContactData> };
+        Sitemap:           { variants: Record<string, ForgeFitSitemapData> };
         [key: string]: any;
       };
     };

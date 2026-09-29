@@ -4,14 +4,14 @@ import rawData from '@/data/templates.json';
 import { TopBar } from '@/components/common/TopBar';
 import { Header } from '@/components/common/Header';
 import { Breadcrumb } from '@/components/common/Breadcrumb';
-import { AboutPageContent } from '@/components/sections/AboutPageContent';
+import { WhyChooseUsSection } from '@/components/sections/WhyChooseUsSection';
 import { ProcessSection } from '@/components/sections/ProcessSection';
 import { Testimonials } from '@/components/sections/Testimonials';
 import { Footer } from '@/components/common/Footer';
 
 export const dynamic = 'force-dynamic';
 
-export default function AboutPage() {
+export default function WhyChooseUsPage() {
   const templateData: ForgeFitTemplateData = rawData as any;
   const sectionData = templateData?.categories?.ForgeFit?.sections;
   const commonData = templateData?.common;
@@ -22,8 +22,8 @@ export default function AboutPage() {
     <main className="bg-white min-h-screen flex flex-col">
       <TopBar data={sectionData.TopBar?.variants?.ForgeFitTopBar1} />
       <Header data={sectionData.Header?.variants?.ForgeFitHeader1} />
-      <Breadcrumb data={commonData.breadcrumbs['AboutBreadcrumb']} />
-      <AboutPageContent data={sectionData.AboutPageContent?.variants?.ForgeFitAboutPageContent1} />
+      <Breadcrumb data={commonData.breadcrumbs['WhyChooseUsBreadcrumb']} />
+      <WhyChooseUsSection data={sectionData.WhyChooseUs?.variants?.ForgeFitWhyChooseUs1} />
       <ProcessSection data={sectionData.Process?.variants?.ForgeFitProcess1} />
       <Testimonials data={sectionData.Testimonials?.variants?.ForgeFitTestimonials1} />
       <Footer data={commonData.Footer} />

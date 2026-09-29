@@ -472,6 +472,48 @@ export interface ForgeFitSitemapData {
   categories: SitemapCategory[];
 }
 
+
+// ------------------------------------------------------------
+// PRICING SECTION
+// ------------------------------------------------------------
+
+export interface PricingPlan {
+  id: string;
+  name: string;
+  subtitle: string;
+  price: string;
+  period: string;
+  isPopular?: boolean;
+  features: string[];
+}
+
+export interface PricingCardsData {
+  subtitle: string;
+  titlePart1: string;
+  titleHighlight: string;
+  titlePart2?: string;
+  description: string;
+  plans: PricingPlan[];
+}
+
+export interface PricingFeatureRow {
+  id: string;
+  featureName: string;
+  basic: string | boolean;
+  standard: string | boolean;
+  premium: string | boolean;
+  elite: string | boolean;
+}
+
+export interface PricingTableData {
+  subtitle: string;
+  titlePart1: string;
+  titleHighlight: string;
+  description: string;
+  plans: string[];
+  features: PricingFeatureRow[];
+}
+
 // ------------------------------------------------------------
 // GLOBAL UI STRINGS
 // ------------------------------------------------------------
@@ -536,6 +578,8 @@ export interface ForgeFitTemplateData {
         TrainingDetail:    { variants: Record<string, ForgeFitTrainingDetailData> };
         Contact:           { variants: Record<string, ForgeFitContactData> };
         Sitemap:           { variants: Record<string, ForgeFitSitemapData> };
+        PricingCards:      { variants: Record<string, PricingCardsData> };
+        PricingTable:      { variants: Record<string, PricingTableData> };
         [key: string]: any;
       };
     };

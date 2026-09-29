@@ -103,17 +103,17 @@
         ]
       },
       "PricingBreadcrumb": {
-        "title": "Membership Plans",
-        "bgImage": "/main logo/breadcrumb.jpg",
+        "title": "PRICING",
         "paths": [
           {
             "label": "Home",
             "url": "/"
           },
           {
-            "label": "Membership Plans"
+            "label": "Pricing"
           }
-        ]
+        ],
+        "bgImage": "/main logo/breadcrumb.jpg"
       },
       "TestimonialsBreadcrumb": {
         "title": "TESTIMONIALS",
@@ -121,10 +121,6 @@
           {
             "label": "Home",
             "url": "/"
-          },
-          {
-            "label": "About Us",
-            "url": "/about"
           },
           {
             "label": "Testimonials"
@@ -655,6 +651,34 @@
                 {
                   "key": "TestimonialsGrid",
                   "component": "ForgeFitTestimonials1"
+                },
+                {
+                  "key": "Footer",
+                  "component": "Footer"
+                }
+              ]
+            },
+            "pricing": {
+              "components": [
+                {
+                  "key": "TopBar",
+                  "component": "ForgeFitTopBar1"
+                },
+                {
+                  "key": "Header",
+                  "component": "ForgeFitHeader1"
+                },
+                {
+                  "key": "Breadcrumb",
+                  "component": "PricingBreadcrumb"
+                },
+                {
+                  "key": "PricingCards",
+                  "component": "ForgeFitPricingCards1"
+                },
+                {
+                  "key": "PricingTable",
+                  "component": "ForgeFitPricingTable1"
                 },
                 {
                   "key": "Footer",
@@ -2392,6 +2416,158 @@
                   "titlePart1": "Group ",
                   "titleHighlight": "Training",
                   "programType": "Group Training"
+                }
+              ]
+            }
+          }
+        },
+        "PricingCards": {
+          "variants": {
+            "ForgeFitPricingCards1": {
+              "subtitle": "OUR PRICING PLANS",
+              "titlePart1": "Simple. Flexible. ",
+              "titleHighlight": "Effective.",
+              "description": "No hidden fees. No complicated terms. Just honest pricing for a healthier, stronger you.",
+              "plans": [
+                {
+                  "id": "plan-basic",
+                  "name": "Basic Plan",
+                  "subtitle": "Great for getting started",
+                  "price": "1,499",
+                  "period": "/ month",
+                  "isPopular": false,
+                  "features": [
+                    "Gym Access (Single Location)",
+                    "Standard Equipment",
+                    "General Fitness Guidance",
+                    "Access to Group Workouts",
+                    "Locker Room Access"
+                  ]
+                },
+                {
+                  "id": "plan-standard",
+                  "name": "Standard Plan",
+                  "subtitle": "Most popular choice",
+                  "price": "2,499",
+                  "period": "/ month",
+                  "isPopular": false,
+                  "features": [
+                    "Gym Access (All Locations)",
+                    "Personalized Workout Plan",
+                    "Group Classes (All Types)",
+                    "Basic Nutrition Guidance",
+                    "Locker Room Access",
+                    "Progress Tracking"
+                  ]
+                },
+                {
+                  "id": "plan-premium",
+                  "name": "Premium Plan",
+                  "subtitle": "For serious results",
+                  "price": "3,999",
+                  "period": "/ month",
+                  "isPopular": true,
+                  "features": [
+                    "Gym Access (All Locations)",
+                    "Personalized Training Plan",
+                    "1-on-1 Trainer Support (2 Sessions/Month)",
+                    "Advanced Nutrition Guidance",
+                    "Group Classes (All Types)",
+                    "Progress Tracking & Assessment",
+                    "Priority Support"
+                  ]
+                },
+                {
+                  "id": "plan-elite",
+                  "name": "Elite Plan",
+                  "subtitle": "Complete transformation",
+                  "price": "5,999",
+                  "period": "/ month",
+                  "isPopular": false,
+                  "features": [
+                    "Gym Access (All Locations)",
+                    "Unlimited 1-on-1 Training",
+                    "Customized Nutrition Plan",
+                    "Body Composition Analysis",
+                    "Group Classes (All Types)",
+                    "Progress Tracking & Reports",
+                    "Lifestyle & Wellness Coaching",
+                    "Priority Support"
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "PricingTable": {
+          "variants": {
+            "ForgeFitPricingTable1": {
+              "subtitle": "PLAN COMPARISON",
+              "titlePart1": "Find the Right Fit\nfor ",
+              "titleHighlight": "Your Goals",
+              "description": "Compare features and choose the plan\nthat works best for you.",
+              "plans": [
+                "Basic",
+                "Standard",
+                "Premium",
+                "Elite"
+              ],
+              "features": [
+                {
+                  "id": "feat-1",
+                  "featureName": "Gym Access",
+                  "basic": "Single Location",
+                  "standard": "All Locations",
+                  "premium": "All Locations",
+                  "elite": "All Locations"
+                },
+                {
+                  "id": "feat-2",
+                  "featureName": "Personalized Plan",
+                  "basic": false,
+                  "standard": true,
+                  "premium": true,
+                  "elite": true
+                },
+                {
+                  "id": "feat-3",
+                  "featureName": "1-on-1 Training",
+                  "basic": false,
+                  "standard": false,
+                  "premium": "2/Month",
+                  "elite": "Unlimited"
+                },
+                {
+                  "id": "feat-4",
+                  "featureName": "Nutrition Guidance",
+                  "basic": "Basic",
+                  "standard": "Basic",
+                  "premium": "Advanced",
+                  "elite": "Customized"
+                },
+                {
+                  "id": "feat-5",
+                  "featureName": "Group Classes",
+                  "basic": "Limited",
+                  "standard": "All",
+                  "premium": "All",
+                  "elite": "All"
+                },
+                {
+                  "id": "feat-6",
+                  "featureName": "Progress Tracking",
+                  "basic": false,
+                  "standard": true,
+                  "premium": true,
+                  "elite": true
+                },
+                {
+                  "id": "feat-7",
+                  "featureName": "Body Analysis",
+                  "basic": false,
+                  "standard": false,
+                  "premium": false,
+                  "elite": true
                 }
               ]
             }

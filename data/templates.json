@@ -116,17 +116,21 @@
         ]
       },
       "TestimonialsBreadcrumb": {
-        "title": "Success Stories",
-        "bgImage": "/main logo/breadcrumb.jpg",
+        "title": "TESTIMONIALS",
         "paths": [
           {
             "label": "Home",
             "url": "/"
           },
           {
-            "label": "Success Stories"
+            "label": "About Us",
+            "url": "/about"
+          },
+          {
+            "label": "Testimonials"
           }
-        ]
+        ],
+        "bgImage": "/main logo/breadcrumb.jpg"
       },
       "FAQBreadcrumb": {
         "title": "FAQs",
@@ -633,6 +637,30 @@
                   "component": "Footer"
                 }
               ]
+            },
+            "testimonials": {
+              "components": [
+                {
+                  "key": "TopBar",
+                  "component": "ForgeFitTopBar1"
+                },
+                {
+                  "key": "Header",
+                  "component": "ForgeFitHeader1"
+                },
+                {
+                  "key": "Breadcrumb",
+                  "component": "TestimonialsBreadcrumb"
+                },
+                {
+                  "key": "TestimonialsGrid",
+                  "component": "ForgeFitTestimonials1"
+                },
+                {
+                  "key": "Footer",
+                  "component": "Footer"
+                }
+              ]
             }
           }
         }
@@ -713,6 +741,11 @@
                       "id": "nav-about-team-detail",
                       "label": "Team Details",
                       "url": "/team/rahul-sharma"
+                    },
+                    {
+                      "id": "nav-about-testimonials",
+                      "label": "Testimonials",
+                      "url": "/testimonials"
                     }
                   ]
                 },
@@ -1142,6 +1175,30 @@
                   "designation": "Entrepreneur, Gurgaon",
                   "rating": 5,
                   "text": "\"Excellent facility with extremely knowledgeable staff. They take the time to correct your form and build a program that actually works for your schedule.\""
+                },
+                {
+                  "id": "test-1-copy1",
+                  "image": "/team/c1.webp",
+                  "name": "Rohit Sharma",
+                  "designation": "IT Professional, Delhi",
+                  "rating": 5,
+                  "text": "\"ForgeFit has completely transformed my lifestyle. The trainers are knowledgeable, the sessions are engaging and the results speak for themselves. I feel stronger, healthier and more confident than ever!\""
+                },
+                {
+                  "id": "test-2-copy1",
+                  "image": "/team/c2.webp",
+                  "name": "Priya Mehta",
+                  "designation": "Student, Mumbai",
+                  "rating": 5,
+                  "text": "\"I love the flexibility of the training programs. The coaches are very supportive and always motivate me to do better. ForgeFit has helped me stay consistent and achieve goals I never thought possible!\""
+                },
+                {
+                  "id": "test-3-copy1",
+                  "image": "/team/c3.webp",
+                  "name": "Amit Verma",
+                  "designation": "Business Owner, Bangalore",
+                  "rating": 5,
+                  "text": "\"Professional guidance, personalized plans and a great training environment. The team at ForgeFit genuinely cares about your progress. I'm in the best shape of my life and more energetic every day!\""
                 }
               ]
             }

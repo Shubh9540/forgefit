@@ -200,6 +200,19 @@
           }
         ],
         "bgImage": "/main logo/breadcrumb.jpg"
+      },
+      "ConsultationBreadcrumb": {
+        "title": "FREE CONSULTATION",
+        "paths": [
+          {
+            "label": "Home",
+            "url": "/"
+          },
+          {
+            "label": "Free Consultation"
+          }
+        ],
+        "bgImage": "/main logo/breadcrumb.jpg"
       }
     },
     "Footer": {
@@ -685,6 +698,34 @@
                   "component": "Footer"
                 }
               ]
+            },
+            "free-consultation": {
+              "components": [
+                {
+                  "key": "TopBar",
+                  "component": "ForgeFitTopBar1"
+                },
+                {
+                  "key": "Header",
+                  "component": "ForgeFitHeader1"
+                },
+                {
+                  "key": "Breadcrumb",
+                  "component": "ConsultationBreadcrumb"
+                },
+                {
+                  "key": "ConsultationTop",
+                  "component": "ForgeFitConsultationTop1"
+                },
+                {
+                  "key": "ConsultationBottom",
+                  "component": "ForgeFitConsultationBottom1"
+                },
+                {
+                  "key": "Footer",
+                  "component": "Footer"
+                }
+              ]
             }
           }
         }
@@ -813,7 +854,7 @@
               ],
               "contactButton": {
                 "text": "Free Consultation",
-                "url": "/contact"
+                "url": "/free-consultation"
               }
             }
           }
@@ -2570,6 +2611,87 @@
                   "elite": true
                 }
               ]
+            }
+          }
+        },
+        "ConsultationTop": {
+          "variants": {
+            "ForgeFitConsultationTop1": {
+              "subtitle": "WHY BOOK A CONSULTATION",
+              "titlePart1": "Personalized Guidance\nfor ",
+              "titleHighlight": "Real Results",
+              "description": "Our free consultation helps you understand your current fitness level, set realistic goals and get a customized plan from our experts. Whether you're a beginner or looking to take your fitness to the next level, we're here to guide you.",
+              "features": [
+                {
+                  "id": "cf-1",
+                  "icon": "FaUsers",
+                  "title": "Expert Advice",
+                  "description": "Get guidance from certified fitness professionals."
+                },
+                {
+                  "id": "cf-2",
+                  "icon": "FaBullseye",
+                  "title": "Customized Plan",
+                  "description": "Plans tailored to your goals and lifestyle."
+                },
+                {
+                  "id": "cf-3",
+                  "icon": "FaHeartbeat",
+                  "title": "Clear Your Doubts",
+                  "description": "Ask anything about workouts, diet, or memberships."
+                },
+                {
+                  "id": "cf-4",
+                  "icon": "FaBolt",
+                  "title": "No Cost. No Obligation",
+                  "description": "It's completely free and pressure-free."
+                }
+              ],
+              "formSubtitle": "BOOK YOUR",
+              "formTitlePart1": "Free ",
+              "formTitleHighlight": "Consultation",
+              "formDescription": "Fill in your details and our team will get in touch with you soon.",
+              "buttonText": "Book My Free Consultation",
+              "privacyText": "Your information is safe with us. We respect your privacy."
+            }
+          }
+        },
+        "ConsultationBottom": {
+          "variants": {
+            "ForgeFitConsultationBottom1": {
+              "subtitle": "HOW IT WORKS",
+              "titlePart1": "Your Fitness Journey\n",
+              "titleHighlight": "Starts Here",
+              "description": "Booking a free consultation is quick and easy. Follow these simple steps and let our experts guide you towards a healthier, fitter you.",
+              "steps": [
+                {
+                  "id": "cs-1",
+                  "stepNumber": "01",
+                  "title": "Fill the Form",
+                  "description": "Share your basic details."
+                },
+                {
+                  "id": "cs-2",
+                  "stepNumber": "02",
+                  "title": "Get a Call",
+                  "description": "Our team will reach out to confirm."
+                },
+                {
+                  "id": "cs-3",
+                  "stepNumber": "03",
+                  "title": "Consult with Expert",
+                  "description": "Discuss your goals and get personalized advice."
+                },
+                {
+                  "id": "cs-4",
+                  "stepNumber": "04",
+                  "title": "Start Your Journey",
+                  "description": "Choose the right plan and begin your transformation."
+                }
+              ],
+              "image": "/about/about-2.jpg",
+              "imageAlt": "Real People Real Progress",
+              "imageOverlayText": "REAL\nPEOPLE\nREAL\nPROGRESS"
             }
           }
         }

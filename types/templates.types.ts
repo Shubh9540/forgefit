@@ -514,6 +514,50 @@ export interface PricingTableData {
   features: PricingFeatureRow[];
 }
 
+
+// ------------------------------------------------------------
+// CONSULTATION SECTION
+// ------------------------------------------------------------
+
+export interface ConsultationFeature {
+  id: string;
+  icon: string;
+  title: string;
+  description: string;
+}
+
+export interface ConsultationTopData {
+  subtitle: string;
+  titlePart1: string;
+  titleHighlight: string;
+  description: string;
+  features: ConsultationFeature[];
+  formSubtitle: string;
+  formTitlePart1: string;
+  formTitleHighlight: string;
+  formDescription: string;
+  buttonText: string;
+  privacyText: string;
+}
+
+export interface ConsultationStep {
+  id: string;
+  stepNumber: string;
+  title: string;
+  description: string;
+}
+
+export interface ConsultationBottomData {
+  subtitle: string;
+  titlePart1: string;
+  titleHighlight: string;
+  description: string;
+  steps: ConsultationStep[];
+  image: string;
+  imageAlt: string;
+  imageOverlayText: string;
+}
+
 // ------------------------------------------------------------
 // GLOBAL UI STRINGS
 // ------------------------------------------------------------
@@ -580,6 +624,8 @@ export interface ForgeFitTemplateData {
         Sitemap:           { variants: Record<string, ForgeFitSitemapData> };
         PricingCards:      { variants: Record<string, PricingCardsData> };
         PricingTable:      { variants: Record<string, PricingTableData> };
+        ConsultationTop:   { variants: Record<string, ConsultationTopData> };
+        ConsultationBottom:{ variants: Record<string, ConsultationBottomData> };
         [key: string]: any;
       };
     };

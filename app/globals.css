@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Fonts */
+  --font-primary: var(--font-poppins), sans-serif;
+  --font-heading: var(--font-poppins), sans-serif;
+
+  /* Global Colors — ForgeFit Fitness Design (Light Theme) */
+  --color-bg-main: #ffffff;
+  /* White background */
+  --color-bg-card: #ffffff;
+  /* White for cards */
+  --color-bg-alt: #f8f9fa;
+  /* Very light gray for alternating sections */
+  --color-primary: #fc9725;
+  /* Vibrant orange — primary accent */
+  --color-accent: #fd871b;
+  /* Darker orange for hover states */
+  --color-text: #1a1a1a;
+  /* Dark text */
+  --color-text-light: #666666;
+  /* Gray for secondary text */
+  --color-border: #e5e5e5;
+  /* Subtle light border */
+}
+
+body {
+  color: var(--color-text);
+  background-color: var(--color-bg-main);
+}

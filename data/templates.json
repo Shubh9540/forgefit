@@ -1,5 +1,83 @@
 {
   "common": {
+    "pages": {
+      "home": {
+        "components": [
+          {
+            "key": "TopBar",
+            "component": "ForgeFitTopBar1"
+          },
+          {
+            "key": "Header",
+            "component": "ForgeFitHeader1"
+          },
+          {
+            "key": "HeroSection",
+            "component": "ForgeFitHero1"
+          },
+          {
+            "key": "AboutUs",
+            "component": "ForgeFitAbout1"
+          },
+          {
+            "key": "TrainingPrograms",
+            "component": "ForgeFitTraining1"
+          },
+          {
+            "key": "ProcessSection",
+            "component": "ForgeFitProcess1"
+          },
+          {
+            "key": "Testimonials",
+            "component": "ForgeFitTestimonials1"
+          },
+          {
+            "key": "Counter",
+            "component": "ForgeFitCounter1"
+          },
+          {
+            "key": "BlogSection",
+            "component": "ForgeFitBlog1"
+          },
+          {
+            "key": "Footer",
+            "component": "Footer"
+          }
+        ]
+      },
+      "about": {
+        "components": [
+          {
+            "key": "TopBar",
+            "component": "ForgeFitTopBar1"
+          },
+          {
+            "key": "Header",
+            "component": "ForgeFitHeader1"
+          },
+          {
+            "key": "Breadcrumb",
+            "component": "about"
+          },
+          {
+            "key": "AboutPageContent",
+            "component": "ForgeFitAboutPageContent1"
+          },
+          {
+            "key": "ProcessSection",
+            "component": "ForgeFitProcess1"
+          },
+          {
+            "key": "Testimonials",
+            "component": "ForgeFitTestimonials1"
+          },
+          {
+            "key": "Footer",
+            "component": "Footer"
+          }
+        ]
+      }
+    },
     "globalUI": {
       "loading": "Loading...",
       "notFound": {
@@ -10,7 +88,72 @@
         "homeButtonUrl": "/"
       }
     },
-    "breadcrumbs": {},
+    "breadcrumbs": {
+      "about": {
+        "title": "About Us",
+        "paths": [
+          { "label": "Home", "url": "/" },
+          { "label": "About Us" }
+        ],
+        "bgImage": "/main logo/breadcrumb.jpg"
+      },
+      "services": {
+        "title": "Our Programs",
+        "paths": [
+          { "label": "Home", "url": "/" },
+          { "label": "Our Programs" }
+        ],
+        "bgImage": "/main logo/breadcrumb.jpg"
+      },
+      "blog": {
+        "title": "Our Blog",
+        "paths": [
+          { "label": "Home", "url": "/" },
+          { "label": "Our Blog" }
+        ],
+        "bgImage": "/main logo/breadcrumb.jpg"
+      },
+      "contact": {
+        "title": "Contact Us",
+        "paths": [
+          { "label": "Home", "url": "/" },
+          { "label": "Contact Us" }
+        ],
+        "bgImage": "/main logo/breadcrumb.jpg"
+      },
+      "gallery": {
+        "title": "Our Gallery",
+        "paths": [
+          { "label": "Home", "url": "/" },
+          { "label": "Our Gallery" }
+        ],
+        "bgImage": "/main logo/breadcrumb.jpg"
+      },
+      "pricing": {
+        "title": "Membership Plans",
+        "paths": [
+          { "label": "Home", "url": "/" },
+          { "label": "Membership Plans" }
+        ],
+        "bgImage": "/main logo/breadcrumb.jpg"
+      },
+      "testimonials": {
+        "title": "Success Stories",
+        "paths": [
+          { "label": "Home", "url": "/" },
+          { "label": "Success Stories" }
+        ],
+        "bgImage": "/main logo/breadcrumb.jpg"
+      },
+      "faqs": {
+        "title": "FAQs",
+        "paths": [
+          { "label": "Home", "url": "/" },
+          { "label": "FAQs" }
+        ],
+        "bgImage": "/main logo/breadcrumb.jpg"
+      }
+    },
     "Footer": {
       "logo": "/main logo/header-logo.png",
       "logoAlt": "ForgeFit Logo",
@@ -266,6 +409,28 @@
                 "WELLNESS"
               ],
               "bottomSlogan": "A HEALTHIER HAPPIER YOU"
+            }
+          }
+        },
+        "AboutPageContent": {
+          "variants": {
+            "ForgeFitAboutPageContent1": {
+              "subtitle": "About Us",
+              "watermarkText": "ABOUT US",
+              "titlePart1": "We Are Pushing Limit Of The Year",
+              "titleHighlight": "Core Strength",
+              "descriptions": [
+                "At ForgeFit, we believe fitness is more than just a workout — it's a lifestyle. Our mission is to help you become stronger, healthier, and more confident through expert guidance, modern training methods, and a supportive community.",
+                "We are dedicated to providing world-class training facilities and expert coaches who genuinely care about your progress. Whether you are a beginner or a seasoned athlete, we have a program tailored just for you.",
+                "Our approach goes beyond physical training. We focus on building healthy habits, mental resilience, and a positive mindset — because true fitness is a complete lifestyle transformation."
+              ],
+              "image1": "/about/about-2.jpg",
+              "image2": "/about/about-1.jpg",
+              "image1Alt": "Personal Training",
+              "image2Alt": "Workout Session",
+              "experienceYears": "15",
+              "experienceLabel": "YEARS OF\nEXPERIENCE",
+              "bottomTags": ["FITNESS", "STRENGTH", "WELLNESS"]
             }
           }
         },

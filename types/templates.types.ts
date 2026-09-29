@@ -129,6 +129,21 @@ export interface ForgeFitAboutData {
   bottomSlogan: string;
 }
 
+export interface ForgeFitAboutPageContentData {
+  subtitle: string;
+  watermarkText: string;
+  titlePart1: string;
+  titleHighlight: string;
+  descriptions: string[];
+  image1: string;
+  image2: string;
+  image1Alt: string;
+  image2Alt: string;
+  experienceYears: string;
+  experienceLabel: string;
+  bottomTags: string[];
+}
+
 // ------------------------------------------------------------
 // TRAINING PROGRAMS SECTION
 // ------------------------------------------------------------
@@ -390,7 +405,8 @@ export interface ForgeFitTemplateData {
         TopBar:        { variants: Record<string, TopBarData> };
         Header:        { variants: Record<string, HeaderData> };
         Hero:          { variants: Record<string, ForgeFitHeroData> };
-        AboutUs:       { variants: Record<string, ForgeFitAboutData> };
+        AboutUs:           { variants: Record<string, ForgeFitAboutData> };
+        AboutPageContent:  { variants: Record<string, ForgeFitAboutPageContentData> };
         Training:      { variants: Record<string, ForgeFitTrainingData> };
         Process:       { variants: Record<string, ForgeFitProcessData> };
         Counter:       { variants: Record<string, ForgeFitCounterData> };

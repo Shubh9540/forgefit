@@ -427,6 +427,7 @@ export interface ForgeFitTrainingDetailData {
   programs: TrainingDetailItem[];
 }
 
+
 // ------------------------------------------------------------
 // CONTACT SECTION
 // ------------------------------------------------------------
@@ -434,8 +435,8 @@ export interface ForgeFitTrainingDetailData {
 export interface ContactInfo {
   id: string;
   icon: string;
-  label: string;
-  value: string;
+  title: string;
+  lines: string[];
 }
 
 export interface ForgeFitContactData {
@@ -444,12 +445,24 @@ export interface ForgeFitContactData {
   titleHighlight: string;
   description: string;
   contactInfo: ContactInfo[];
-  formTitle: string;
-  namePlaceholder: string;
-  emailPlaceholder: string;
-  phonePlaceholder: string;
-  messagePlaceholder: string;
+  socialLinks: { id: string; icon: string; url: string }[];
+  
+  formSubtitle: string;
+  formTitlePart1: string;
+  formTitleHighlight: string;
+  formDescription: string;
   submitText: string;
+}
+
+export interface ForgeFitContactLocationData {
+  mapUrl: string;
+  subtitle: string;
+  titlePart1: string;
+  titleHighlight: string;
+  description: string;
+  buttonText: string;
+  buttonUrl: string;
+  backgroundImage: string;
 }
 
 // ------------------------------------------------------------
@@ -621,6 +634,7 @@ export interface ForgeFitTemplateData {
         BlogDetail:        { variants: Record<string, ForgeFitBlogDetailData> };
         TrainingDetail:    { variants: Record<string, ForgeFitTrainingDetailData> };
         Contact:           { variants: Record<string, ForgeFitContactData> };
+        ContactLocation:   { variants: Record<string, ForgeFitContactLocationData> };
         Sitemap:           { variants: Record<string, ForgeFitSitemapData> };
         PricingCards:      { variants: Record<string, PricingCardsData> };
         PricingTable:      { variants: Record<string, PricingTableData> };

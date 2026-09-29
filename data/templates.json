@@ -77,8 +77,7 @@
         ]
       },
       "ContactBreadcrumb": {
-        "title": "Contact Us",
-        "bgImage": "/main logo/breadcrumb.jpg",
+        "title": "CONTACT US",
         "paths": [
           {
             "label": "Home",
@@ -87,7 +86,8 @@
           {
             "label": "Contact Us"
           }
-        ]
+        ],
+        "bgImage": "/main logo/breadcrumb.jpg"
       },
       "GalleryBreadcrumb": {
         "title": "Our Gallery",
@@ -720,6 +720,34 @@
                 {
                   "key": "ConsultationBottom",
                   "component": "ForgeFitConsultationBottom1"
+                },
+                {
+                  "key": "Footer",
+                  "component": "Footer"
+                }
+              ]
+            },
+            "contact": {
+              "components": [
+                {
+                  "key": "TopBar",
+                  "component": "ForgeFitTopBar1"
+                },
+                {
+                  "key": "Header",
+                  "component": "ForgeFitHeader1"
+                },
+                {
+                  "key": "Breadcrumb",
+                  "component": "ContactBreadcrumb"
+                },
+                {
+                  "key": "Contact",
+                  "component": "ForgeFitContact1"
+                },
+                {
+                  "key": "ContactLocation",
+                  "component": "ForgeFitContactLocation1"
                 },
                 {
                   "key": "Footer",
@@ -2692,6 +2720,95 @@
               "image": "/about/about-2.jpg",
               "imageAlt": "Real People Real Progress",
               "imageOverlayText": "REAL\nPEOPLE\nREAL\nPROGRESS"
+            }
+          }
+        },
+        "Contact": {
+          "variants": {
+            "ForgeFitContact1": {
+              "subtitle": "GET IN TOUCH",
+              "titlePart1": "Let's Start Your\n",
+              "titleHighlight": "Fitness Journey",
+              "description": "Have questions about our programs, membership plans or training sessions? Our team is here to help you with all the information you need.",
+              "contactInfo": [
+                {
+                  "id": "ci-1",
+                  "icon": "FaPhoneAlt",
+                  "title": "Call Us",
+                  "lines": [
+                    "+91 98765 43210",
+                    "Mon - Sat, 9AM - 7PM"
+                  ]
+                },
+                {
+                  "id": "ci-2",
+                  "icon": "FaEnvelope",
+                  "title": "Email Us",
+                  "lines": [
+                    "support@forgefit.com",
+                    "We reply within 24 hours"
+                  ]
+                },
+                {
+                  "id": "ci-3",
+                  "icon": "FaMapMarkerAlt",
+                  "title": "Visit Us",
+                  "lines": [
+                    "123 Fitness Street,",
+                    "New Delhi, India - 110001"
+                  ]
+                },
+                {
+                  "id": "ci-4",
+                  "icon": "FaClock",
+                  "title": "Our Hours",
+                  "lines": [
+                    "Mon - Sat: 6:00 AM - 10:00 PM",
+                    "Sunday: 6:00 AM - 6:00 PM"
+                  ]
+                }
+              ],
+              "socialLinks": [
+                {
+                  "id": "sl-1",
+                  "icon": "FaFacebookF",
+                  "url": "#"
+                },
+                {
+                  "id": "sl-2",
+                  "icon": "FaInstagram",
+                  "url": "#"
+                },
+                {
+                  "id": "sl-3",
+                  "icon": "FaYoutube",
+                  "url": "#"
+                },
+                {
+                  "id": "sl-4",
+                  "icon": "FaLinkedinIn",
+                  "url": "#"
+                }
+              ],
+              "formSubtitle": "SEND US A MESSAGE",
+              "formTitlePart1": "We're Here ",
+              "formTitleHighlight": "to Help",
+              "formDescription": "Fill out the form and our team\nwill get back to you shortly.",
+              "submitText": "Send Message"
+            }
+          }
+        },
+        "ContactLocation": {
+          "variants": {
+            "ForgeFitContactLocation1": {
+              "subtitle": "OUR LOCATION",
+              "titlePart1": "Find Us ",
+              "titleHighlight": "Here",
+              "description": "Visit our gym and experience a world-class fitness environment with state-of-the-art equipment, expert trainers and a supportive community.",
+              "buttonText": "Get Directions",
+              "buttonUrl": "https://maps.google.com",
+              "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14008.114827184429!2d77.20966455!3d28.6289299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd37b741d057%3A0xc46188eb6120bdc3!2sConnaught%20Place%2C%20New%20Delhi%2C%20Delhi%20110001!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+              "backgroundImage": "/banner/ban1.jpg"
             }
           }
         }

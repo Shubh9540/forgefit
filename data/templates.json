@@ -37,6 +37,19 @@
           }
         ]
       },
+      "MissionVisionBreadcrumb": {
+        "title": "Mission & Vision",
+        "bgImage": "/main logo/breadcrumb.jpg",
+        "paths": [
+          {
+            "label": "Home",
+            "url": "/"
+          },
+          {
+            "label": "Mission & Vision"
+          }
+        ]
+      },
       "ServicesBreadcrumb": {
         "title": "Our Programs",
         "bgImage": "/main logo/breadcrumb.jpg",
@@ -428,6 +441,38 @@
                   "component": "Footer"
                 }
               ]
+            },
+            "mission-vision": {
+              "components": [
+                {
+                  "key": "TopBar",
+                  "component": "ForgeFitTopBar1"
+                },
+                {
+                  "key": "Header",
+                  "component": "ForgeFitHeader1"
+                },
+                {
+                  "key": "Breadcrumb",
+                  "component": "MissionVisionBreadcrumb"
+                },
+                {
+                  "key": "MissionSection",
+                  "component": "ForgeFitMission1"
+                },
+                {
+                  "key": "VisionSection",
+                  "component": "ForgeFitVision1"
+                },
+                {
+                  "key": "ProcessSection",
+                  "component": "ForgeFitProcess1"
+                },
+                {
+                  "key": "Footer",
+                  "component": "Footer"
+                }
+              ]
             }
           }
         }
@@ -800,6 +845,34 @@
                   "url": "/classes/group"
                 }
               ]
+            }
+          }
+        },
+        "Mission": {
+          "variants": {
+            "ForgeFitMission1": {
+              "backgroundNumber": "01",
+              "subtitle": "WHY CHOOSE US",
+              "titlePart1": "MORE THAN A GYM,",
+              "titleHighlight": "A STRONGER YOU",
+              "description1": "At ForgeFit, we believe fitness is more than just a workout — it's a lifestyle. We provide the right environment, expert guidance and unwavering support to help you become stronger, healthier and more confident every day.",
+              "description2": "Our mission is to make fitness simple, accessible and enjoyable for everyone, regardless of age, fitness level or starting point.",
+              "image": "/mission/mission.webp",
+              "imageAlt": "Woman lifting dumbbells"
+            }
+          }
+        },
+        "Vision": {
+          "variants": {
+            "ForgeFitVision1": {
+              "backgroundNumber": "02",
+              "subtitle": "OUR COMMITMENT",
+              "titlePart1": "BUILDING ",
+              "titleHighlight": "A BRIGHTER TOMORROW",
+              "description1": "We are committed to building a healthier, stronger and more confident community where fitness becomes a lifelong habit.",
+              "description2": "Through expert training, modern facilities and a supportive environment, we empower individuals to take control of their health, unlock their potential and live a more energetic, fulfilling life.",
+              "image": "/mission/vision.webp",
+              "imageAlt": "Man lifting dumbbells"
             }
           }
         },

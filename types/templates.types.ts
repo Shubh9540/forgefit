@@ -167,6 +167,28 @@ export interface ForgeFitWhyChooseUsData {
   features: WhyChooseUsFeature[];
 }
 
+export interface ForgeFitMissionData {
+  backgroundNumber: string;
+  subtitle: string;
+  titlePart1: string;
+  titleHighlight: string;
+  description1: string;
+  description2: string;
+  image: string;
+  imageAlt: string;
+}
+
+export interface ForgeFitVisionData {
+  backgroundNumber: string;
+  subtitle: string;
+  titlePart1: string;
+  titleHighlight: string;
+  description1: string;
+  description2: string;
+  image: string;
+  imageAlt: string;
+}
+
 // ------------------------------------------------------------
 // TRAINING PROGRAMS SECTION
 // ------------------------------------------------------------
@@ -448,6 +470,8 @@ export interface ForgeFitTemplateData {
         AboutUs:           { variants: Record<string, ForgeFitAboutData> };
         AboutPageContent:  { variants: Record<string, ForgeFitAboutPageContentData> };
         WhyChooseUs:       { variants: Record<string, ForgeFitWhyChooseUsData> };
+        Mission:           { variants: Record<string, ForgeFitMissionData> };
+        Vision:            { variants: Record<string, ForgeFitVisionData> };
         Training:          { variants: Record<string, ForgeFitTrainingData> };
         Process:           { variants: Record<string, ForgeFitProcessData> };
         Counter:           { variants: Record<string, ForgeFitCounterData> };

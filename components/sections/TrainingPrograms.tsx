@@ -1,11 +1,17 @@
+'use client';
+
 import React from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { FaArrowRight } from 'react-icons/fa';
 import { ForgeFitTrainingData } from '@/types/templates.types';
 import { Button } from '@/components/ui/Button';
 import { SectionHeading } from '@/components/ui/SectionHeading';
 
 export const TrainingPrograms = ({ data }: { data?: ForgeFitTrainingData }) => {
+  const pathname = usePathname();
+  const isHomePage = pathname === '/';
+
   if (!data) return null;
 
   return (
@@ -18,7 +24,7 @@ export const TrainingPrograms = ({ data }: { data?: ForgeFitTrainingData }) => {
           titleHighlight={data.titleHighlight}
           description={data.description}
         />
-        i
+        
         {/* Grid of Programs */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-16">
           {data.programs?.map((prog, index) => {
@@ -120,11 +126,13 @@ export const TrainingPrograms = ({ data }: { data?: ForgeFitTrainingData }) => {
         </div>
 
         {/* Bottom Button */}
-        <Button
-          text={data.buttonText}
-          url={data.buttonUrl}
-          withSideLines={data.buttonSideLines}
-        />
+        {isHomePage && (
+          <Button
+            text={data.buttonText}
+            url={data.buttonUrl}
+            withSideLines={data.buttonSideLines}
+          />
+        )}
       </div>
     </section>
   );

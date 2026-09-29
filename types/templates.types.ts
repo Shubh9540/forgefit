@@ -382,26 +382,49 @@ export interface ForgeFitBlogGridData {
 
 
 // ------------------------------------------------------------
-// SERVICE / TRAINING DETAIL
+// TRAINING DETAIL SECTION
 // ------------------------------------------------------------
 
-export interface ServiceDetailItem {
+export interface TrainingDetailFeature {
   id: string;
-  slug: string;
-  image: string;
-  imageAlt: string;
-  category: string;
+  icon: string;
   title: string;
   description: string;
-  fullDescription: string;
-  duration: string;
-  level: string;
-  features: { id: string; text: string }[];
-  schedule: { id: string; day: string; time: string }[];
 }
 
-export interface ForgeFitServiceDetailData {
-  services: ServiceDetailItem[];
+export interface TrainingDetailItem {
+  id: string;
+  slug: string;
+  subtitle: string;
+  titlePart1: string;
+  titleHighlight: string;
+  description: string;
+  overviewFeatures: TrainingDetailFeature[];
+  
+  programType: string;
+  level: string;
+  duration: string;
+  trainerSupport: string;
+  equipment: string;
+  location: string;
+  suitableFor: { id: string; text: string }[];
+  
+  image1: string;
+  image2: string;
+  highlightsSubtitle: string;
+  highlightsTitlePart1: string;
+  highlightsTitleHighlight: string;
+  highlights: TrainingDetailFeature[];
+
+  bannerSubtitle: string;
+  bannerTitlePart1: string;
+  bannerTitleHighlight: string;
+  bannerDescription: string;
+  bannerBgImage: string;
+}
+
+export interface ForgeFitTrainingDetailData {
+  programs: TrainingDetailItem[];
 }
 
 // ------------------------------------------------------------
@@ -510,7 +533,7 @@ export interface ForgeFitTemplateData {
         Testimonials:      { variants: Record<string, ForgeFitTestimonialsData> };
         Blog:              { variants: Record<string, ForgeFitBlogData> };
         BlogDetail:        { variants: Record<string, ForgeFitBlogDetailData> };
-        ServiceDetail:     { variants: Record<string, ForgeFitServiceDetailData> };
+        TrainingDetail:    { variants: Record<string, ForgeFitTrainingDetailData> };
         Contact:           { variants: Record<string, ForgeFitContactData> };
         Sitemap:           { variants: Record<string, ForgeFitSitemapData> };
         [key: string]: any;

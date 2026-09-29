@@ -170,6 +170,36 @@
           }
         ],
         "bgImage": "/main logo/breadcrumb.jpg"
+      },
+      "TrainingBreadcrumb": {
+        "title": "TRAINING PROGRAMS",
+        "paths": [
+          {
+            "label": "Home",
+            "url": "/"
+          },
+          {
+            "label": "Training Programs"
+          }
+        ],
+        "bgImage": "/main logo/breadcrumb.jpg"
+      },
+      "TrainingDetailBreadcrumb": {
+        "title": "PROGRAM DETAILS",
+        "paths": [
+          {
+            "label": "Home",
+            "url": "/"
+          },
+          {
+            "label": "Programs",
+            "url": "/training-programs"
+          },
+          {
+            "label": "Details"
+          }
+        ],
+        "bgImage": "/main logo/breadcrumb.jpg"
       }
     },
     "Footer": {
@@ -551,6 +581,58 @@
                   "component": "Footer"
                 }
               ]
+            },
+            "training-programs": {
+              "components": [
+                {
+                  "key": "TopBar",
+                  "component": "ForgeFitTopBar1"
+                },
+                {
+                  "key": "Header",
+                  "component": "ForgeFitHeader1"
+                },
+                {
+                  "key": "Breadcrumb",
+                  "component": "TrainingBreadcrumb"
+                },
+                {
+                  "key": "TrainingPrograms",
+                  "component": "ForgeFitTraining1"
+                },
+                {
+                  "key": "ProcessSection",
+                  "component": "ForgeFitProcess1"
+                },
+                {
+                  "key": "Footer",
+                  "component": "Footer"
+                }
+              ]
+            },
+            "training-programs-detail": {
+              "components": [
+                {
+                  "key": "TopBar",
+                  "component": "ForgeFitTopBar1"
+                },
+                {
+                  "key": "Header",
+                  "component": "ForgeFitHeader1"
+                },
+                {
+                  "key": "Breadcrumb",
+                  "component": "TrainingDetailBreadcrumb"
+                },
+                {
+                  "key": "TrainingDetail",
+                  "component": "ForgeFitTrainingDetail1"
+                },
+                {
+                  "key": "Footer",
+                  "component": "Footer"
+                }
+              ]
             }
           }
         }
@@ -630,14 +712,26 @@
                     {
                       "id": "nav-about-team-detail",
                       "label": "Team Details",
-                      "url": "/team/1"
+                      "url": "/team/rahul-sharma"
                     }
                   ]
                 },
                 {
                   "id": "nav-programs",
                   "label": "Programs",
-                  "url": "/services"
+                  "url": "#",
+                  "subLinks": [
+                    {
+                      "id": "nav-programs-training",
+                      "label": "Training Programs",
+                      "url": "/training-programs"
+                    },
+                    {
+                      "id": "nav-programs-details",
+                      "label": "Training Programs Details",
+                      "url": "/training-programs/strength-training"
+                    }
+                  ]
                 },
                 {
                   "id": "nav-gallery",
@@ -857,7 +951,7 @@
               "titleHighlight": "PROGRAMS",
               "description": "Personalized training programs designed to help you achieve your fitness goals, whatever your starting point.",
               "buttonText": "START YOUR JOURNEY",
-              "buttonUrl": "/classes",
+              "buttonUrl": "/training-programs",
               "buttonSideLines": true,
               "programs": [
                 {
@@ -869,7 +963,7 @@
                   "description": "One-on-one coaching with customized workout plans to help you achieve your unique goals.",
                   "duration": "",
                   "level": "",
-                  "url": "/classes/personal-training"
+                  "url": "/training-programs/personal-training"
                 },
                 {
                   "id": "prog-2",
@@ -880,7 +974,7 @@
                   "description": "Effective and sustainable weight loss programs to help you burn fat, boost energy and feel great.",
                   "duration": "",
                   "level": "",
-                  "url": "/classes/weight-loss"
+                  "url": "/training-programs/weight-loss"
                 },
                 {
                   "id": "prog-3",
@@ -891,7 +985,7 @@
                   "description": "Structured strength training to help you build lean muscle mass, improve endurance and get stronger every day.",
                   "duration": "",
                   "level": "",
-                  "url": "/classes/muscle-building"
+                  "url": "/training-programs/muscle-building"
                 },
                 {
                   "id": "prog-4",
@@ -902,7 +996,7 @@
                   "description": "High-energy cardio workouts to improve heart health, increase stamina and keep you active and fit.",
                   "duration": "",
                   "level": "",
-                  "url": "/classes/cardio"
+                  "url": "/training-programs/cardio"
                 },
                 {
                   "id": "prog-5",
@@ -913,7 +1007,7 @@
                   "description": "Real-life strength and mobility training to improve balance, flexibility and overall performance in daily life.",
                   "duration": "",
                   "level": "",
-                  "url": "/classes/functional"
+                  "url": "/training-programs/functional"
                 },
                 {
                   "id": "prog-6",
@@ -924,7 +1018,7 @@
                   "description": "Stay motivated with high-energy group sessions designed for all fitness levels.",
                   "duration": "",
                   "level": "",
-                  "url": "/classes/group"
+                  "url": "/training-programs/group"
                 }
               ]
             }
@@ -1635,6 +1729,314 @@
           "variants": {
             "ForgeFitTeamDetail1": {
               "teamMemberId": ""
+            }
+          }
+        },
+        "TrainingDetail": {
+          "variants": {
+            "ForgeFitTrainingDetail1": {
+              "programs": [
+                {
+                  "id": "strength-training",
+                  "slug": "strength-training",
+                  "subtitle": "PROGRAM OVERVIEW",
+                  "titlePart1": "Build a Stronger, ",
+                  "titleHighlight": "Healthier You",
+                  "description": "Our Strength Training program is designed to help you build lean muscle, increase endurance and improve overall strength. Whether you're a beginner or an experienced athlete, our structured training plans are tailored to your fitness level and goals.\n\nWith the guidance of our certified trainers, you'll learn proper techniques, follow progressive workouts and stay motivated throughout your fitness journey.",
+                  "overviewFeatures": [
+                    {
+                      "id": "of-1",
+                      "icon": "FaDumbbell",
+                      "title": "Build Strength",
+                      "description": "Increase muscular strength and power."
+                    },
+                    {
+                      "id": "of-2",
+                      "icon": "FaChartLine",
+                      "title": "Improve Endurance",
+                      "description": "Boost stamina for better performance."
+                    },
+                    {
+                      "id": "of-3",
+                      "icon": "FaHeartbeat",
+                      "title": "Better Health",
+                      "description": "Support a healthier lifestyle and mindset."
+                    },
+                    {
+                      "id": "of-4",
+                      "icon": "FaBullseye",
+                      "title": "Achieve Goals",
+                      "description": "Personalized plans to reach your targets."
+                    }
+                  ],
+                  "programType": "Strength Training",
+                  "level": "All Levels",
+                  "duration": "8 - 16 Weeks",
+                  "trainerSupport": "Yes",
+                  "equipment": "Gym Equipment",
+                  "location": "ForgeFit Gym",
+                  "suitableFor": [
+                    {
+                      "id": "sf-1",
+                      "text": "Muscle building"
+                    },
+                    {
+                      "id": "sf-2",
+                      "text": "Strength improvement"
+                    },
+                    {
+                      "id": "sf-3",
+                      "text": "Fat loss & body toning"
+                    },
+                    {
+                      "id": "sf-4",
+                      "text": "Athletic performance"
+                    }
+                  ],
+                  "image1": "/banner/image-2.webp",
+                  "image2": "/banner/image-1.webp",
+                  "highlightsSubtitle": "WHAT YOU'LL GET",
+                  "highlightsTitlePart1": "Program ",
+                  "highlightsTitleHighlight": "Highlights",
+                  "highlights": [
+                    {
+                      "id": "hl-1",
+                      "icon": "FaDumbbell",
+                      "title": "Structured Workouts",
+                      "description": "Scientifically designed training plans for maximum results."
+                    },
+                    {
+                      "id": "hl-2",
+                      "icon": "FaClipboardList",
+                      "title": "Expert Guidance",
+                      "description": "One-on-one and group support from certified trainers."
+                    },
+                    {
+                      "id": "hl-3",
+                      "icon": "FaAppleAlt",
+                      "title": "Nutrition Support",
+                      "description": "Guidance on diet and nutrition to complement your training."
+                    },
+                    {
+                      "id": "hl-4",
+                      "icon": "FaUsers",
+                      "title": "Track Progress",
+                      "description": "Regular assessments to monitor your improvement."
+                    },
+                    {
+                      "id": "hl-5",
+                      "icon": "FaStar",
+                      "title": "Stay Motivated",
+                      "description": "Be part of a supportive fitness community."
+                    }
+                  ],
+                  "bannerSubtitle": "READY TO GET STRONGER?",
+                  "bannerTitlePart1": "TRANSFORM ",
+                  "bannerTitleHighlight": "YOURSELF",
+                  "bannerDescription": "Commit today. A stronger, healthier tomorrow is waiting.",
+                  "bannerBgImage": "/banner/banner1.webp"
+                },
+                {
+                  "id": "cardio-fitness",
+                  "slug": "cardio-fitness",
+                  "subtitle": "PROGRAM OVERVIEW",
+                  "titlePart1": "Build a Stronger, ",
+                  "titleHighlight": "Fitter You",
+                  "description": "Our Strength Training program is designed to help you build lean muscle, increase endurance and improve overall strength. Whether you're a beginner or an experienced athlete, our structured training plans are tailored to your fitness level and goals.\n\nWith the guidance of our certified trainers, you'll learn proper techniques, follow progressive workouts and stay motivated throughout your fitness journey.",
+                  "overviewFeatures": [
+                    {
+                      "id": "of-1",
+                      "icon": "FaDumbbell",
+                      "title": "Build Strength",
+                      "description": "Increase muscular strength and power."
+                    },
+                    {
+                      "id": "of-2",
+                      "icon": "FaChartLine",
+                      "title": "Improve Endurance",
+                      "description": "Boost stamina for better performance."
+                    },
+                    {
+                      "id": "of-3",
+                      "icon": "FaHeartbeat",
+                      "title": "Better Health",
+                      "description": "Support a healthier lifestyle and mindset."
+                    },
+                    {
+                      "id": "of-4",
+                      "icon": "FaBullseye",
+                      "title": "Achieve Goals",
+                      "description": "Personalized plans to reach your targets."
+                    }
+                  ],
+                  "programType": "Cardio Fitness",
+                  "level": "All Levels",
+                  "duration": "8 - 16 Weeks",
+                  "trainerSupport": "Yes",
+                  "equipment": "Gym Equipment",
+                  "location": "ForgeFit Gym",
+                  "suitableFor": [
+                    {
+                      "id": "sf-1",
+                      "text": "Muscle building"
+                    },
+                    {
+                      "id": "sf-2",
+                      "text": "Strength improvement"
+                    },
+                    {
+                      "id": "sf-3",
+                      "text": "Fat loss & body toning"
+                    },
+                    {
+                      "id": "sf-4",
+                      "text": "Athletic performance"
+                    }
+                  ],
+                  "image1": "/other/image1.webp",
+                  "image2": "/banner/hero_bg_1.jpg",
+                  "highlightsSubtitle": "WHAT YOU'LL GET",
+                  "highlightsTitlePart1": "Program ",
+                  "highlightsTitleHighlight": "Highlights",
+                  "highlights": [
+                    {
+                      "id": "hl-1",
+                      "icon": "FaDumbbell",
+                      "title": "Structured Workouts",
+                      "description": "Scientifically designed training plans for maximum results."
+                    },
+                    {
+                      "id": "hl-2",
+                      "icon": "FaClipboardList",
+                      "title": "Expert Guidance",
+                      "description": "One-on-one and group support from certified trainers."
+                    },
+                    {
+                      "id": "hl-3",
+                      "icon": "FaAppleAlt",
+                      "title": "Nutrition Support",
+                      "description": "Guidance on diet and nutrition to complement your training."
+                    },
+                    {
+                      "id": "hl-4",
+                      "icon": "FaUsers",
+                      "title": "Track Progress",
+                      "description": "Regular assessments to monitor your improvement."
+                    },
+                    {
+                      "id": "hl-5",
+                      "icon": "FaStar",
+                      "title": "Stay Motivated",
+                      "description": "Be part of a supportive fitness community."
+                    }
+                  ],
+                  "bannerSubtitle": "READY TO GET STRONGER?",
+                  "bannerTitlePart1": "TRANSFORM ",
+                  "bannerTitleHighlight": "YOURSELF",
+                  "bannerDescription": "Commit today. A stronger, healthier tomorrow is waiting.",
+                  "bannerBgImage": "/banner/banner1.webp"
+                },
+                {
+                  "id": "personal-training",
+                  "slug": "personal-training",
+                  "subtitle": "PROGRAM OVERVIEW",
+                  "titlePart1": "Build a Stronger, ",
+                  "titleHighlight": "Healthier You",
+                  "description": "Our Strength Training program is designed to help you build lean muscle, increase endurance and improve overall strength. Whether you're a beginner or an experienced athlete, our structured training plans are tailored to your fitness level and goals.\n\nWith the guidance of our certified trainers, you'll learn proper techniques, follow progressive workouts and stay motivated throughout your fitness journey.",
+                  "overviewFeatures": [
+                    {
+                      "id": "of-1",
+                      "icon": "FaDumbbell",
+                      "title": "Build Strength",
+                      "description": "Increase muscular strength and power."
+                    },
+                    {
+                      "id": "of-2",
+                      "icon": "FaChartLine",
+                      "title": "Improve Endurance",
+                      "description": "Boost stamina for better performance."
+                    },
+                    {
+                      "id": "of-3",
+                      "icon": "FaHeartbeat",
+                      "title": "Better Health",
+                      "description": "Support a healthier lifestyle and mindset."
+                    },
+                    {
+                      "id": "of-4",
+                      "icon": "FaBullseye",
+                      "title": "Achieve Goals",
+                      "description": "Personalized plans to reach your targets."
+                    }
+                  ],
+                  "programType": "Personal Training",
+                  "level": "All Levels",
+                  "duration": "8 - 16 Weeks",
+                  "trainerSupport": "Yes",
+                  "equipment": "Gym Equipment",
+                  "location": "ForgeFit Gym",
+                  "suitableFor": [
+                    {
+                      "id": "sf-1",
+                      "text": "Muscle building"
+                    },
+                    {
+                      "id": "sf-2",
+                      "text": "Strength improvement"
+                    },
+                    {
+                      "id": "sf-3",
+                      "text": "Fat loss & body toning"
+                    },
+                    {
+                      "id": "sf-4",
+                      "text": "Athletic performance"
+                    }
+                  ],
+                  "image1": "/other/image1.webp",
+                  "image2": "/banner/hero_bg_1.jpg",
+                  "highlightsSubtitle": "WHAT YOU'LL GET",
+                  "highlightsTitlePart1": "Program ",
+                  "highlightsTitleHighlight": "Highlights",
+                  "highlights": [
+                    {
+                      "id": "hl-1",
+                      "icon": "FaDumbbell",
+                      "title": "Structured Workouts",
+                      "description": "Scientifically designed training plans for maximum results."
+                    },
+                    {
+                      "id": "hl-2",
+                      "icon": "FaClipboardList",
+                      "title": "Expert Guidance",
+                      "description": "One-on-one and group support from certified trainers."
+                    },
+                    {
+                      "id": "hl-3",
+                      "icon": "FaAppleAlt",
+                      "title": "Nutrition Support",
+                      "description": "Guidance on diet and nutrition to complement your training."
+                    },
+                    {
+                      "id": "hl-4",
+                      "icon": "FaUsers",
+                      "title": "Track Progress",
+                      "description": "Regular assessments to monitor your improvement."
+                    },
+                    {
+                      "id": "hl-5",
+                      "icon": "FaStar",
+                      "title": "Stay Motivated",
+                      "description": "Be part of a supportive fitness community."
+                    }
+                  ],
+                  "bannerSubtitle": "READY TO GET STRONGER?",
+                  "bannerTitlePart1": "TRANSFORM ",
+                  "bannerTitleHighlight": "YOURSELF",
+                  "bannerDescription": "Commit today. A stronger, healthier tomorrow is waiting.",
+                  "bannerBgImage": "/banner/banner1.webp"
+                }
+              ]
             }
           }
         }

@@ -239,6 +239,62 @@ export interface ForgeFitProcessData {
 }
 
 // ------------------------------------------------------------
+// TEAM SECTION
+// ------------------------------------------------------------
+
+export interface SocialLink {
+  id: string;
+  icon: string;
+  url: string;
+}
+
+export interface TeamMemberQuickInfo {
+  position: string;
+  experience: string;
+  specialization: string;
+  certification: string;
+  location: string;
+}
+
+export interface TeamMemberExpertise {
+  id: string;
+  icon: string;
+  title: string;
+  description: string;
+}
+
+export interface TeamMember {
+  id: string;
+  image: string;
+  name: string;
+  role: string;
+  shortDescription: string;
+  quote: string;
+  biography: string;
+  experience: string;
+  certification: string;
+  specialization: string;
+  trainingStyle: string;
+  quickInfo: TeamMemberQuickInfo;
+  expertise: TeamMemberExpertise[];
+  social: SocialLink[];
+}
+
+export interface ForgeFitTeamData {
+  subtitle: string;
+  titlePart1: string;
+  titleHighlight: string;
+  description: string;
+  members: TeamMember[];
+}
+
+export interface ForgeFitTeamDetailData {
+  teamMemberId?: string;
+  // Note: Detail pages typically read directly from the main list.
+  // We can pass the whole member object to the detail component.
+}
+
+// ------------------------------------------------------------
 // COUNTER / STATS SECTION
 // ------------------------------------------------------------
 
@@ -323,33 +379,7 @@ export interface ForgeFitBlogGridData {
   posts: BlogPost[];
 }
 
-// ------------------------------------------------------------
-// TEAM SECTION
-// ------------------------------------------------------------
 
-export interface TeamMember {
-  id: string;
-  image: string;
-  imageAlt: string;
-  name: string;
-  role: string;
-  bio?: string;
-  experience?: string;
-  specialties?: string[];
-  socialLinks?: { id: string; icon: string; url: string }[];
-}
-
-export interface ForgeFitTeamData {
-  subtitle: string;
-  titlePart1: string;
-  titleHighlight: string;
-  description: string;
-  members: TeamMember[];
-}
-
-export interface ForgeFitTeamDetailData {
-  members: TeamMember[];
-}
 
 // ------------------------------------------------------------
 // SERVICE / TRAINING DETAIL
@@ -474,12 +504,12 @@ export interface ForgeFitTemplateData {
         Vision:            { variants: Record<string, ForgeFitVisionData> };
         Training:          { variants: Record<string, ForgeFitTrainingData> };
         Process:           { variants: Record<string, ForgeFitProcessData> };
+        Team:              { variants: Record<string, ForgeFitTeamData> };
+        TeamDetail:        { variants: Record<string, ForgeFitTeamDetailData> };
         Counter:           { variants: Record<string, ForgeFitCounterData> };
         Testimonials:      { variants: Record<string, ForgeFitTestimonialsData> };
         Blog:              { variants: Record<string, ForgeFitBlogData> };
         BlogDetail:        { variants: Record<string, ForgeFitBlogDetailData> };
-        Team:              { variants: Record<string, ForgeFitTeamData> };
-        TeamDetail:        { variants: Record<string, ForgeFitTeamDetailData> };
         ServiceDetail:     { variants: Record<string, ForgeFitServiceDetailData> };
         Contact:           { variants: Record<string, ForgeFitContactData> };
         Sitemap:           { variants: Record<string, ForgeFitSitemapData> };

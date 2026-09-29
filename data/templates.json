@@ -140,6 +140,36 @@
             "label": "FAQs"
           }
         ]
+      },
+      "TeamBreadcrumb": {
+        "title": "OUR TEAM",
+        "paths": [
+          {
+            "label": "Home",
+            "url": "/"
+          },
+          {
+            "label": "Our Team"
+          }
+        ],
+        "bgImage": "/main logo/breadcrumb.jpg"
+      },
+      "TeamDetailBreadcrumb": {
+        "title": "TEAM DETAILS",
+        "paths": [
+          {
+            "label": "Home",
+            "url": "/"
+          },
+          {
+            "label": "Our Team",
+            "url": "/team"
+          },
+          {
+            "label": "Details"
+          }
+        ],
+        "bgImage": "/main logo/breadcrumb.jpg"
       }
     },
     "Footer": {
@@ -473,6 +503,54 @@
                   "component": "Footer"
                 }
               ]
+            },
+            "team": {
+              "components": [
+                {
+                  "key": "TopBar",
+                  "component": "ForgeFitTopBar1"
+                },
+                {
+                  "key": "Header",
+                  "component": "ForgeFitHeader1"
+                },
+                {
+                  "key": "Breadcrumb",
+                  "component": "TeamBreadcrumb"
+                },
+                {
+                  "key": "Team",
+                  "component": "ForgeFitTeam1"
+                },
+                {
+                  "key": "Footer",
+                  "component": "Footer"
+                }
+              ]
+            },
+            "team-detail": {
+              "components": [
+                {
+                  "key": "TopBar",
+                  "component": "ForgeFitTopBar1"
+                },
+                {
+                  "key": "Header",
+                  "component": "ForgeFitHeader1"
+                },
+                {
+                  "key": "Breadcrumb",
+                  "component": "TeamDetailBreadcrumb"
+                },
+                {
+                  "key": "TeamDetail",
+                  "component": "ForgeFitTeamDetail1"
+                },
+                {
+                  "key": "Footer",
+                  "component": "Footer"
+                }
+              ]
             }
           }
         }
@@ -711,7 +789,11 @@
               "image2Alt": "Workout Session",
               "experienceYears": "15",
               "experienceLabel": "YEARS OF\nEXPERIENCE",
-              "bottomTags": ["FITNESS", "STRENGTH", "WELLNESS"]
+              "bottomTags": [
+                "FITNESS",
+                "STRENGTH",
+                "WELLNESS"
+              ]
             }
           }
         },
@@ -1065,6 +1147,494 @@
                   "readMoreText": "Read More"
                 }
               ]
+            }
+          }
+        },
+        "Team": {
+          "variants": {
+            "ForgeFitTeam1": {
+              "subtitle": "OUR TEAM",
+              "titlePart1": "Meet Our ",
+              "titleHighlight": "Expert Team",
+              "description": "Passionate professionals dedicated to helping you become a stronger, healthier and happier you.",
+              "members": [
+                {
+                  "id": "rahul-sharma",
+                  "image": "/team/team-1.jpg",
+                  "name": "Rahul Sharma",
+                  "role": "Head Trainer",
+                  "shortDescription": "Specializes in strength training, muscle building and functional fitness.",
+                  "quote": "\"Fitness is not a destination, it's a way of life.\"",
+                  "biography": "Rahul Sharma is a certified fitness professional with over 8 years of experience in strength training. He is passionate about helping people achieve their fitness goals through safe, effective and personalized training programs.\n\nWith a strong focus on discipline, consistency and proper technique, Rahul has trained clients of all fitness levels.",
+                  "experience": "8+ Years",
+                  "certification": "ACE Certified Personal Trainer",
+                  "specialization": "Strength Training, Muscle Building",
+                  "trainingStyle": "Goal Oriented & Personalized",
+                  "quickInfo": {
+                    "position": "Head Trainer",
+                    "experience": "8+ Years",
+                    "specialization": "Strength Training, Muscle Building",
+                    "certification": "ACE Certified",
+                    "location": "ForgeFit Gym, New Delhi"
+                  },
+                  "expertise": [
+                    {
+                      "id": "exp-1",
+                      "icon": "FaDumbbell",
+                      "title": "Strength Training",
+                      "description": "Build strength and endurance with proven training methods."
+                    },
+                    {
+                      "id": "exp-2",
+                      "icon": "FaFire",
+                      "title": "Muscle Building",
+                      "description": "Science-based programs for lean muscle gain."
+                    },
+                    {
+                      "id": "exp-3",
+                      "icon": "FaRunning",
+                      "title": "Functional Fitness",
+                      "description": "Improve mobility, flexibility and overall performance."
+                    },
+                    {
+                      "id": "exp-4",
+                      "icon": "FaClipboardList",
+                      "title": "Fitness Guidance",
+                      "description": "Personalized plans for long-term results."
+                    }
+                  ],
+                  "social": [
+                    {
+                      "id": "soc-1",
+                      "icon": "FaFacebookF",
+                      "url": "#"
+                    },
+                    {
+                      "id": "soc-2",
+                      "icon": "FaInstagram",
+                      "url": "#"
+                    },
+                    {
+                      "id": "soc-3",
+                      "icon": "FaLinkedinIn",
+                      "url": "#"
+                    },
+                    {
+                      "id": "soc-4",
+                      "icon": "FaYoutube",
+                      "url": "#"
+                    }
+                  ]
+                },
+                {
+                  "id": "rohan-mehta",
+                  "image": "/team/team-2.jpg",
+                  "name": "Rohan Mehta",
+                  "role": "Fitness Trainer",
+                  "shortDescription": "Expert in weight loss, HIIT and personal training for all fitness levels.",
+                  "quote": "\"Sweat is just fat crying.\"",
+                  "biography": "Priya brings high energy and motivation to every session. He believes in making fitness fun while pushing his clients to reach their full potential.",
+                  "experience": "5+ Years",
+                  "certification": "ISSA Certified Fitness Trainer",
+                  "specialization": "Weight Loss, HIIT",
+                  "trainingStyle": "High Energy & Fun",
+                  "quickInfo": {
+                    "position": "Fitness Trainer",
+                    "experience": "5+ Years",
+                    "specialization": "Weight Loss, HIIT",
+                    "certification": "ISSA Certified",
+                    "location": "ForgeFit Gym, New Delhi"
+                  },
+                  "expertise": [
+                    {
+                      "id": "exp-1",
+                      "icon": "FaFire",
+                      "title": "HIIT",
+                      "description": "High-intensity interval training for maximum calorie burn."
+                    },
+                    {
+                      "id": "exp-2",
+                      "icon": "FaHeartbeat",
+                      "title": "Cardio",
+                      "description": "Improve heart health and endurance."
+                    },
+                    {
+                      "id": "exp-3",
+                      "icon": "FaAppleAlt",
+                      "title": "Nutrition",
+                      "description": "Basic guidance on healthy eating habits."
+                    },
+                    {
+                      "id": "exp-4",
+                      "icon": "FaRunning",
+                      "title": "Weight Loss",
+                      "description": "Structured programs to shed excess fat safely."
+                    }
+                  ],
+                  "social": [
+                    {
+                      "id": "soc-1",
+                      "icon": "FaFacebookF",
+                      "url": "#"
+                    },
+                    {
+                      "id": "soc-2",
+                      "icon": "FaInstagram",
+                      "url": "#"
+                    },
+                    {
+                      "id": "soc-3",
+                      "icon": "FaLinkedinIn",
+                      "url": "#"
+                    }
+                  ]
+                },
+                {
+                  "id": "amit-verma",
+                  "image": "/team/team-3.jpg",
+                  "name": "Amit Verma",
+                  "role": "Strength & Conditioning Coach",
+                  "shortDescription": "Focuses on athletic performance, endurance and conditioning.",
+                  "quote": "\"Train insane or remain the same.\"",
+                  "biography": "Amit specializes in training athletes and individuals looking to push past their limits.",
+                  "experience": "7+ Years",
+                  "certification": "CSCS",
+                  "specialization": "Athletic Performance, Conditioning",
+                  "trainingStyle": "Intense & Result-driven",
+                  "quickInfo": {
+                    "position": "S&C Coach",
+                    "experience": "7+ Years",
+                    "specialization": "Conditioning, Performance",
+                    "certification": "CSCS",
+                    "location": "ForgeFit Gym, New Delhi"
+                  },
+                  "expertise": [
+                    {
+                      "id": "exp-1",
+                      "icon": "FaDumbbell",
+                      "title": "Olympic Weightlifting",
+                      "description": "Master complex lifts and improve power."
+                    },
+                    {
+                      "id": "exp-2",
+                      "icon": "FaBolt",
+                      "title": "Agility Training",
+                      "description": "Improve speed, coordination and reaction time."
+                    },
+                    {
+                      "id": "exp-3",
+                      "icon": "FaChild",
+                      "title": "Sports Specific",
+                      "description": "Training tailored for your sport."
+                    },
+                    {
+                      "id": "exp-4",
+                      "icon": "FaMedal",
+                      "title": "Competition Prep",
+                      "description": "Get ready for your next big event."
+                    }
+                  ],
+                  "social": [
+                    {
+                      "id": "soc-1",
+                      "icon": "FaInstagram",
+                      "url": "#"
+                    },
+                    {
+                      "id": "soc-2",
+                      "icon": "FaLinkedinIn",
+                      "url": "#"
+                    },
+                    {
+                      "id": "soc-3",
+                      "icon": "FaYoutube",
+                      "url": "#"
+                    }
+                  ]
+                },
+                {
+                  "id": "siddharth-kapoor",
+                  "image": "/team/team-4.jpg",
+                  "name": "Siddharth Kapoor",
+                  "role": "Nutrition Expert",
+                  "shortDescription": "Helps you achieve your goals with customized diet and nutrition plans.",
+                  "quote": "\"You are what you eat, so don't be fast, cheap, easy, or fake.\"",
+                  "biography": "Sneha believes that nutrition is 80% of the battle. He works with clients to build sustainable, healthy eating habits.",
+                  "experience": "6+ Years",
+                  "certification": "Registered Dietitian",
+                  "specialization": "Sports Nutrition, Weight Management",
+                  "trainingStyle": "Holistic & Sustainable",
+                  "quickInfo": {
+                    "position": "Nutrition Expert",
+                    "experience": "6+ Years",
+                    "specialization": "Sports Nutrition",
+                    "certification": "Registered Dietitian",
+                    "location": "ForgeFit Gym, New Delhi"
+                  },
+                  "expertise": [
+                    {
+                      "id": "exp-1",
+                      "icon": "FaAppleAlt",
+                      "title": "Meal Planning",
+                      "description": "Customized plans fitting your lifestyle."
+                    },
+                    {
+                      "id": "exp-2",
+                      "icon": "FaCarrot",
+                      "title": "Weight Management",
+                      "description": "Sustainable strategies for long-term success."
+                    },
+                    {
+                      "id": "exp-3",
+                      "icon": "FaLeaf",
+                      "title": "Vegan/Vegetarian",
+                      "description": "Plant-based nutrition guidance."
+                    },
+                    {
+                      "id": "exp-4",
+                      "icon": "FaListAlt",
+                      "title": "Macro Tracking",
+                      "description": "Learn how to track your food effectively."
+                    }
+                  ],
+                  "social": [
+                    {
+                      "id": "soc-1",
+                      "icon": "FaFacebookF",
+                      "url": "#"
+                    },
+                    {
+                      "id": "soc-2",
+                      "icon": "FaInstagram",
+                      "url": "#"
+                    }
+                  ]
+                },
+                {
+                  "id": "vikram-singh",
+                  "image": "/team/team-5.jpg",
+                  "name": "Vikram Singh",
+                  "role": "Functional Training Coach",
+                  "shortDescription": "Specializes in functional training, mobility and injury prevention.",
+                  "quote": "\"Move better to live better.\"",
+                  "biography": "Vikram's approach focuses on improving how your body moves in everyday life, not just how it looks.",
+                  "experience": "4+ Years",
+                  "certification": "FMS Level 2",
+                  "specialization": "Mobility, Injury Prevention",
+                  "trainingStyle": "Mindful & Corrective",
+                  "quickInfo": {
+                    "position": "Functional Coach",
+                    "experience": "4+ Years",
+                    "specialization": "Mobility, Rehab",
+                    "certification": "FMS Level 2",
+                    "location": "ForgeFit Gym, New Delhi"
+                  },
+                  "expertise": [
+                    {
+                      "id": "exp-1",
+                      "icon": "FaWalking",
+                      "title": "Mobility",
+                      "description": "Improve joint health and range of motion."
+                    },
+                    {
+                      "id": "exp-2",
+                      "icon": "FaYinYang",
+                      "title": "Balance Training",
+                      "description": "Enhance stability and core strength."
+                    },
+                    {
+                      "id": "exp-3",
+                      "icon": "FaBandAid",
+                      "title": "Injury Prevention",
+                      "description": "Bulletproof your body against common injuries."
+                    },
+                    {
+                      "id": "exp-4",
+                      "icon": "FaSync",
+                      "title": "Corrective Exercise",
+                      "description": "Fix imbalances and poor movement patterns."
+                    }
+                  ],
+                  "social": [
+                    {
+                      "id": "soc-1",
+                      "icon": "FaInstagram",
+                      "url": "#"
+                    },
+                    {
+                      "id": "soc-2",
+                      "icon": "FaYoutube",
+                      "url": "#"
+                    }
+                  ]
+                },
+                {
+                  "id": "naveen-rathi",
+                  "image": "/team/team-2.jpg",
+                  "name": "Naveen Rathi",
+                  "role": "Group Class Instructor",
+                  "shortDescription": "Leads energizing group sessions like Zumba, HIIT and circuit training.",
+                  "quote": "\"Find your tribe, love them hard.\"",
+                  "biography": "Naveen is the life of the party in group classes. Her energy is infectious, making every workout feel like a celebration.",
+                  "experience": "3+ Years",
+                  "certification": "Zumba Certified",
+                  "specialization": "Group Fitness, Zumba",
+                  "trainingStyle": "High Energy & Community-Focused",
+                  "quickInfo": {
+                    "position": "Group Instructor",
+                    "experience": "3+ Years",
+                    "specialization": "Zumba, Group Fitness",
+                    "certification": "Zumba Certified",
+                    "location": "ForgeFit Gym, New Delhi"
+                  },
+                  "expertise": [
+                    {
+                      "id": "exp-1",
+                      "icon": "FaMusic",
+                      "title": "Zumba",
+                      "description": "Dance your way to fitness."
+                    },
+                    {
+                      "id": "exp-2",
+                      "icon": "FaUsers",
+                      "title": "Bootcamps",
+                      "description": "Outdoor and indoor intense group training."
+                    },
+                    {
+                      "id": "exp-3",
+                      "icon": "FaBiking",
+                      "title": "Spin",
+                      "description": "High-intensity indoor cycling classes."
+                    },
+                    {
+                      "id": "exp-4",
+                      "icon": "FaSmile",
+                      "title": "Community Building",
+                      "description": "Creating a welcoming environment for all."
+                    }
+                  ],
+                  "social": [
+                    {
+                      "id": "soc-1",
+                      "icon": "FaInstagram",
+                      "url": "#"
+                    }
+                  ]
+                },
+                {
+                  "id": "karan-malhotra",
+                  "image": "/team/team-3.jpg",
+                  "name": "Karan Malhotra",
+                  "role": "Member Support",
+                  "shortDescription": "Ensures a smooth and motivating fitness experience for all members.",
+                  "quote": "\"We are here for you.\"",
+                  "biography": "Karan is the friendly face that welcomes you every day. He ensures that all members feel supported on their fitness journey.",
+                  "experience": "5+ Years",
+                  "certification": "Customer Service Management",
+                  "specialization": "Member Relations",
+                  "trainingStyle": "Supportive",
+                  "quickInfo": {
+                    "position": "Member Support",
+                    "experience": "5+ Years",
+                    "specialization": "Customer Relations",
+                    "certification": "CSM",
+                    "location": "ForgeFit Gym, New Delhi"
+                  },
+                  "expertise": [
+                    {
+                      "id": "exp-1",
+                      "icon": "FaHeadset",
+                      "title": "Support",
+                      "description": "Always ready to help with your queries."
+                    },
+                    {
+                      "id": "exp-2",
+                      "icon": "FaClipboardCheck",
+                      "title": "Onboarding",
+                      "description": "Guiding new members through the facility."
+                    },
+                    {
+                      "id": "exp-3",
+                      "icon": "FaCalendarCheck",
+                      "title": "Scheduling",
+                      "description": "Managing class bookings and PT sessions."
+                    },
+                    {
+                      "id": "exp-4",
+                      "icon": "FaRegSmile",
+                      "title": "Member Experience",
+                      "description": "Ensuring a positive environment."
+                    }
+                  ],
+                  "social": [
+                    {
+                      "id": "soc-1",
+                      "icon": "FaLinkedinIn",
+                      "url": "#"
+                    }
+                  ]
+                },
+                {
+                  "id": "prateek-desai",
+                  "image": "/team/team-4.jpg",
+                  "name": "Prateek Desai",
+                  "role": "Client Relationship Manager",
+                  "shortDescription": "Dedicated to understanding your needs and helping you stay on track.",
+                  "quote": "\"Your success is our success.\"",
+                  "biography": "Prateek works closely with our trainers to ensure clients are meeting their goals and getting the best possible experience.",
+                  "experience": "4+ Years",
+                  "certification": "Business Admin",
+                  "specialization": "Client Retention",
+                  "trainingStyle": "Empathetic & Organized",
+                  "quickInfo": {
+                    "position": "CRM",
+                    "experience": "4+ Years",
+                    "specialization": "Client Management",
+                    "certification": "BBA",
+                    "location": "ForgeFit Gym, New Delhi"
+                  },
+                  "expertise": [
+                    {
+                      "id": "exp-1",
+                      "icon": "FaHandshake",
+                      "title": "Consultations",
+                      "description": "Initial assessments and goal setting."
+                    },
+                    {
+                      "id": "exp-2",
+                      "icon": "FaChartLine",
+                      "title": "Progress Tracking",
+                      "description": "Monitoring member results and satisfaction."
+                    },
+                    {
+                      "id": "exp-3",
+                      "icon": "FaComments",
+                      "title": "Feedback",
+                      "description": "Gathering and implementing member suggestions."
+                    },
+                    {
+                      "id": "exp-4",
+                      "icon": "FaStar",
+                      "title": "VIP Services",
+                      "description": "Managing premium member accounts."
+                    }
+                  ],
+                  "social": [
+                    {
+                      "id": "soc-1",
+                      "icon": "FaLinkedinIn",
+                      "url": "#"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "TeamDetail": {
+          "variants": {
+            "ForgeFitTeamDetail1": {
+              "teamMemberId": ""
             }
           }
         }

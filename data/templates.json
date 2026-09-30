@@ -213,6 +213,19 @@
           }
         ],
         "bgImage": "/main logo/breadcrumb.jpg"
+      },
+      "AwardsBreadcrumb": {
+        "title": "AWARDS & CERTIFICATIONS",
+        "paths": [
+          {
+            "label": "Home",
+            "url": "/"
+          },
+          {
+            "label": "Awards & Certifications"
+          }
+        ],
+        "bgImage": "/main logo/breadcrumb.jpg"
       }
     },
     "Footer": {
@@ -754,6 +767,42 @@
                   "component": "Footer"
                 }
               ]
+            },
+            "awards": {
+              "components": [
+                {
+                  "key": "TopBar",
+                  "component": "ForgeFitTopBar1"
+                },
+                {
+                  "key": "Header",
+                  "component": "ForgeFitHeader1"
+                },
+                {
+                  "key": "Breadcrumb",
+                  "component": "AwardsBreadcrumb"
+                },
+                {
+                  "key": "AwardsCounter",
+                  "component": "ForgeFitAwardsCounter1"
+                },
+                {
+                  "key": "AwardsMilestones",
+                  "component": "ForgeFitAwardsMilestones1"
+                },
+                {
+                  "key": "AwardsCertifications",
+                  "component": "ForgeFitAwardsCertifications1"
+                },
+                {
+                  "key": "AwardsCommitment",
+                  "component": "ForgeFitAwardsCommitment1"
+                },
+                {
+                  "key": "Footer",
+                  "component": "Footer"
+                }
+              ]
             }
           }
         }
@@ -811,34 +860,39 @@
                   "label": "About Us",
                   "subLinks": [
                     {
-                      "id": "nav-about-overview",
+                      "id": "nav-overview",
                       "label": "Overview",
                       "url": "/about"
                     },
                     {
-                      "id": "nav-about-why",
+                      "id": "nav-why-choose-us",
                       "label": "Why Choose Us",
                       "url": "/why-choose-us"
                     },
                     {
-                      "id": "nav-about-mission",
+                      "id": "nav-mission",
                       "label": "Mission & Vision",
                       "url": "/mission-vision"
                     },
                     {
-                      "id": "nav-about-team",
+                      "id": "nav-team",
                       "label": "Our Team",
                       "url": "/team"
                     },
                     {
-                      "id": "nav-about-team-detail",
+                      "id": "nav-team-detail",
                       "label": "Team Details",
                       "url": "/team/rahul-sharma"
                     },
                     {
-                      "id": "nav-about-testimonials",
+                      "id": "nav-testimonials",
                       "label": "Testimonials",
                       "url": "/testimonials"
+                    },
+                    {
+                      "id": "nav-awards",
+                      "label": "Awards",
+                      "url": "/awards"
                     }
                   ]
                 },
@@ -2809,6 +2863,169 @@
               "buttonUrl": "https://maps.google.com",
               "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14008.114827184429!2d77.20966455!3d28.6289299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd37b741d057%3A0xc46188eb6120bdc3!2sConnaught%20Place%2C%20New%20Delhi%2C%20Delhi%20110001!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
               "backgroundImage": "/banner/ban1.jpg"
+            }
+          }
+        },
+        "AwardsCounter": {
+          "variants": {
+            "ForgeFitAwardsCounter1": {
+              "stats": [
+                {
+                  "id": "stat-1",
+                  "icon": "FaAward",
+                  "value": "25",
+                  "suffix": "+",
+                  "title": "Industry Awards",
+                  "description": "Recognized for excellence"
+                },
+                {
+                  "id": "stat-2",
+                  "icon": "FaUsers",
+                  "value": "10,000",
+                  "suffix": "+",
+                  "title": "Happy Members",
+                  "description": "Trust our expertise"
+                },
+                {
+                  "id": "stat-3",
+                  "icon": "FaShieldAlt",
+                  "value": "100",
+                  "suffix": "%",
+                  "title": "Certified Trainers",
+                  "description": "Globally recognized"
+                },
+                {
+                  "id": "stat-4",
+                  "icon": "FaTrophy",
+                  "value": "5",
+                  "suffix": "+",
+                  "title": "Years of Impact",
+                  "description": "Building healthier lives"
+                }
+              ]
+            }
+          }
+        },
+        "AwardsMilestones": {
+          "variants": {
+            "ForgeFitAwardsMilestones1": {
+              "subtitle": "OUR ACHIEVEMENTS",
+              "titlePart1": "Milestones That ",
+              "titleHighlight": "Motivate Us",
+              "description": "Over the years, ForgeFit has been honored with prestigious awards for our dedication to fitness, community wellness and client success.",
+              "buttonText": "View Our Journey",
+              "buttonUrl": "/about",
+              "backgroundImage": "/banner/hero_bg_1.jpg",
+              "milestones": [
+                {
+                  "id": "m-1",
+                  "image": "/award/award-1.png",
+                  "imageAlt": "Fitness Excellence Award",
+                  "title": "Fitness Excellence Award",
+                  "year": "2023",
+                  "description": "For outstanding contribution to health & fitness."
+                },
+                {
+                  "id": "m-2",
+                  "image": "/award/award-2.png",
+                  "imageAlt": "Best Gym of the Year",
+                  "title": "Best Gym of the Year",
+                  "year": "2022",
+                  "description": "Recognized for exceptional training programs."
+                },
+                {
+                  "id": "m-3",
+                  "image": "/award/award-3.png",
+                  "imageAlt": "Community Health Champion",
+                  "title": "Community Health Champion",
+                  "year": "2021",
+                  "description": "For promoting a Healthier and stronger community."
+                },
+                {
+                  "id": "m-4",
+                  "image": "/award/award-4.png",
+                  "imageAlt": "Client Satisfaction Award",
+                  "title": "Client Satisfaction Award",
+                  "year": "2020",
+                  "description": "For excellence in customer experience."
+                }
+              ]
+            }
+          }
+        },
+        "AwardsCertifications": {
+          "variants": {
+            "ForgeFitAwardsCertifications1": {
+              "subtitle": "OUR CERTIFICATIONS",
+              "titlePart1": "Certified by ",
+              "titleHighlight": "Global Standards",
+              "description": "Our programs and trainers are certified by internationally recognized fitness and wellness organizations, ensuring the highest standards of safety, knowledge and professionalism.",
+              "buttonText": "Our Training Standards",
+              "buttonUrl": "/training-programs",
+              "certifications": [
+                {
+                  "id": "cert-1",
+                  "image": "/certificate/nasm.webp",
+                  "imageAlt": "NASM",
+                  "title": "NASM Certified",
+                  "description": "Globally recognized fitness certification."
+                },
+                {
+                  "id": "cert-2",
+                  "image": "/certificate/ace.webp",
+                  "imageAlt": "ACE",
+                  "title": "ACE Certified",
+                  "description": "Setting the standard in fitness education."
+                },
+                {
+                  "id": "cert-3",
+                  "image": "/certificate/issa.webp",
+                  "imageAlt": "ISSA",
+                  "title": "ISSA Certified",
+                  "description": "Trusted worldwide fitness certification."
+                },
+                {
+                  "id": "cert-4",
+                  "image": "/certificate/nsca.webp",
+                  "imageAlt": "NSCA",
+                  "title": "NSCA Certified",
+                  "description": "Advancing strength and conditioning."
+                }
+              ]
+            }
+          }
+        },
+        "AwardsCommitment": {
+          "variants": {
+            "ForgeFitAwardsCommitment1": {
+              "subtitle": "OUR COMMITMENT",
+              "titlePart1": "Excellence in ",
+              "titleHighlight": "Every Step",
+              "description": "These certifications and awards inspire us to continue raising the bar and delivering the best fitness experience for our community.",
+              "buttonText": "Join Our Community",
+              "buttonUrl": "/contact",
+              "backgroundImage": "/banner/banner2.webp",
+              "rightHighlightText": "DISCIPLINE BUILDS RESULTS",
+              "features": [
+                {
+                  "id": "feat-1",
+                  "icon": "FaShieldAlt",
+                  "title": "Safe Training",
+                  "description": "Environment"
+                },
+                {
+                  "id": "feat-2",
+                  "icon": "FaUsers",
+                  "title": "Expert",
+                  "description": "Guidance"
+                },
+                {
+                  "id": "feat-3",
+                  "icon": "FaChartBar",
+                  "title": "Real",
+                  "description": "Results"
+                }
+              ]
             }
           }
         }

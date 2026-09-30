@@ -572,6 +572,80 @@ export interface ConsultationBottomData {
 }
 
 // ------------------------------------------------------------
+// AWARDS & CERTIFICATIONS SECTION
+// ------------------------------------------------------------
+
+export interface AwardsCounterStat {
+  id: string;
+  icon: string;
+  value: string;
+  suffix: string;
+  title: string;
+  description: string;
+}
+
+export interface ForgeFitAwardsCounterData {
+  stats: AwardsCounterStat[];
+}
+
+export interface AwardsMilestone {
+  id: string;
+  image: string;
+  imageAlt: string;
+  title: string;
+  year: string;
+  description: string;
+}
+
+export interface ForgeFitAwardsMilestonesData {
+  subtitle: string;
+  titlePart1: string;
+  titleHighlight: string;
+  description: string;
+  buttonText: string;
+  buttonUrl: string;
+  backgroundImage: string;
+  milestones: AwardsMilestone[];
+}
+
+export interface AwardsCertification {
+  id: string;
+  image: string;
+  imageAlt: string;
+  title: string;
+  description: string;
+}
+
+export interface ForgeFitAwardsCertificationsData {
+  subtitle: string;
+  titlePart1: string;
+  titleHighlight: string;
+  description: string;
+  buttonText: string;
+  buttonUrl: string;
+  certifications: AwardsCertification[];
+}
+
+export interface AwardsCommitmentFeature {
+  id: string;
+  icon: string;
+  title: string;
+  description: string;
+}
+
+export interface ForgeFitAwardsCommitmentData {
+  subtitle: string;
+  titlePart1: string;
+  titleHighlight: string;
+  description: string;
+  buttonText: string;
+  buttonUrl: string;
+  backgroundImage: string;
+  features: AwardsCommitmentFeature[];
+  rightHighlightText: string;
+}
+
+// ------------------------------------------------------------
 // GLOBAL UI STRINGS
 // ------------------------------------------------------------
 
@@ -603,6 +677,7 @@ export interface ForgeFitTemplateData {
       PricingBreadcrumb?: BreadcrumbData;
       TestimonialsBreadcrumb?: BreadcrumbData;
       FAQBreadcrumb?: BreadcrumbData;
+      AwardsBreadcrumb?: BreadcrumbData;
       [key: string]: BreadcrumbData | undefined;
     };
     Footer: ForgeFitFooterData;
@@ -640,6 +715,10 @@ export interface ForgeFitTemplateData {
         PricingTable:      { variants: Record<string, PricingTableData> };
         ConsultationTop:   { variants: Record<string, ConsultationTopData> };
         ConsultationBottom:{ variants: Record<string, ConsultationBottomData> };
+        AwardsCounter:     { variants: Record<string, ForgeFitAwardsCounterData> };
+        AwardsMilestones:  { variants: Record<string, ForgeFitAwardsMilestonesData> };
+        AwardsCertifications:{ variants: Record<string, ForgeFitAwardsCertificationsData> };
+        AwardsCommitment:  { variants: Record<string, ForgeFitAwardsCommitmentData> };
         [key: string]: any;
       };
     };

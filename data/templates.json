@@ -803,6 +803,82 @@
                   "component": "Footer"
                 }
               ]
+            },
+            "gallery": {
+              "components": [
+                {
+                  "key": "TopBar",
+                  "component": "ForgeFitTopBar1"
+                },
+                {
+                  "key": "Header",
+                  "component": "ForgeFitHeader1"
+                },
+                {
+                  "key": "Breadcrumb",
+                  "component": "GalleryBreadcrumb"
+                },
+                {
+                  "key": "ImageGallery",
+                  "component": "ForgeFitImageGallery1"
+                },
+                {
+                  "key": "VideoGallery",
+                  "component": "ForgeFitVideoGallery1"
+                },
+                {
+                  "key": "Footer",
+                  "component": "Footer"
+                }
+              ]
+            },
+            "blog": {
+              "components": [
+                {
+                  "key": "TopBar",
+                  "component": "ForgeFitTopBar1"
+                },
+                {
+                  "key": "Header",
+                  "component": "ForgeFitHeader1"
+                },
+                {
+                  "key": "Breadcrumb",
+                  "component": "BlogBreadcrumb"
+                },
+                {
+                  "key": "Blog",
+                  "component": "ForgeFitBlog1"
+                },
+                {
+                  "key": "Footer",
+                  "component": "Footer"
+                }
+              ]
+            },
+            "blogDetail": {
+              "components": [
+                {
+                  "key": "TopBar",
+                  "component": "ForgeFitTopBar1"
+                },
+                {
+                  "key": "Header",
+                  "component": "ForgeFitHeader1"
+                },
+                {
+                  "key": "Breadcrumb",
+                  "component": "BlogBreadcrumb"
+                },
+                {
+                  "key": "BlogDetail",
+                  "component": "ForgeFitBlogDetail1"
+                },
+                {
+                  "key": "Footer",
+                  "component": "Footer"
+                }
+              ]
             }
           }
         }
@@ -926,7 +1002,19 @@
                 {
                   "id": "nav-blogs",
                   "label": "Blogs",
-                  "url": "/blog"
+                  "url": "#",
+                  "subLinks": [
+                    {
+                      "id": "nav-blog",
+                      "label": "Blog",
+                      "url": "/blog"
+                    },
+                    {
+                      "id": "nav-blog-detail",
+                      "label": "Blog Detail",
+                      "url": "/blog/10-simple-habits"
+                    }
+                  ]
                 },
                 {
                   "id": "nav-contact",
@@ -1442,6 +1530,48 @@
                   "title": "Healthy Eating Made Easy: Meal Ideas for Busy People",
                   "excerpt": "Good nutrition doesn't have to be complicated. Explore simple and delicious meal ideas that fit into your busy lifestyle.",
                   "url": "/blog/healthy-eating-made-easy",
+                  "readMoreText": "Read More"
+                },
+                {
+                  "id": "blog-4",
+                  "image": "/blog/blog-4.jpg",
+                  "imageAlt": "Woman doing core workout",
+                  "category": "WORKOUT",
+                  "date": "2025-07-20",
+                  "day": "20",
+                  "month": "JUL 2025",
+                  "author": "Admin",
+                  "title": "5 Core Exercises for a Stronger Midsection",
+                  "excerpt": "A strong core is essential for balance, posture, and overall fitness. Here are five simple exercises you can do anywhere.",
+                  "url": "/blog/5-core-exercises",
+                  "readMoreText": "Read More"
+                },
+                {
+                  "id": "blog-5",
+                  "image": "/blog/blog-6.jpg",
+                  "imageAlt": "Man stretching",
+                  "category": "RECOVERY",
+                  "date": "2025-07-15",
+                  "day": "15",
+                  "month": "JUL 2025",
+                  "author": "Admin",
+                  "title": "The Importance of Rest and Recovery",
+                  "excerpt": "Your muscles grow when you rest, not when you train. Learn why scheduling rest days is crucial for avoiding injury and burnout.",
+                  "url": "/blog/importance-of-rest-and-recovery",
+                  "readMoreText": "Read More"
+                },
+                {
+                  "id": "blog-6",
+                  "image": "/blog/blog-10.jpg",
+                  "imageAlt": "Gym equipment",
+                  "category": "GYM TIPS",
+                  "date": "2025-07-02",
+                  "day": "02",
+                  "month": "JUL 2025",
+                  "author": "Admin",
+                  "title": "Gym Etiquette: 10 Unspoken Rules",
+                  "excerpt": "New to the gym? Make sure you know these 10 basic etiquette rules to make the experience better for you and everyone else.",
+                  "url": "/blog/gym-etiquette-rules",
                   "readMoreText": "Read More"
                 }
               ]
@@ -3027,8 +3157,98 @@
                 }
               ]
             }
+            }
+          },
+          "ImageGallery": {
+            "variants": {
+              "ForgeFitImageGallery1": {
+                "subtitle": "IMAGE GALLERY",
+                "titlePart1": "Captured at ",
+                "titleHighlight": "ForgeFit",
+                "description": "A glimpse into our facility, training sessions, events and the amazing community that makes ForgeFit special.",
+                "loadMoreText": "Load More",
+                "tabs": [
+                  { "id": "all", "label": "All", "category": "all" },
+                  { "id": "training", "label": "Training", "category": "training" },
+                  { "id": "facilities", "label": "Facilities", "category": "facilities" },
+                  { "id": "events", "label": "Events", "category": "events" },
+                  { "id": "members", "label": "Members", "category": "members" },
+                  { "id": "transformations", "label": "Transformations", "category": "transformations" }
+                ],
+                "images": [
+                  { "id": "img1", "category": "training", "image": "/gallery/01.jpg", "imageAlt": "Gallery image 1" },
+                  { "id": "img2", "category": "facilities", "image": "/gallery/02.jpg", "imageAlt": "Gallery image 2" },
+                  { "id": "img3", "category": "events", "image": "/gallery/03.jpg", "imageAlt": "Gallery image 3" },
+                  { "id": "img4", "category": "members", "image": "/gallery/04.jpg", "imageAlt": "Gallery image 4" },
+                  { "id": "img5", "category": "transformations", "image": "/gallery/05.jpg", "imageAlt": "Gallery image 5" },
+                  { "id": "img6", "category": "training", "image": "/gallery/06.jpg", "imageAlt": "Gallery image 6" },
+                  { "id": "img7", "category": "facilities", "image": "/gallery/07.jpg", "imageAlt": "Gallery image 7" },
+                  { "id": "img8", "category": "events", "image": "/gallery/08.jpg", "imageAlt": "Gallery image 8" },
+                  { "id": "img9", "category": "members", "image": "/gallery/09.jpg", "imageAlt": "Gallery image 9" },
+                  { "id": "img10", "category": "transformations", "image": "/gallery/10.jpg", "imageAlt": "Gallery image 10" },
+                  { "id": "img11", "category": "training", "image": "/gallery/11.jpg", "imageAlt": "Gallery image 11" }
+                ]
+              }
+            }
+          },
+          "VideoGallery": {
+            "variants": {
+              "ForgeFitVideoGallery1": {
+                "subtitle": "VIDEO GALLERY",
+                "titlePart1": "Watch Our ",
+                "titleHighlight": "Story",
+                "description": "Experience the energy, passion and real moments from ForgeFit through our videos.",
+                "loadMoreText": "Load More Videos",
+                "videos": [
+                  {
+                    "id": "vid1",
+                    "thumbnail": "/gallery/01.jpg",
+                    "thumbnailAlt": "Train Harder",
+                    "duration": "02:15",
+                    "title": "Train Harder, Live Better",
+                    "description": "See what makes ForgeFit different.",
+                    "videoUrl": "https://www.youtube.com/embed/tUykoP30Gb0"
+                  },
+                  {
+                    "id": "vid2",
+                    "thumbnail": "/gallery/02.jpg",
+                    "thumbnailAlt": "Training Facility",
+                    "duration": "01:48",
+                    "title": "Our Training Facility",
+                    "description": "Take a tour of our world-class gym.",
+                    "videoUrl": "https://www.youtube.com/embed/tUykoP30Gb0"
+                  },
+                  {
+                    "id": "vid3",
+                    "thumbnail": "/gallery/03.jpg",
+                    "thumbnailAlt": "Member Transformations",
+                    "duration": "03:20",
+                    "title": "Member Transformations",
+                    "description": "Real people. Real results.",
+                    "videoUrl": "https://www.youtube.com/embed/tUykoP30Gb0"
+                  },
+                  {
+                    "id": "vid4",
+                    "thumbnail": "/gallery/04.jpg",
+                    "thumbnailAlt": "Community Events",
+                    "duration": "01:52",
+                    "title": "Community & Events",
+                    "description": "More than a gym, a community.",
+                    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  },
+                  {
+                    "id": "vid5",
+                    "thumbnail": "/gallery/05.jpg",
+                    "thumbnailAlt": "Gym Tour",
+                    "duration": "02:30",
+                    "title": "Full Gym Tour",
+                    "description": "Explore all our equipment and zones.",
+                    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  }
+                ]
+              }
+            }
           }
-        }
       }
     }
   }

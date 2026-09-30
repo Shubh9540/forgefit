@@ -646,6 +646,52 @@ export interface ForgeFitAwardsCommitmentData {
 }
 
 // ------------------------------------------------------------
+// GALLERY SECTIONS
+// ------------------------------------------------------------
+
+export interface GalleryTab {
+  id: string;
+  label: string;
+  category: string;
+}
+
+export interface GalleryImage {
+  id: string;
+  category: string;
+  image: string;
+  imageAlt: string;
+}
+
+export interface ForgeFitImageGalleryData {
+  subtitle: string;
+  titlePart1: string;
+  titleHighlight: string;
+  description: string;
+  tabs: GalleryTab[];
+  images: GalleryImage[];
+  loadMoreText: string;
+}
+
+export interface GalleryVideo {
+  id: string;
+  thumbnail: string;
+  thumbnailAlt: string;
+  duration: string;
+  title: string;
+  description: string;
+  videoUrl: string;
+}
+
+export interface ForgeFitVideoGalleryData {
+  subtitle: string;
+  titlePart1: string;
+  titleHighlight: string;
+  description: string;
+  videos: GalleryVideo[];
+  loadMoreText: string;
+}
+
+// ------------------------------------------------------------
 // GLOBAL UI STRINGS
 // ------------------------------------------------------------
 
@@ -719,6 +765,8 @@ export interface ForgeFitTemplateData {
         AwardsMilestones:  { variants: Record<string, ForgeFitAwardsMilestonesData> };
         AwardsCertifications:{ variants: Record<string, ForgeFitAwardsCertificationsData> };
         AwardsCommitment:  { variants: Record<string, ForgeFitAwardsCommitmentData> };
+        ImageGallery:      { variants: Record<string, ForgeFitImageGalleryData> };
+        VideoGallery:      { variants: Record<string, ForgeFitVideoGalleryData> };
         [key: string]: any;
       };
     };

@@ -28,7 +28,7 @@ export const BlogSection = ({ data }: { data?: ForgeFitBlogData }) => {
 
         {/* Blog Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12 mb-16">
-          {data.blogs.map((blog) => (
+          {data.blogs.slice(0, 3).map((blog) => (
             <div key={blog.id} className="bg-white rounded-lg overflow-hidden shadow-lg group flex flex-col">
               {/* Image Container with Date Badge */}
               <div className="relative h-64 w-full overflow-hidden">

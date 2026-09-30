@@ -55,6 +55,14 @@ export const HeroSection = ({ data }: { data?: ForgeFitHeroData }) => {
           {/* Overall image darkening */}
           <div className="absolute inset-0 bg-black/10" />
 
+          {/* Diagonal Orange Stripes */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
+            {/* Thin Stripe */}
+            <div className="absolute -top-[20%] left-[38%] md:left-[40%] w-[15px] md:w-[25px] h-[150%] rotate-[26deg] bg-gradient-to-b from-[#f39200]/90 via-[#f39200]/40 to-transparent origin-center" />
+            {/* Thick Stripe */}
+            <div className="absolute -top-[20%] left-[44%] md:left-[44%] w-[50px] md:w-[85px] h-[150%] rotate-[26deg] bg-gradient-to-b from-[#f39200]/90 via-[#f39200]/40 to-transparent origin-center" />
+          </div>
+
           {/* Left dark gradient */}
           <div
             className="absolute inset-y-0 left-0 w-full lg:w-[62%] bg-[linear-gradient(90deg,rgba(7,7,7,0.96)_0%,rgba(8,8,8,0.92)_35%,rgba(10,10,10,0.75)_60%,rgba(10,10,10,0.28)_82%,rgba(10,10,10,0)_100%)]"

@@ -1278,8 +1278,8 @@
                   "titleHighlight": "Healthier You",
                   "description": "Personalized training, real results and a supportive community to help you reach your fitness goals.",
                   "primaryButton": {
-                    "text": "Our Classes",
-                    "url": "/classes"
+                    "text": "Our Programs",
+                    "url": "/training-programs"
                   },
                   "secondaryButton": {
                     "text": "About Us",

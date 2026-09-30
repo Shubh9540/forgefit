@@ -678,6 +678,15 @@ export interface ForgeFitNotFoundData {
   textRight: string[];
 }
 
+export interface ForgeFitThankYouData {
+  title: string;
+  subtitle: string;
+  description: string;
+  buttonText: string;
+  buttonUrl: string;
+  backgroundImage?: string;
+}
+
 export interface ForgeFitLegalContentData {
   subtitle: string;
   titlePart1: string;
@@ -858,6 +867,7 @@ export interface ForgeFitTemplateData {
         FAQ:               { variants: Record<string, ForgeFitFAQData> };
         LegalContent:      { variants: Record<string, ForgeFitLegalContentData> };
         NotFoundContent:   { variants: Record<string, ForgeFitNotFoundData> };
+        ThankYouContent:   { variants: Record<string, ForgeFitThankYouData> };
         [key: string]: any;
       };
     };

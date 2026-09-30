@@ -456,8 +456,8 @@
         },
         {
           "id": "bl-3",
-          "label": "Sitemap",
-          "url": "/sitemap"
+          "label": "Thank You",
+          "url": "/thank-you"
         }
       ]
     }
@@ -910,37 +910,114 @@
             },
             "privacy-policy": {
               "components": [
-                { "key": "TopBar", "component": "ForgeFitTopBar1" },
-                { "key": "Header", "component": "ForgeFitHeader1" },
-                { "key": "Breadcrumb", "component": "PrivacyBreadcrumb" },
-                { "key": "LegalContent", "component": "ForgeFitPrivacyPolicy" },
-                { "key": "Footer", "component": "Footer" }
+                {
+                  "key": "TopBar",
+                  "component": "ForgeFitTopBar1"
+                },
+                {
+                  "key": "Header",
+                  "component": "ForgeFitHeader1"
+                },
+                {
+                  "key": "Breadcrumb",
+                  "component": "PrivacyBreadcrumb"
+                },
+                {
+                  "key": "LegalContent",
+                  "component": "ForgeFitPrivacyPolicy"
+                },
+                {
+                  "key": "Footer",
+                  "component": "Footer"
+                }
               ]
             },
             "terms-and-conditions": {
               "components": [
-                { "key": "TopBar", "component": "ForgeFitTopBar1" },
-                { "key": "Header", "component": "ForgeFitHeader1" },
-                { "key": "Breadcrumb", "component": "TermsBreadcrumb" },
-                { "key": "LegalContent", "component": "ForgeFitTermsAndConditions" },
-                { "key": "Footer", "component": "Footer" }
+                {
+                  "key": "TopBar",
+                  "component": "ForgeFitTopBar1"
+                },
+                {
+                  "key": "Header",
+                  "component": "ForgeFitHeader1"
+                },
+                {
+                  "key": "Breadcrumb",
+                  "component": "TermsBreadcrumb"
+                },
+                {
+                  "key": "LegalContent",
+                  "component": "ForgeFitTermsAndConditions"
+                },
+                {
+                  "key": "Footer",
+                  "component": "Footer"
+                }
               ]
             },
             "refund-policy": {
               "components": [
-                { "key": "TopBar", "component": "ForgeFitTopBar1" },
-                { "key": "Header", "component": "ForgeFitHeader1" },
-                { "key": "Breadcrumb", "component": "RefundBreadcrumb" },
-                { "key": "LegalContent", "component": "ForgeFitRefundPolicy" },
-                { "key": "Footer", "component": "Footer" }
+                {
+                  "key": "TopBar",
+                  "component": "ForgeFitTopBar1"
+                },
+                {
+                  "key": "Header",
+                  "component": "ForgeFitHeader1"
+                },
+                {
+                  "key": "Breadcrumb",
+                  "component": "RefundBreadcrumb"
+                },
+                {
+                  "key": "LegalContent",
+                  "component": "ForgeFitRefundPolicy"
+                },
+                {
+                  "key": "Footer",
+                  "component": "Footer"
+                }
               ]
             },
             "404-page": {
               "components": [
-                { "key": "TopBar", "component": "ForgeFitTopBar1" },
-                { "key": "Header", "component": "ForgeFitHeader1" },
-                { "key": "NotFoundContent", "component": "ForgeFit404" },
-                { "key": "Footer", "component": "Footer" }
+                {
+                  "key": "TopBar",
+                  "component": "ForgeFitTopBar1"
+                },
+                {
+                  "key": "Header",
+                  "component": "ForgeFitHeader1"
+                },
+                {
+                  "key": "NotFoundContent",
+                  "component": "ForgeFit404"
+                },
+                {
+                  "key": "Footer",
+                  "component": "Footer"
+                }
+              ]
+            },
+            "thank-you": {
+              "components": [
+                {
+                  "key": "TopBar",
+                  "component": "ForgeFitTopBar1"
+                },
+                {
+                  "key": "Header",
+                  "component": "ForgeFitHeader1"
+                },
+                {
+                  "key": "ThankYouContent",
+                  "component": "ForgeFitThankYou1"
+                },
+                {
+                  "key": "Footer",
+                  "component": "Footer"
+                }
               ]
             },
             "blog": {
@@ -1166,6 +1243,11 @@
                       "id": "nav-404",
                       "label": "404 page",
                       "url": "/404-page"
+                    },
+                    {
+                      "id": "nav-thankyou",
+                      "label": "Thank You page",
+                      "url": "/thank-you"
                     }
                   ]
                 }
@@ -3305,268 +3387,452 @@
                 }
               ]
             }
-            }
-          },
-          "ImageGallery": {
-            "variants": {
-              "ForgeFitImageGallery1": {
-                "subtitle": "IMAGE GALLERY",
-                "titlePart1": "Captured at ",
-                "titleHighlight": "ForgeFit",
-                "description": "A glimpse into our facility, training sessions, events and the amazing community that makes ForgeFit special.",
-                "loadMoreText": "Load More",
-                "tabs": [
-                  { "id": "all", "label": "All", "category": "all" },
-                  { "id": "training", "label": "Training", "category": "training" },
-                  { "id": "facilities", "label": "Facilities", "category": "facilities" },
-                  { "id": "events", "label": "Events", "category": "events" },
-                  { "id": "members", "label": "Members", "category": "members" },
-                  { "id": "transformations", "label": "Transformations", "category": "transformations" }
-                ],
-                "images": [
-                  { "id": "img1", "category": "training", "image": "/gallery/01.jpg", "imageAlt": "Gallery image 1" },
-                  { "id": "img2", "category": "facilities", "image": "/gallery/02.jpg", "imageAlt": "Gallery image 2" },
-                  { "id": "img3", "category": "events", "image": "/gallery/03.jpg", "imageAlt": "Gallery image 3" },
-                  { "id": "img4", "category": "members", "image": "/gallery/04.jpg", "imageAlt": "Gallery image 4" },
-                  { "id": "img5", "category": "transformations", "image": "/gallery/05.jpg", "imageAlt": "Gallery image 5" },
-                  { "id": "img6", "category": "training", "image": "/gallery/06.jpg", "imageAlt": "Gallery image 6" },
-                  { "id": "img7", "category": "facilities", "image": "/gallery/07.jpg", "imageAlt": "Gallery image 7" },
-                  { "id": "img8", "category": "events", "image": "/gallery/08.jpg", "imageAlt": "Gallery image 8" },
-                  { "id": "img9", "category": "members", "image": "/gallery/09.jpg", "imageAlt": "Gallery image 9" },
-                  { "id": "img10", "category": "transformations", "image": "/gallery/10.jpg", "imageAlt": "Gallery image 10" },
-                  { "id": "img11", "category": "training", "image": "/gallery/11.jpg", "imageAlt": "Gallery image 11" }
-                ]
-              }
-            }
-          },
-          "VideoGallery": {
-            "variants": {
-              "ForgeFitVideoGallery1": {
-                "subtitle": "VIDEO GALLERY",
-                "titlePart1": "Watch Our ",
-                "titleHighlight": "Story",
-                "description": "Experience the energy, passion and real moments from ForgeFit through our videos.",
-                "loadMoreText": "Load More Videos",
-                "videos": [
-                  {
-                    "id": "vid1",
-                    "thumbnail": "/gallery/01.jpg",
-                    "thumbnailAlt": "Train Harder",
-                    "duration": "02:15",
-                    "title": "Train Harder, Live Better",
-                    "description": "See what makes ForgeFit different.",
-                    "videoUrl": "https://www.youtube.com/embed/tUykoP30Gb0"
-                  },
-                  {
-                    "id": "vid2",
-                    "thumbnail": "/gallery/02.jpg",
-                    "thumbnailAlt": "Training Facility",
-                    "duration": "01:48",
-                    "title": "Our Training Facility",
-                    "description": "Take a tour of our world-class gym.",
-                    "videoUrl": "https://www.youtube.com/embed/tUykoP30Gb0"
-                  },
-                  {
-                    "id": "vid3",
-                    "thumbnail": "/gallery/03.jpg",
-                    "thumbnailAlt": "Member Transformations",
-                    "duration": "03:20",
-                    "title": "Member Transformations",
-                    "description": "Real people. Real results.",
-                    "videoUrl": "https://www.youtube.com/embed/tUykoP30Gb0"
-                  },
-                  {
-                    "id": "vid4",
-                    "thumbnail": "/gallery/04.jpg",
-                    "thumbnailAlt": "Community Events",
-                    "duration": "01:52",
-                    "title": "Community & Events",
-                    "description": "More than a gym, a community.",
-                    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-                  },
-                  {
-                    "id": "vid5",
-                    "thumbnail": "/gallery/05.jpg",
-                    "thumbnailAlt": "Gym Tour",
-                    "duration": "02:30",
-                    "title": "Full Gym Tour",
-                    "description": "Explore all our equipment and zones.",
-                    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-                  }
-                ]
-              }
-            }
-          },
-          "FAQ": {
-            "variants": {
-              "ForgeFitFAQ1": {
-                "subtitle": "FAQS",
-                "titlePart1": "Common Questions,",
-                "titleHighlight": "Clear Answers",
-                "description": "We've answered the most common questions to help you make the right choice. If you don't find what you're looking for, feel free to contact us.",
-                "topStats": [
-                  { "id": "ts1", "icon": "FaHeadset", "title": "Quick Answers", "description": "Find information fast" },
-                  { "id": "ts2", "icon": "FaShieldAlt", "title": "Clear & Transparent", "description": "Straightforward information" },
-                  { "id": "ts3", "icon": "FaUsers", "title": "Member Support", "description": "We're here to help" },
-                  { "id": "ts4", "icon": "FaFileAlt", "title": "Your Fitness Journey", "description": "Guidance at every step" }
-                ],
-                "promo": {
-                  "image": "/banner/banner1.webp",
-                  "imageAlt": "Gym Trainer",
-                  "title": "STILL HAVE",
-                  "titleHighlight": "QUESTIONS?",
-                  "description": "Our team is here to help you with any queries. Get in touch and we'll be happy to assist you.",
-                  "buttonText": "Contact Us",
-                  "buttonUrl": "/contact"
+          }
+        },
+        "ImageGallery": {
+          "variants": {
+            "ForgeFitImageGallery1": {
+              "subtitle": "IMAGE GALLERY",
+              "titlePart1": "Captured at ",
+              "titleHighlight": "ForgeFit",
+              "description": "A glimpse into our facility, training sessions, events and the amazing community that makes ForgeFit special.",
+              "loadMoreText": "Load More",
+              "tabs": [
+                {
+                  "id": "all",
+                  "label": "All",
+                  "category": "all"
                 },
-                "contactBox": {
-                  "title": "Need More Help?",
-                  "items": [
-                    { "id": "cb1", "icon": "FaPhoneAlt", "title": "Call Us", "details": ["+91 98765 43210", "Mon - Sat, 9AM - 7PM"] },
-                    { "id": "cb2", "icon": "FaEnvelope", "title": "Email Us", "details": ["support@forgefit.com", "We reply within 24 hours"] },
-                    { "id": "cb3", "icon": "FaMapMarkerAlt", "title": "Visit Us", "details": ["123 Fitness Street,", "New Delhi, India"] }
-                  ]
+                {
+                  "id": "training",
+                  "label": "Training",
+                  "category": "training"
                 },
-                "faqs": [
-                  { "id": "faq1", "question": "What types of fitness programs does ForgeFit offer?", "answer": "We offer a variety of fitness programs including strength training, weight loss, muscle building, flexibility, functional training and personalized coaching. Our programs are designed for all fitness levels – from beginners to advanced." },
-                  { "id": "faq2", "question": "Do you offer personal training?", "answer": "Yes, we have certified personal trainers available to help you achieve your goals faster with customized workout and nutrition plans." },
-                  { "id": "faq3", "question": "Can beginners join ForgeFit?", "answer": "Absolutely! We welcome members of all fitness levels. Our trainers will guide you step-by-step." },
-                  { "id": "faq4", "question": "What are your membership plans?", "answer": "We offer monthly, quarterly, and annual membership plans. Please visit our Pricing page for more details." },
-                  { "id": "faq5", "question": "Are there group classes available?", "answer": "Yes, we host various group classes like Yoga, Zumba, HIIT, and Spin classes." },
-                  { "id": "faq6", "question": "Do you provide diet and nutrition guidance?", "answer": "Yes, our expert nutritionists can provide you with a tailored diet plan to complement your workouts." },
-                  { "id": "faq7", "question": "What are your gym timings?", "answer": "We are open Monday to Saturday from 6:00 AM to 10:00 PM. We are closed on Sundays." },
-                  { "id": "faq8", "question": "Is there a trial session available?", "answer": "Yes, we offer a free 1-day trial pass for new visitors." },
-                  { "id": "faq9", "question": "How can I join ForgeFit?", "answer": "You can join by visiting our gym in person or signing up online through our website." },
-                  { "id": "faq10", "question": "Can I pause or cancel my membership?", "answer": "Yes, memberships can be paused for medical reasons. Cancellations are subject to our terms and conditions." }
-                ]
-              }
-            }
-          },
-          "LegalContent": {
-            "variants": {
-              "ForgeFitPrivacyPolicy": {
-                "subtitle": "OUR COMMITMENT",
-                "titlePart1": "Your ",
-                "titleHighlight": "Privacy Matters",
-                "description": "At ForgeFit, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose and safeguard your information when you visit our website, use our services or interact with us.",
-                "sections": [
-                  {
-                    "id": "sec1",
-                    "title": "Information We Collect",
-                    "content": "We may collect personal information such as your name, email address, phone number, fitness goals and any other details you provide through our forms, bookings or communications. We also collect non-personal information like browser type, device information and website usage data to improve your experience."
-                  },
-                  {
-                    "id": "sec2",
-                    "title": "How We Use Your Information",
-                    "content": "The information we collect is used to provide and improve our services, respond to your enquiries, process registrations, personalize your experience and keep you updated about our programs, offers and events."
-                  },
-                  {
-                    "id": "sec3",
-                    "title": "Information Sharing",
-                    "content": "We do not sell, trade or rent your personal information to third parties. We may share your information with trusted service providers who assist us in operating our website, managing our services or communicating with you, under strict confidentiality agreements."
-                  },
-                  {
-                    "id": "sec4",
-                    "title": "Data Security",
-                    "content": "We implement appropriate technical and organizational measures to protect your personal information from unauthorized access, alteration, disclosure or destruction."
-                  },
-                  {
-                    "id": "sec5",
-                    "title": "Cookies",
-                    "content": "Our website uses cookies to enhance your browsing experience, analyze website traffic and understand user behavior. You can choose to disable cookies through your browser settings, but this may affect certain features of the website."
-                  },
-                  {
-                    "id": "sec6",
-                    "title": "Your Rights",
-                    "content": "You have the right to access, update or request deletion of your personal information. If you have any questions or requests regarding your data, please contact us using the details provided below."
-                  },
-                  {
-                    "id": "sec7",
-                    "title": "Changes to This Policy",
-                    "content": "We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date. We encourage you to review this policy periodically."
-                  },
-                  {
-                    "id": "sec8",
-                    "title": "Contact Us",
-                    "content": "If you have any questions, concerns or requests regarding this Privacy Policy, please reach out to us at support@forgefit.com or call +91 98765 43210."
-                  }
-                ]
-              },
-              "ForgeFitTermsAndConditions": {
-                "subtitle": "OUR POLICIES",
-                "titlePart1": "Terms & ",
-                "titleHighlight": "Conditions",
-                "description": "Welcome to ForgeFit. By accessing our website, using our facilities or signing up for any of our services, you agree to comply with and be bound by the following terms and conditions of use.",
-                "sections": [
-                  {
-                    "id": "sec1",
-                    "title": "Membership Guidelines",
-                    "content": "All members must carry their ID or access card at all times. Memberships are strictly non-transferable and can only be used by the registered individual."
-                  },
-                  {
-                    "id": "sec2",
-                    "title": "Gym Etiquette",
-                    "content": "Members are expected to wipe down equipment after use, return weights to their proper racks, and respect the personal space of other members. Proper athletic attire and closed-toe athletic shoes are required at all times."
-                  },
-                  {
-                    "id": "sec3",
-                    "title": "Health & Safety",
-                    "content": "You acknowledge that participating in physical exercises carries inherent risks. You certify that you are physically capable of engaging in fitness activities and agree that ForgeFit is not liable for any injuries sustained on the premises."
-                  },
-                  {
-                    "id": "sec4",
-                    "title": "Payment & Fees",
-                    "content": "Membership fees are payable in advance. Failure to pay dues may result in suspension or termination of your membership. All promotional pricing is subject to specific terms as advertised."
-                  }
-                ]
-              },
-              "ForgeFitRefundPolicy": {
-                "subtitle": "CANCELLATIONS",
-                "titlePart1": "Cancellation & ",
-                "titleHighlight": "Refund Policy",
-                "description": "We understand that plans can change. This policy outlines the terms regarding cancellations, pauses, and refunds for memberships and personal training sessions at ForgeFit.",
-                "sections": [
-                  {
-                    "id": "sec1",
-                    "title": "Membership Cancellations",
-                    "content": "Members may cancel their ongoing membership by providing a 30-day written notice to the management. Annual memberships are generally non-refundable except in cases of relocation or severe medical reasons (proof required)."
-                  },
-                  {
-                    "id": "sec2",
-                    "title": "Refund Eligibility",
-                    "content": "Refunds for upfront payments are only processed within the first 7 days of purchase, provided the facilities have not been used. Processing fees may apply. After 7 days, all sales are final."
-                  },
-                  {
-                    "id": "sec3",
-                    "title": "Personal Training Sessions",
-                    "content": "Cancellations for scheduled personal training sessions must be made at least 12 hours in advance. Failure to do so will result in the forfeiture of the session without a refund."
-                  },
-                  {
-                    "id": "sec4",
-                    "title": "Membership Freezes",
-                    "content": "You may freeze your membership for a minimum of 1 month and a maximum of 3 months per calendar year for travel or medical reasons. A small administrative fee may be charged per freeze request."
-                  }
-                ]
-              }
-            }
-          },
-          "NotFoundContent": {
-            "variants": {
-              "ForgeFit404": {
-                "bgImage": "/other/404_bg.webp",
-                "bgImageAlt": "Gym Background",
-                "zeroImage": "/other/404.webp",
-                "zeroImageAlt": "Running Man",
-                "titlePart1": "Oops! ",
-                "titleHighlight": "Page Not Found",
-                "description": "The page you're looking for doesn't exist or may have been moved. Let's get you back on track.",
-                "buttonText": "Back to Home ->",
-                "buttonUrl": "/",
-                "textLeft": ["Stronger", "Today", "Brighter", "Tomorrow"],
-                "textRight": ["DISCIPLINE", "BUILDS", "RESULTS"]
-              }
+                {
+                  "id": "facilities",
+                  "label": "Facilities",
+                  "category": "facilities"
+                },
+                {
+                  "id": "events",
+                  "label": "Events",
+                  "category": "events"
+                },
+                {
+                  "id": "members",
+                  "label": "Members",
+                  "category": "members"
+                },
+                {
+                  "id": "transformations",
+                  "label": "Transformations",
+                  "category": "transformations"
+                }
+              ],
+              "images": [
+                {
+                  "id": "img1",
+                  "category": "training",
+                  "image": "/gallery/01.jpg",
+                  "imageAlt": "Gallery image 1"
+                },
+                {
+                  "id": "img2",
+                  "category": "facilities",
+                  "image": "/gallery/02.jpg",
+                  "imageAlt": "Gallery image 2"
+                },
+                {
+                  "id": "img3",
+                  "category": "events",
+                  "image": "/gallery/03.jpg",
+                  "imageAlt": "Gallery image 3"
+                },
+                {
+                  "id": "img4",
+                  "category": "members",
+                  "image": "/gallery/04.jpg",
+                  "imageAlt": "Gallery image 4"
+                },
+                {
+                  "id": "img5",
+                  "category": "transformations",
+                  "image": "/gallery/05.jpg",
+                  "imageAlt": "Gallery image 5"
+                },
+                {
+                  "id": "img6",
+                  "category": "training",
+                  "image": "/gallery/06.jpg",
+                  "imageAlt": "Gallery image 6"
+                },
+                {
+                  "id": "img7",
+                  "category": "facilities",
+                  "image": "/gallery/07.jpg",
+                  "imageAlt": "Gallery image 7"
+                },
+                {
+                  "id": "img8",
+                  "category": "events",
+                  "image": "/gallery/08.jpg",
+                  "imageAlt": "Gallery image 8"
+                },
+                {
+                  "id": "img9",
+                  "category": "members",
+                  "image": "/gallery/09.jpg",
+                  "imageAlt": "Gallery image 9"
+                },
+                {
+                  "id": "img10",
+                  "category": "transformations",
+                  "image": "/gallery/10.jpg",
+                  "imageAlt": "Gallery image 10"
+                },
+                {
+                  "id": "img11",
+                  "category": "training",
+                  "image": "/gallery/11.jpg",
+                  "imageAlt": "Gallery image 11"
+                }
+              ]
             }
           }
+        },
+        "VideoGallery": {
+          "variants": {
+            "ForgeFitVideoGallery1": {
+              "subtitle": "VIDEO GALLERY",
+              "titlePart1": "Watch Our ",
+              "titleHighlight": "Story",
+              "description": "Experience the energy, passion and real moments from ForgeFit through our videos.",
+              "loadMoreText": "Load More Videos",
+              "videos": [
+                {
+                  "id": "vid1",
+                  "thumbnail": "/gallery/01.jpg",
+                  "thumbnailAlt": "Train Harder",
+                  "duration": "02:15",
+                  "title": "Train Harder, Live Better",
+                  "description": "See what makes ForgeFit different.",
+                  "videoUrl": "https://www.youtube.com/embed/tUykoP30Gb0"
+                },
+                {
+                  "id": "vid2",
+                  "thumbnail": "/gallery/02.jpg",
+                  "thumbnailAlt": "Training Facility",
+                  "duration": "01:48",
+                  "title": "Our Training Facility",
+                  "description": "Take a tour of our world-class gym.",
+                  "videoUrl": "https://www.youtube.com/embed/tUykoP30Gb0"
+                },
+                {
+                  "id": "vid3",
+                  "thumbnail": "/gallery/03.jpg",
+                  "thumbnailAlt": "Member Transformations",
+                  "duration": "03:20",
+                  "title": "Member Transformations",
+                  "description": "Real people. Real results.",
+                  "videoUrl": "https://www.youtube.com/embed/tUykoP30Gb0"
+                },
+                {
+                  "id": "vid4",
+                  "thumbnail": "/gallery/04.jpg",
+                  "thumbnailAlt": "Community Events",
+                  "duration": "01:52",
+                  "title": "Community & Events",
+                  "description": "More than a gym, a community.",
+                  "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+                },
+                {
+                  "id": "vid5",
+                  "thumbnail": "/gallery/05.jpg",
+                  "thumbnailAlt": "Gym Tour",
+                  "duration": "02:30",
+                  "title": "Full Gym Tour",
+                  "description": "Explore all our equipment and zones.",
+                  "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+                }
+              ]
+            }
+          }
+        },
+        "FAQ": {
+          "variants": {
+            "ForgeFitFAQ1": {
+              "subtitle": "FAQS",
+              "titlePart1": "Common Questions,",
+              "titleHighlight": "Clear Answers",
+              "description": "We've answered the most common questions to help you make the right choice. If you don't find what you're looking for, feel free to contact us.",
+              "topStats": [
+                {
+                  "id": "ts1",
+                  "icon": "FaHeadset",
+                  "title": "Quick Answers",
+                  "description": "Find information fast"
+                },
+                {
+                  "id": "ts2",
+                  "icon": "FaShieldAlt",
+                  "title": "Clear & Transparent",
+                  "description": "Straightforward information"
+                },
+                {
+                  "id": "ts3",
+                  "icon": "FaUsers",
+                  "title": "Member Support",
+                  "description": "We're here to help"
+                },
+                {
+                  "id": "ts4",
+                  "icon": "FaFileAlt",
+                  "title": "Your Fitness Journey",
+                  "description": "Guidance at every step"
+                }
+              ],
+              "promo": {
+                "image": "/banner/banner1.webp",
+                "imageAlt": "Gym Trainer",
+                "title": "STILL HAVE",
+                "titleHighlight": "QUESTIONS?",
+                "description": "Our team is here to help you with any queries. Get in touch and we'll be happy to assist you.",
+                "buttonText": "Contact Us",
+                "buttonUrl": "/contact"
+              },
+              "contactBox": {
+                "title": "Need More Help?",
+                "items": [
+                  {
+                    "id": "cb1",
+                    "icon": "FaPhoneAlt",
+                    "title": "Call Us",
+                    "details": [
+                      "+91 98765 43210",
+                      "Mon - Sat, 9AM - 7PM"
+                    ]
+                  },
+                  {
+                    "id": "cb2",
+                    "icon": "FaEnvelope",
+                    "title": "Email Us",
+                    "details": [
+                      "support@forgefit.com",
+                      "We reply within 24 hours"
+                    ]
+                  },
+                  {
+                    "id": "cb3",
+                    "icon": "FaMapMarkerAlt",
+                    "title": "Visit Us",
+                    "details": [
+                      "123 Fitness Street,",
+                      "New Delhi, India"
+                    ]
+                  }
+                ]
+              },
+              "faqs": [
+                {
+                  "id": "faq1",
+                  "question": "What types of fitness programs does ForgeFit offer?",
+                  "answer": "We offer a variety of fitness programs including strength training, weight loss, muscle building, flexibility, functional training and personalized coaching. Our programs are designed for all fitness levels – from beginners to advanced."
+                },
+                {
+                  "id": "faq2",
+                  "question": "Do you offer personal training?",
+                  "answer": "Yes, we have certified personal trainers available to help you achieve your goals faster with customized workout and nutrition plans."
+                },
+                {
+                  "id": "faq3",
+                  "question": "Can beginners join ForgeFit?",
+                  "answer": "Absolutely! We welcome members of all fitness levels. Our trainers will guide you step-by-step."
+                },
+                {
+                  "id": "faq4",
+                  "question": "What are your membership plans?",
+                  "answer": "We offer monthly, quarterly, and annual membership plans. Please visit our Pricing page for more details."
+                },
+                {
+                  "id": "faq5",
+                  "question": "Are there group classes available?",
+                  "answer": "Yes, we host various group classes like Yoga, Zumba, HIIT, and Spin classes."
+                },
+                {
+                  "id": "faq6",
+                  "question": "Do you provide diet and nutrition guidance?",
+                  "answer": "Yes, our expert nutritionists can provide you with a tailored diet plan to complement your workouts."
+                },
+                {
+                  "id": "faq7",
+                  "question": "What are your gym timings?",
+                  "answer": "We are open Monday to Saturday from 6:00 AM to 10:00 PM. We are closed on Sundays."
+                },
+                {
+                  "id": "faq8",
+                  "question": "Is there a trial session available?",
+                  "answer": "Yes, we offer a free 1-day trial pass for new visitors."
+                },
+                {
+                  "id": "faq9",
+                  "question": "How can I join ForgeFit?",
+                  "answer": "You can join by visiting our gym in person or signing up online through our website."
+                },
+                {
+                  "id": "faq10",
+                  "question": "Can I pause or cancel my membership?",
+                  "answer": "Yes, memberships can be paused for medical reasons. Cancellations are subject to our terms and conditions."
+                }
+              ]
+            }
+          }
+        },
+        "LegalContent": {
+          "variants": {
+            "ForgeFitPrivacyPolicy": {
+              "subtitle": "OUR COMMITMENT",
+              "titlePart1": "Your ",
+              "titleHighlight": "Privacy Matters",
+              "description": "At ForgeFit, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose and safeguard your information when you visit our website, use our services or interact with us.",
+              "sections": [
+                {
+                  "id": "sec1",
+                  "title": "Information We Collect",
+                  "content": "We may collect personal information such as your name, email address, phone number, fitness goals and any other details you provide through our forms, bookings or communications. We also collect non-personal information like browser type, device information and website usage data to improve your experience."
+                },
+                {
+                  "id": "sec2",
+                  "title": "How We Use Your Information",
+                  "content": "The information we collect is used to provide and improve our services, respond to your enquiries, process registrations, personalize your experience and keep you updated about our programs, offers and events."
+                },
+                {
+                  "id": "sec3",
+                  "title": "Information Sharing",
+                  "content": "We do not sell, trade or rent your personal information to third parties. We may share your information with trusted service providers who assist us in operating our website, managing our services or communicating with you, under strict confidentiality agreements."
+                },
+                {
+                  "id": "sec4",
+                  "title": "Data Security",
+                  "content": "We implement appropriate technical and organizational measures to protect your personal information from unauthorized access, alteration, disclosure or destruction."
+                },
+                {
+                  "id": "sec5",
+                  "title": "Cookies",
+                  "content": "Our website uses cookies to enhance your browsing experience, analyze website traffic and understand user behavior. You can choose to disable cookies through your browser settings, but this may affect certain features of the website."
+                },
+                {
+                  "id": "sec6",
+                  "title": "Your Rights",
+                  "content": "You have the right to access, update or request deletion of your personal information. If you have any questions or requests regarding your data, please contact us using the details provided below."
+                },
+                {
+                  "id": "sec7",
+                  "title": "Changes to This Policy",
+                  "content": "We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date. We encourage you to review this policy periodically."
+                },
+                {
+                  "id": "sec8",
+                  "title": "Contact Us",
+                  "content": "If you have any questions, concerns or requests regarding this Privacy Policy, please reach out to us at support@forgefit.com or call +91 98765 43210."
+                }
+              ]
+            },
+            "ForgeFitTermsAndConditions": {
+              "subtitle": "OUR POLICIES",
+              "titlePart1": "Terms & ",
+              "titleHighlight": "Conditions",
+              "description": "Welcome to ForgeFit. By accessing our website, using our facilities or signing up for any of our services, you agree to comply with and be bound by the following terms and conditions of use.",
+              "sections": [
+                {
+                  "id": "sec1",
+                  "title": "Membership Guidelines",
+                  "content": "All members must carry their ID or access card at all times. Memberships are strictly non-transferable and can only be used by the registered individual."
+                },
+                {
+                  "id": "sec2",
+                  "title": "Gym Etiquette",
+                  "content": "Members are expected to wipe down equipment after use, return weights to their proper racks, and respect the personal space of other members. Proper athletic attire and closed-toe athletic shoes are required at all times."
+                },
+                {
+                  "id": "sec3",
+                  "title": "Health & Safety",
+                  "content": "You acknowledge that participating in physical exercises carries inherent risks. You certify that you are physically capable of engaging in fitness activities and agree that ForgeFit is not liable for any injuries sustained on the premises."
+                },
+                {
+                  "id": "sec4",
+                  "title": "Payment & Fees",
+                  "content": "Membership fees are payable in advance. Failure to pay dues may result in suspension or termination of your membership. All promotional pricing is subject to specific terms as advertised."
+                }
+              ]
+            },
+            "ForgeFitRefundPolicy": {
+              "subtitle": "CANCELLATIONS",
+              "titlePart1": "Cancellation & ",
+              "titleHighlight": "Refund Policy",
+              "description": "We understand that plans can change. This policy outlines the terms regarding cancellations, pauses, and refunds for memberships and personal training sessions at ForgeFit.",
+              "sections": [
+                {
+                  "id": "sec1",
+                  "title": "Membership Cancellations",
+                  "content": "Members may cancel their ongoing membership by providing a 30-day written notice to the management. Annual memberships are generally non-refundable except in cases of relocation or severe medical reasons (proof required)."
+                },
+                {
+                  "id": "sec2",
+                  "title": "Refund Eligibility",
+                  "content": "Refunds for upfront payments are only processed within the first 7 days of purchase, provided the facilities have not been used. Processing fees may apply. After 7 days, all sales are final."
+                },
+                {
+                  "id": "sec3",
+                  "title": "Personal Training Sessions",
+                  "content": "Cancellations for scheduled personal training sessions must be made at least 12 hours in advance. Failure to do so will result in the forfeiture of the session without a refund."
+                },
+                {
+                  "id": "sec4",
+                  "title": "Membership Freezes",
+                  "content": "You may freeze your membership for a minimum of 1 month and a maximum of 3 months per calendar year for travel or medical reasons. A small administrative fee may be charged per freeze request."
+                }
+              ]
+            }
+          }
+        },
+        "NotFoundContent": {
+          "variants": {
+            "ForgeFit404": {
+              "bgImage": "/other/404_bg.webp",
+              "bgImageAlt": "Gym Background",
+              "zeroImage": "/other/404.webp",
+              "zeroImageAlt": "Running Man",
+              "titlePart1": "Oops! ",
+              "titleHighlight": "Page Not Found",
+              "description": "The page you're looking for doesn't exist or may have been moved. Let's get you back on track.",
+              "buttonText": "Back to Home ->",
+              "buttonUrl": "/",
+              "textLeft": [
+                "Stronger",
+                "Today",
+                "Brighter",
+                "Tomorrow"
+              ],
+              "textRight": [
+                "DISCIPLINE",
+                "BUILDS",
+                "RESULTS"
+              ]
+            }
+          }
+        },
+        "ThankYouContent": {
+          "variants": {
+            "ForgeFitThankYou1": {
+              "title": "Thank You!",
+              "subtitle": "Request Received",
+              "description": "We have received your details. One of our fitness experts will reach out to you shortly. Stay strong, keep pushing, and let's achieve your goals together!",
+              "buttonText": "Back to Home",
+              "buttonUrl": "/",
+              "backgroundImage": "/banner/image-3.webp"
+            }
+          }
+        }
       }
     }
   }

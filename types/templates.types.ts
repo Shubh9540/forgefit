@@ -602,10 +602,98 @@ export interface ForgeFitAwardsMilestonesData {
   titlePart1: string;
   titleHighlight: string;
   description: string;
+  backgroundImage?: string;
+  buttonText?: string;
+  buttonUrl?: string;
+  milestones: AwardsMilestone[];
+}
+
+// ------------------------------------------------------------
+// FAQ SECTION
+// ------------------------------------------------------------
+
+export interface FAQStat {
+  id: string;
+  icon: string;
+  title: string;
+  description: string;
+}
+
+export interface FAQPromo {
+  image: string;
+  imageAlt: string;
+  title: string;
+  titleHighlight: string;
+  description: string;
+  buttonText: string;
+  buttonUrl: string;
+}
+
+export interface FAQContactBoxItem {
+  id: string;
+  icon: string;
+  title: string;
+  details: string[];
+}
+
+export interface FAQContactBox {
+  title: string;
+  items: FAQContactBoxItem[];
+}
+
+export interface FAQItem {
+  id: string;
+  question: string;
+  answer: string;
+}
+
+export interface ForgeFitFAQData {
+  topStats: FAQStat[];
+  promo: FAQPromo;
+  contactBox: FAQContactBox;
+  subtitle: string;
+  titlePart1: string;
+  titleHighlight: string;
+  description: string;
+  faqs: FAQItem[];
+}
+
+export interface LegalSection {
+  id: string;
+  title: string;
+  content: string;
+}
+
+export interface ForgeFitNotFoundData {
+  bgImage: string;
+  bgImageAlt?: string;
+  zeroImage: string;
+  zeroImageAlt?: string;
+  titlePart1: string;
+  titleHighlight: string;
+  description: string;
+  buttonText: string;
+  buttonUrl: string;
+  textLeft: string[];
+  textRight: string[];
+}
+
+export interface ForgeFitLegalContentData {
+  subtitle: string;
+  titlePart1: string;
+  titleHighlight: string;
+  description: string;
+  sections: LegalSection[];
+}
+
+export interface ForgeFitCallToActionData {
+  subtitle: string;
+  titlePart1: string;
+  titleHighlight: string;
+  description: string;
   buttonText: string;
   buttonUrl: string;
   backgroundImage: string;
-  milestones: AwardsMilestone[];
 }
 
 export interface AwardsCertification {
@@ -767,6 +855,9 @@ export interface ForgeFitTemplateData {
         AwardsCommitment:  { variants: Record<string, ForgeFitAwardsCommitmentData> };
         ImageGallery:      { variants: Record<string, ForgeFitImageGalleryData> };
         VideoGallery:      { variants: Record<string, ForgeFitVideoGalleryData> };
+        FAQ:               { variants: Record<string, ForgeFitFAQData> };
+        LegalContent:      { variants: Record<string, ForgeFitLegalContentData> };
+        NotFoundContent:   { variants: Record<string, ForgeFitNotFoundData> };
         [key: string]: any;
       };
     };

@@ -32,13 +32,15 @@ export const AwardsMilestones = ({ data }: { data?: ForgeFitAwardsMilestonesData
             <p className="text-gray-400 text-sm mb-6 leading-relaxed">
               {data.description}
             </p>
-            <Link
-              href={data.buttonUrl}
-              className="inline-flex items-center gap-2 bg-[#ff4d15] text-white font-semibold px-6 py-3 rounded hover:bg-[#e03a00] transition-colors"
-            >
-              {data.buttonText}
-              <FaArrowRight />
-            </Link>
+            {data.buttonUrl && data.buttonText && (
+              <Link
+                href={data.buttonUrl}
+                className="inline-flex items-center gap-2 bg-[#ff4d15] text-white font-semibold px-6 py-3 rounded hover:bg-[#e03a00] transition-colors"
+              >
+                {data.buttonText}
+                <FaArrowRight />
+              </Link>
+            )}
           </div>
 
           {/* Right Cards Grid */}

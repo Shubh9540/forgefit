@@ -1295,8 +1295,8 @@
                   "titleHighlight": "True Power",
                   "description": "Join our advanced strength and conditioning programs tailored to push your boundaries.",
                   "primaryButton": {
-                    "text": "Our Classes",
-                    "url": "/classes"
+                    "text": "Our Programs",
+                    "url": "/training-programs"
                   },
                   "secondaryButton": {
                     "text": "About Us",
@@ -1312,8 +1312,8 @@
                   "titleHighlight": "Lifestyle",
                   "description": "Experience holistic wellness with our expert nutrition and fitness guidance.",
                   "primaryButton": {
-                    "text": "Our Classes",
-                    "url": "/classes"
+                    "text": "Our Programs",
+                    "url": "/training-programs"
                   },
                   "secondaryButton": {
                     "text": "About Us",

@@ -31,14 +31,14 @@ export const TestimonialsGrid = ({ data }: { data?: ForgeFitTestimonialsData }) 
               {/* Header (Image + Details) */}
               <div className="flex items-center gap-4 mb-4 ml-1">
                 {/* Hexagon Image Container */}
-                <div className="relative w-20 h-24 shrink-0">
+                <div className="relative w-24 h-28 shrink-0">
                   {/* Top-Left Orange Layer */}
                   <div className="absolute inset-0 bg-[var(--color-accent)] -translate-x-2 -translate-y-2 [clip-path:polygon(50%_0%,100%_25%,100%_75%,50%_100%,0%_75%,0%_25%)]" />
                   {/* Bottom-Right Orange Layer */}
                   <div className="absolute inset-0 bg-[var(--color-accent)] translate-x-2 translate-y-2 [clip-path:polygon(50%_0%,100%_25%,100%_75%,50%_100%,0%_75%,0%_25%)]" />
                   {/* Actual Image */}
                   <div
-                    className="absolute inset-0 bg-cover bg-center shadow-lg [clip-path:polygon(50%_0%,100%_25%,100%_75%,50%_100%,0%_75%,0%_25%)]"
+                    className="absolute inset-0 bg-cover bg-center shadow-[inset_0_0_10px_rgba(0,0,0,0.5)] [clip-path:polygon(50%_0%,100%_25%,100%_75%,50%_100%,0%_75%,0%_25%)]"
                     style={{ backgroundImage: `url(${testimonial.image})` }}
                   />
                 </div>

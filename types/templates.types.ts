@@ -498,6 +498,8 @@ export interface PricingPlan {
   period: string;
   isPopular?: boolean;
   features: string[];
+    buttonText?: string;
+    buttonUrl?: string;
 }
 
 export interface PricingCardsData {
@@ -873,3 +875,4 @@ export interface ForgeFitTemplateData {
     };
   };
 }
+

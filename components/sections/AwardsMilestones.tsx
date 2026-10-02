@@ -1,10 +1,21 @@
-import React from 'react';
+'use client';
+import React, { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import useEmblaCarousel from 'embla-carousel-react';
 import { ForgeFitAwardsMilestonesData } from '@/types/templates.types';
-import { FaArrowRight } from 'react-icons/fa';
-
+import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
 export const AwardsMilestones = ({ data }: { data?: ForgeFitAwardsMilestonesData }) => {
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: 'start' });
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  const scrollPrev = useCallback(() => emblaApi && emblaApi.scrollPrev(), [emblaApi]);
+  const scrollNext = useCallback(() => emblaApi && emblaApi.scrollNext(), [emblaApi]);
+
   if (!data) return null;
 
   return (
@@ -15,7 +26,7 @@ export const AwardsMilestones = ({ data }: { data?: ForgeFitAwardsMilestonesData
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-[#0f172a]/90"></div>
 
-      <div className="container mx-auto px-4 max-w-[1500px] relative z-10">
+      <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-12 relative z-10">
         <div className="flex flex-col xl:flex-row gap-8 items-end justify-between">
 
           {/* Left Text Content */}
@@ -44,10 +55,12 @@ export const AwardsMilestones = ({ data }: { data?: ForgeFitAwardsMilestonesData
           </div>
 
           {/* Right Cards Grid */}
-          <div className="w-full flex-1">
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-4 xl:gap-5 mt-6 sm:mt-10 xl:mt-0">
-              {data.milestones.map((milestone) => (
-                <div key={milestone.id} className="group flex flex-col h-full mt-6 sm:mt-10 lg:mt-0">
+          <div className="w-full flex-1 relative px-4 md:px-12 py-4">
+            <div className="overflow-hidden" ref={emblaRef}>
+              <div className="flex -ml-4 touch-pan-y mt-6 sm:mt-10 xl:mt-0">
+                {data.milestones.map((milestone) => (
+                  <div key={milestone.id} className="flex-[0_0_100%] sm:flex-[0_0_50%] lg:flex-[0_0_33.333%] pl-4">
+                    <div className="group flex flex-col h-full mt-6 sm:mt-10 lg:mt-0">
                   {/* Image Container - Reverted to proper flow layout */}
                   <div className="w-full h-24 sm:h-52 relative z-10 -mb-4 sm:-mb-6 transition-transform duration-300 group-hover:-translate-y-2 sm:group-hover:-translate-y-3 pointer-events-none">
                     <Image
@@ -73,8 +86,28 @@ export const AwardsMilestones = ({ data }: { data?: ForgeFitAwardsMilestonesData
                     </p>
                   </div>
                 </div>
-              ))}
+                  </div>
+                ))}
+              </div>
             </div>
+
+            {/* Navigation Arrows */}
+            {isMounted && (
+              <>
+                <button
+                  onClick={scrollPrev}
+                  className="absolute top-1/2 left-0 -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center text-[#ff4d15] hover:bg-[#ff4d15] hover:text-white transition-colors duration-300 z-10"
+                >
+                  <FaArrowLeft />
+                </button>
+                <button
+                  onClick={scrollNext}
+                  className="absolute top-1/2 right-0 -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center text-[#ff4d15] hover:bg-[#ff4d15] hover:text-white transition-colors duration-300 z-10"
+                >
+                  <FaArrowRight />
+                </button>
+              </>
+            )}
           </div>
 
         </div>

@@ -47,7 +47,7 @@ const useCountUp = (end: number, duration: number = 2000) => {
   return { count, ref };
 };
 
-const AnimatedNumber = ({ value, suffix }: { value: string; suffix: string }) => {
+const AnimatedNumber = ({ value, suffix, isSmall }: { value: string; suffix: string; isSmall?: boolean }) => {
   const numValue = parseInt(value.replace(/[^0-9]/g, ''), 10);
   const { count, ref } = useCountUp(isNaN(numValue) ? 0 : numValue, 2500);
 
@@ -57,16 +57,20 @@ const AnimatedNumber = ({ value, suffix }: { value: string; suffix: string }) =>
 
   return (
     <div ref={ref} className="flex items-baseline gap-1">
-      <h3 className="text-xl sm:text-3xl md:text-5xl font-bold text-[#ff4d15]">
+      <h3 className={`font-bold text-[#ff4d15] ${isSmall ? 'text-lg sm:text-xl md:text-3xl' : 'text-xl sm:text-3xl md:text-5xl'}`}>
         {displayCount}
       </h3>
-      <span className="text-lg sm:text-2xl md:text-3xl font-bold text-[#ff4d15]">{suffix}</span>
+      <span className={`font-bold text-[#ff4d15] ${isSmall ? 'text-sm sm:text-lg md:text-xl' : 'text-lg sm:text-2xl md:text-3xl'}`}>
+        {suffix}
+      </span>
     </div>
   );
 };
 
-const renderIcon = (iconName: string) => {
-  const iconClasses = "w-6 h-6 sm:w-8 sm:h-8 md:w-12 md:h-12 text-[#ff4d15]";
+const renderIcon = (iconName: string, isSmall?: boolean) => {
+  const iconClasses = isSmall 
+    ? "w-6 h-6 sm:w-8 sm:h-8 md:w-8 md:h-8 text-[#ff4d15]" 
+    : "w-6 h-6 sm:w-8 sm:h-8 md:w-12 md:h-12 text-[#ff4d15]";
   switch (iconName) {
     case 'FaAward': return <FaAward className={iconClasses} />;
     case 'FaUsers': return <FaUsers className={iconClasses} />;
@@ -76,12 +80,12 @@ const renderIcon = (iconName: string) => {
   }
 };
 
-export const AwardsCounter = ({ data }: { data?: ForgeFitAwardsCounterData }) => {
+export const AwardsCounter = ({ data, isSmall }: { data?: ForgeFitAwardsCounterData; isSmall?: boolean }) => {
   if (!data || !data.stats) return null;
 
   return (
     <section className="bg-[#f8f9fc] py-8 border-b border-gray-200">
-      <div className="container mx-auto px-4 max-w-[1500px]">
+      <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-12">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
           {data.stats.map((stat, index) => (
             <div 
@@ -89,12 +93,12 @@ export const AwardsCounter = ({ data }: { data?: ForgeFitAwardsCounterData }) =>
               className={`flex flex-row items-center text-left gap-3 sm:gap-6 ${index !== 0 ? 'md:pl-8 lg:border-l lg:border-gray-300' : ''}`}
             >
               <div className="flex-shrink-0">
-                {renderIcon(stat.icon)}
+                {renderIcon(stat.icon, isSmall)}
               </div>
               <div className="flex flex-col">
-                <AnimatedNumber value={stat.value} suffix={stat.suffix} />
-                <h4 className="text-[11px] sm:text-lg md:text-xl font-bold text-[#0f172a] mt-0 sm:mt-1 leading-tight">{stat.title}</h4>
-                <p className="text-[#64748b] text-[10px] sm:text-sm mt-0 sm:mt-1 hidden sm:block">{stat.description}</p>
+                <AnimatedNumber value={stat.value} suffix={stat.suffix} isSmall={isSmall} />
+                <h4 className={`font-bold text-[#0f172a] mt-0 sm:mt-1 leading-tight ${isSmall ? 'text-[11px] sm:text-sm md:text-base' : 'text-[11px] sm:text-lg md:text-xl'}`}>{stat.title}</h4>
+                <p className={`text-[#64748b] mt-0 sm:mt-1 hidden sm:block ${isSmall ? 'text-[10px] sm:text-xs' : 'text-[10px] sm:text-sm'}`}>{stat.description}</p>
               </div>
             </div>
           ))}

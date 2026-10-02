@@ -1,23 +1,30 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ForgeFitBlogData } from '@/types/templates.types';
 import { FaArrowRight } from 'react-icons/fa';
+import { Button } from '@/components/ui/Button';
 
 export const BlogGridSection = ({ data }: { data?: ForgeFitBlogData }) => {
+  const [visibleCount, setVisibleCount] = useState(3);
+
   if (!data) return null;
+
+  const handleLoadMore = () => {
+    setVisibleCount(prev => prev + 3);
+  };
 
   return (
     <section className="bg-white py-16 lg:py-12">
       <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-12">
         {/* Blog Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {data.blogs.map((blog) => (
+          {data.blogs.slice(0, visibleCount).map((blog) => (
             <div key={blog.id} className="bg-white rounded-lg overflow-hidden shadow-lg group flex flex-col border border-gray-100">
               {/* Image Container with Date Badge */}
-              <div className="relative h-64 w-full overflow-hidden">
+              <Link href={blog.url} className="relative h-64 w-full overflow-hidden block">
                 <Image
                   src={blog.image}
                   alt={blog.imageAlt}
@@ -30,7 +37,7 @@ export const BlogGridSection = ({ data }: { data?: ForgeFitBlogData }) => {
                   <span className="text-2xl font-bold leading-none">{blog.day}</span>
                   <span className="text-[10px] font-semibold tracking-wider uppercase mt-1">{blog.month}</span>
                 </div>
-              </div>
+              </Link>
 
               {/* Content Container */}
               <div className="p-8 flex-1 flex flex-col">
@@ -50,9 +57,11 @@ export const BlogGridSection = ({ data }: { data?: ForgeFitBlogData }) => {
                 </Link>
 
                 {/* Excerpt */}
-                <p className="text-[#64748b] text-sm leading-relaxed mb-6 flex-1">
-                  {blog.excerpt}
-                </p>
+                <Link href={blog.url} className="mb-6 flex-1 block group">
+                  <p className="text-[#64748b] text-sm leading-relaxed group-hover:text-[#0f172a] transition-colors">
+                    {blog.excerpt}
+                  </p>
+                </Link>
 
                 {/* Read More Link */}
                 <Link
@@ -66,6 +75,17 @@ export const BlogGridSection = ({ data }: { data?: ForgeFitBlogData }) => {
             </div>
           ))}
         </div>
+
+        {/* Pagination / Load More */}
+        {visibleCount < data.blogs.length && (
+          <div className="flex justify-center mt-12">
+            <Button
+              text="Load More"
+              onClick={handleLoadMore}
+              withSideLines={true}
+            />
+          </div>
+        )}
       </div>
     </section>
   );

@@ -76,13 +76,17 @@ export const Testimonials = ({ data }: { data?: ForgeFitTestimonialsData }) => {
                     <div className="flex items-center gap-4 mb-4 ml-1">
                       {/* Hexagon Image Container */}
                       <div className="relative w-20 h-24 shrink-0">
-                        {/* Orange Background Hexagon (Shifted Left) */}
-                        <div className="absolute inset-0 bg-[var(--color-accent)] -translate-x-2 [clip-path:polygon(25%_0,75%_0,100%_50%,75%_100%,25%_100%,0_50%)]" />
-                        {/* Actual Image */}
-                        <div
-                          className="absolute inset-0 bg-cover bg-center [clip-path:polygon(25%_0,75%_0,100%_50%,75%_100%,25%_100%,0_50%)]"
-                          style={{ backgroundImage: `url(${testimonial.image})` }}
-                        />
+                        {/* Orange Background Octagon */}
+                        <div className="absolute inset-0 bg-[var(--color-accent)] scale-[1.12] rotate-6 [clip-path:polygon(30%_0%,70%_0%,100%_30%,100%_70%,70%_100%,30%_100%,0%_70%,0%_30%)]" />
+                        
+                        {/* Image Wrapper for Shadow */}
+                        <div className="absolute inset-0 drop-shadow-[0_5px_10px_rgba(0,0,0,0.4)]">
+                          {/* Actual Image */}
+                          <div
+                            className="absolute inset-0 bg-cover bg-center [clip-path:polygon(30%_0%,70%_0%,100%_30%,100%_70%,70%_100%,30%_100%,0%_70%,0%_30%)]"
+                            style={{ backgroundImage: `url(${testimonial.image})` }}
+                          />
+                        </div>
                       </div>
 
                       {/* Name & Details */}

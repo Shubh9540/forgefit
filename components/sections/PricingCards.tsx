@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { PricingCardsData } from '@/types/templates.types';
 import { FaCheckCircle } from 'react-icons/fa';
 
@@ -74,9 +75,12 @@ export const PricingCards = ({ data }: { data?: PricingCardsData }) => {
                 </ul>
 
                 {/* Button */}
-                <button className="w-full py-3 rounded text-sm font-bold bg-gray-100 text-[#1a1a1a] group-hover:bg-[var(--color-accent)] group-hover:text-white transition-colors duration-300">
-                  Get Started
-                </button>
+                <Link
+                  href={plan.buttonUrl || "#"}
+                  className="w-full py-3 rounded text-sm font-bold bg-gray-100 text-[#1a1a1a] group-hover:bg-[var(--color-accent)] group-hover:text-white transition-colors duration-300 text-center inline-block"
+                >
+                  {plan.buttonText}
+                </Link>
               </div>
             </div>
           ))}

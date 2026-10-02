@@ -1,15 +1,26 @@
-import React from 'react';
+'use client';
+import React, { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import useEmblaCarousel from 'embla-carousel-react';
 import { ForgeFitAwardsCertificationsData } from '@/types/templates.types';
-import { FaArrowRight } from 'react-icons/fa';
-
+import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
 export const AwardsCertifications = ({ data }: { data?: ForgeFitAwardsCertificationsData }) => {
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: 'start' });
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  const scrollPrev = useCallback(() => emblaApi && emblaApi.scrollPrev(), [emblaApi]);
+  const scrollNext = useCallback(() => emblaApi && emblaApi.scrollNext(), [emblaApi]);
+
   if (!data) return null;
 
   return (
     <section className="py-16 lg:py-12 bg-[#f8f9fc]">
-      <div className="container mx-auto px-4 max-w-[1500px]">
+      <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-12">
         <div className="flex flex-col xl:flex-row gap-8 lg:gap-10 items-center justify-between">
 
           {/* Left Text Content */}
@@ -39,10 +50,12 @@ export const AwardsCertifications = ({ data }: { data?: ForgeFitAwardsCertificat
           </div>
 
           {/* Right Certifications Grid */}
-          <div className="w-full flex-1">
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-4 xl:gap-5 mt-8 xl:mt-0">
-              {data.certifications.map((cert) => (
-                <div key={cert.id} className="bg-white rounded p-3 sm:p-5 xl:p-6 shadow-[0_4px_20px_rgba(0,0,0,0.03)] text-center hover:shadow-[0_4px_30px_rgba(0,0,0,0.08)] transition-shadow flex flex-col items-center sm:justify-between h-full border border-gray-100">
+          <div className="w-full flex-1 relative px-4 md:px-12 py-4">
+            <div className="overflow-hidden" ref={emblaRef}>
+              <div className="flex -ml-4 touch-pan-y mt-8 xl:mt-0">
+                {data.certifications.map((cert) => (
+                  <div key={cert.id} className="flex-[0_0_100%] sm:flex-[0_0_50%] lg:flex-[0_0_33.333%] pl-4">
+                    <div className="bg-white rounded p-3 sm:p-5 xl:p-6 shadow-[0_4px_20px_rgba(0,0,0,0.03)] text-center hover:shadow-[0_4px_30px_rgba(0,0,0,0.08)] transition-shadow flex flex-col items-center sm:justify-between h-full border border-gray-100">
                   <div className="relative w-full h-14 sm:h-20 mb-3 sm:mb-5 shrink-0">
                     <Image
                       src={`${cert.image}?v=2`}
@@ -62,8 +75,28 @@ export const AwardsCertifications = ({ data }: { data?: ForgeFitAwardsCertificat
                     </p>
                   </div>
                 </div>
-              ))}
+                  </div>
+                ))}
+              </div>
             </div>
+
+            {/* Navigation Arrows */}
+            {isMounted && (
+              <>
+                <button
+                  onClick={scrollPrev}
+                  className="absolute top-1/2 left-0 -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center text-[#ff4d15] hover:bg-[#ff4d15] hover:text-white transition-colors duration-300 z-10"
+                >
+                  <FaArrowLeft />
+                </button>
+                <button
+                  onClick={scrollNext}
+                  className="absolute top-1/2 right-0 -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center text-[#ff4d15] hover:bg-[#ff4d15] hover:text-white transition-colors duration-300 z-10"
+                >
+                  <FaArrowRight />
+                </button>
+              </>
+            )}
           </div>
 
         </div>

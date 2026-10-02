@@ -23,7 +23,7 @@ export default function AwardsPage() {
       <TopBar data={sectionData.TopBar?.variants?.ForgeFitTopBar1} />
       <Header data={sectionData.Header?.variants?.ForgeFitHeader1} />
       <Breadcrumb data={commonData?.breadcrumbs?.AwardsBreadcrumb} />
-      <AwardsCounter data={sectionData.AwardsCounter?.variants?.ForgeFitAwardsCounter1} />
+      <AwardsCounter data={sectionData.AwardsCounter?.variants?.ForgeFitAwardsCounter1} isSmall={true} />
       <AwardsMilestones data={sectionData.AwardsMilestones?.variants?.ForgeFitAwardsMilestones1} />
       <AwardsCertifications data={sectionData.AwardsCertifications?.variants?.ForgeFitAwardsCertifications1} />
       <AwardsCommitment data={sectionData.AwardsCommitment?.variants?.ForgeFitAwardsCommitment1} />

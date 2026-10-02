@@ -180,19 +180,6 @@
         ],
         "bgImage": "/main logo/breadcrumb.jpg"
       },
-      "FAQBreadcrumb": {
-        "title": "FAQs",
-        "bgImage": "/main logo/breadcrumb.jpg",
-        "paths": [
-          {
-            "label": "Home",
-            "url": "/"
-          },
-          {
-            "label": "FAQs"
-          }
-        ]
-      },
       "TeamBreadcrumb": {
         "title": "OUR TEAM",
         "paths": [
@@ -422,17 +409,17 @@
           {
             "id": "ci-1",
             "icon": "FaMapMarkerAlt",
-            "text": "123 Fitness Street,\nNew Delhi, India - 110001"
+            "text": "123 Dummy St,\nNew York, NY 10001"
           },
           {
             "id": "ci-2",
             "icon": "FaPhoneAlt",
-            "text": "+91 98765 43210"
+            "text": "+1 000000000"
           },
           {
             "id": "ci-3",
             "icon": "FaEnvelope",
-            "text": "info@forgefit.com"
+            "text": "info@xyz.com"
           },
           {
             "id": "ci-4",
@@ -1076,8 +1063,8 @@
           "variants": {
             "ForgeFitTopBar1": {
               "hours": "Mon - Sat (6:00 - 22:00)",
-              "phone": "+91 98765 43210",
-              "address": "123 Fitness Street, New Delhi, 110001",
+              "phone": "+1 000000000",
+              "address": "123 Dummy St, New York, NY 10001",
               "socialLinks": [
                 {
                   "id": "tb-fb",
@@ -1885,9 +1872,9 @@
                   ]
                 },
                 {
-                  "id": "rohan-mehta",
+                  "id": "arushi-vij",
                   "image": "/team/team-2.jpg",
-                  "name": "Rohan Mehta",
+                  "name": "Arushi Vij",
                   "role": "Fitness Trainer",
                   "shortDescription": "Expert in weight loss, HIIT and personal training for all fitness levels.",
                   "quote": "\"Sweat is just fat crying.\"",
@@ -2127,9 +2114,9 @@
                   ]
                 },
                 {
-                  "id": "naveen-rathi",
+                  "id": "parul-singh",
                   "image": "/team/team-2.jpg",
-                  "name": "Naveen Rathi",
+                  "name": "Parul Singh",
                   "role": "Group Class Instructor",
                   "shortDescription": "Leads energizing group sessions like Zumba, HIIT and circuit training.",
                   "quote": "\"Find your tribe, love them hard.\"",
@@ -2925,7 +2912,9 @@
                     "General Fitness Guidance",
                     "Access to Group Workouts",
                     "Locker Room Access"
-                  ]
+                  ],
+                  "buttonText": "Get a Quote",
+                  "buttonUrl": "/contact"
                 },
                 {
                   "id": "plan-standard",
@@ -2941,7 +2930,9 @@
                     "Basic Nutrition Guidance",
                     "Locker Room Access",
                     "Progress Tracking"
-                  ]
+                  ],
+                  "buttonText": "Get a Quote",
+                  "buttonUrl": "/contact"
                 },
                 {
                   "id": "plan-premium",
@@ -2958,7 +2949,9 @@
                     "Group Classes (All Types)",
                     "Progress Tracking & Assessment",
                     "Priority Support"
-                  ]
+                  ],
+                  "buttonText": "Get a Quote",
+                  "buttonUrl": "/contact"
                 },
                 {
                   "id": "plan-elite",
@@ -2976,7 +2969,9 @@
                     "Progress Tracking & Reports",
                     "Lifestyle & Wellness Coaching",
                     "Priority Support"
-                  ]
+                  ],
+                  "buttonText": "Get a Quote",
+                  "buttonUrl": "/contact"
                 }
               ]
             }
@@ -3150,7 +3145,7 @@
                   "icon": "FaPhoneAlt",
                   "title": "Call Us",
                   "lines": [
-                    "+91 98765 43210",
+                    "+1 000000000",
                     "Mon - Sat, 9AM - 7PM"
                   ]
                 },
@@ -3159,7 +3154,7 @@
                   "icon": "FaEnvelope",
                   "title": "Email Us",
                   "lines": [
-                    "support@forgefit.com",
+                    "info@xyz.com",
                     "We reply within 24 hours"
                   ]
                 },
@@ -3168,8 +3163,8 @@
                   "icon": "FaMapMarkerAlt",
                   "title": "Visit Us",
                   "lines": [
-                    "123 Fitness Street,",
-                    "New Delhi, India - 110001"
+                    "123 Dummy St,",
+                    "New York, NY 10001"
                   ]
                 },
                 {
@@ -3221,7 +3216,7 @@
               "description": "Visit our gym and experience a world-class fitness environment with state-of-the-art equipment, expert trainers and a supportive community.",
               "buttonText": "Get Directions",
               "buttonUrl": "https://maps.google.com",
-              "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14008.114827184429!2d77.20966455!3d28.6289299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd37b741d057%3A0xc46188eb6120bdc3!2sConnaught%20Place%2C%20New%20Delhi%2C%20Delhi%20110001!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+              "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.2528000654!2d-74.14448744572236!3d40.69763123334698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1711234567890!5m2!1sen!2sin",
               "backgroundImage": "/banner/ban1.jpg"
             }
           }
@@ -3608,7 +3603,7 @@
                     "icon": "FaPhoneAlt",
                     "title": "Call Us",
                     "details": [
-                      "+91 98765 43210",
+                      "+1 000000000",
                       "Mon - Sat, 9AM - 7PM"
                     ]
                   },
@@ -3617,7 +3612,7 @@
                     "icon": "FaEnvelope",
                     "title": "Email Us",
                     "details": [
-                      "support@forgefit.com",
+                      "info@xyz.com",
                       "We reply within 24 hours"
                     ]
                   },
@@ -3626,7 +3621,7 @@
                     "icon": "FaMapMarkerAlt",
                     "title": "Visit Us",
                     "details": [
-                      "123 Fitness Street,",
+                      "123 Dummy St,",
                       "New Delhi, India"
                     ]
                   }
@@ -3733,7 +3728,7 @@
                 {
                   "id": "sec8",
                   "title": "Contact Us",
-                  "content": "If you have any questions, concerns or requests regarding this Privacy Policy, please reach out to us at support@forgefit.com or call +91 98765 43210."
+                  "content": "If you have any questions, concerns or requests regarding this Privacy Policy, please reach out to us at info@xyz.com or call +1 000000000."
                 }
               ]
             },

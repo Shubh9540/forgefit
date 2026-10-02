@@ -31,7 +31,7 @@ export const BlogSection = ({ data }: { data?: ForgeFitBlogData }) => {
           {data.blogs.slice(0, 3).map((blog) => (
             <div key={blog.id} className="bg-white rounded-lg overflow-hidden shadow-lg group flex flex-col">
               {/* Image Container with Date Badge */}
-              <div className="relative h-64 w-full overflow-hidden">
+              <Link href={blog.url} className="relative h-64 w-full overflow-hidden block">
                 <Image
                   src={blog.image}
                   alt={blog.imageAlt}
@@ -44,7 +44,7 @@ export const BlogSection = ({ data }: { data?: ForgeFitBlogData }) => {
                   <span className="text-2xl font-bold leading-none">{blog.day}</span>
                   <span className="text-[10px] font-semibold tracking-wider uppercase mt-1">{blog.month}</span>
                 </div>
-              </div>
+              </Link>
 
               {/* Content Container */}
               <div className="p-8 flex-1 flex flex-col">
@@ -64,9 +64,11 @@ export const BlogSection = ({ data }: { data?: ForgeFitBlogData }) => {
                 </Link>
 
                 {/* Excerpt */}
-                <p className="text-gray-500 text-sm leading-relaxed mb-6 flex-1">
-                  {blog.excerpt}
-                </p>
+                <Link href={blog.url} className="mb-6 flex-1 block group">
+                  <p className="text-gray-500 text-sm leading-relaxed group-hover:text-[#1a1a1a] transition-colors">
+                    {blog.excerpt}
+                  </p>
+                </Link>
 
                 {/* Read More Link */}
                 <Link

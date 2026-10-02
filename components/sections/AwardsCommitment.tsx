@@ -26,7 +26,7 @@ export const AwardsCommitment = ({ data }: { data?: ForgeFitAwardsCommitmentData
       {/* Diagonal Orange Shape */}
       <div className="hidden lg:block absolute top-0 left-[55%] bottom-0 w-24 bg-[#ff4d15] -skew-x-[20deg] z-0 opacity-90"></div>
 
-      <div className="container mx-auto px-4 max-w-[1500px] relative z-10">
+      <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-12 relative z-10">
         <div className="flex flex-col lg:flex-row gap-10 items-center justify-between">
 
           {/* Left Side */}

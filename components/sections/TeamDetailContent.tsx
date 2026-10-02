@@ -8,39 +8,39 @@ export const TeamDetailContent = ({ data }: { data?: TeamMember }) => {
 
   const renderIcon = (iconName: string) => {
     switch (iconName) {
-      case 'FaFacebookF': return <FaFacebookF size={16} />;
-      case 'FaInstagram': return <FaInstagram size={16} />;
-      case 'FaLinkedinIn': return <FaLinkedinIn size={16} />;
-      case 'FaYoutube': return <FaYoutube size={16} />;
-      case 'FaDumbbell': return <FaDumbbell size={24} className="text-[var(--color-accent)]" />;
-      case 'FaFire': return <FaFire size={24} className="text-[var(--color-accent)]" />;
-      case 'FaRunning': return <FaRunning size={24} className="text-[var(--color-accent)]" />;
-      case 'FaClipboardList': return <FaClipboardList size={24} className="text-[var(--color-accent)]" />;
-      case 'FaAppleAlt': return <FaAppleAlt size={24} className="text-[var(--color-accent)]" />;
-      case 'FaHeartbeat': return <FaHeartbeat size={24} className="text-[var(--color-accent)]" />;
-      case 'FaMedal': return <FaMedal size={24} className="text-[var(--color-accent)]" />;
-      case 'FaChild': return <FaChild size={24} className="text-[var(--color-accent)]" />;
-      case 'FaBolt': return <FaBolt size={24} className="text-[var(--color-accent)]" />;
-      case 'FaWalking': return <FaWalking size={24} className="text-[var(--color-accent)]" />;
-      case 'FaYinYang': return <FaYinYang size={24} className="text-[var(--color-accent)]" />;
-      case 'FaBandAid': return <FaBandAid size={24} className="text-[var(--color-accent)]" />;
-      case 'FaSync': return <FaSync size={24} className="text-[var(--color-accent)]" />;
-      case 'FaMusic': return <FaMusic size={24} className="text-[var(--color-accent)]" />;
-      case 'FaUsers': return <FaUsers size={24} className="text-[var(--color-accent)]" />;
-      case 'FaBiking': return <FaBiking size={24} className="text-[var(--color-accent)]" />;
-      case 'FaSmile': return <FaSmile size={24} className="text-[var(--color-accent)]" />;
-      case 'FaHeadset': return <FaHeadset size={24} className="text-[var(--color-accent)]" />;
-      case 'FaClipboardCheck': return <FaClipboardCheck size={24} className="text-[var(--color-accent)]" />;
-      case 'FaCalendarCheck': return <FaCalendarCheck size={24} className="text-[var(--color-accent)]" />;
-      case 'FaRegSmile': return <FaRegSmile size={24} className="text-[var(--color-accent)]" />;
-      case 'FaHandshake': return <FaHandshake size={24} className="text-[var(--color-accent)]" />;
-      case 'FaChartLine': return <FaChartLine size={24} className="text-[var(--color-accent)]" />;
-      case 'FaComments': return <FaComments size={24} className="text-[var(--color-accent)]" />;
-      case 'FaStar': return <FaStar size={24} className="text-[var(--color-accent)]" />;
-      case 'FaLeaf': return <FaLeaf size={24} className="text-[var(--color-accent)]" />;
-      case 'FaCarrot': return <FaCarrot size={24} className="text-[var(--color-accent)]" />;
-      case 'FaListAlt': return <FaListAlt size={24} className="text-[var(--color-accent)]" />;
-      default: return <FaDumbbell size={24} className="text-[var(--color-accent)]" />;
+      case 'FaFacebookF': return <FaFacebookF size={20} />;
+      case 'FaInstagram': return <FaInstagram size={20} />;
+      case 'FaLinkedinIn': return <FaLinkedinIn size={20} />;
+      case 'FaYoutube': return <FaYoutube size={20} />;
+      case 'FaDumbbell': return <FaDumbbell size={40} className="text-[var(--color-accent)]" />;
+      case 'FaFire': return <FaFire size={40} className="text-[var(--color-accent)]" />;
+      case 'FaRunning': return <FaRunning size={40} className="text-[var(--color-accent)]" />;
+      case 'FaClipboardList': return <FaClipboardList size={40} className="text-[var(--color-accent)]" />;
+      case 'FaAppleAlt': return <FaAppleAlt size={40} className="text-[var(--color-accent)]" />;
+      case 'FaHeartbeat': return <FaHeartbeat size={40} className="text-[var(--color-accent)]" />;
+      case 'FaMedal': return <FaMedal size={40} className="text-[var(--color-accent)]" />;
+      case 'FaChild': return <FaChild size={40} className="text-[var(--color-accent)]" />;
+      case 'FaBolt': return <FaBolt size={40} className="text-[var(--color-accent)]" />;
+      case 'FaWalking': return <FaWalking size={40} className="text-[var(--color-accent)]" />;
+      case 'FaYinYang': return <FaYinYang size={40} className="text-[var(--color-accent)]" />;
+      case 'FaBandAid': return <FaBandAid size={40} className="text-[var(--color-accent)]" />;
+      case 'FaSync': return <FaSync size={40} className="text-[var(--color-accent)]" />;
+      case 'FaMusic': return <FaMusic size={40} className="text-[var(--color-accent)]" />;
+      case 'FaUsers': return <FaUsers size={40} className="text-[var(--color-accent)]" />;
+      case 'FaBiking': return <FaBiking size={40} className="text-[var(--color-accent)]" />;
+      case 'FaSmile': return <FaSmile size={40} className="text-[var(--color-accent)]" />;
+      case 'FaHeadset': return <FaHeadset size={40} className="text-[var(--color-accent)]" />;
+      case 'FaClipboardCheck': return <FaClipboardCheck size={40} className="text-[var(--color-accent)]" />;
+      case 'FaCalendarCheck': return <FaCalendarCheck size={40} className="text-[var(--color-accent)]" />;
+      case 'FaRegSmile': return <FaRegSmile size={40} className="text-[var(--color-accent)]" />;
+      case 'FaHandshake': return <FaHandshake size={40} className="text-[var(--color-accent)]" />;
+      case 'FaChartLine': return <FaChartLine size={40} className="text-[var(--color-accent)]" />;
+      case 'FaComments': return <FaComments size={40} className="text-[var(--color-accent)]" />;
+      case 'FaStar': return <FaStar size={40} className="text-[var(--color-accent)]" />;
+      case 'FaLeaf': return <FaLeaf size={40} className="text-[var(--color-accent)]" />;
+      case 'FaCarrot': return <FaCarrot size={40} className="text-[var(--color-accent)]" />;
+      case 'FaListAlt': return <FaListAlt size={40} className="text-[var(--color-accent)]" />;
+      default: return <FaDumbbell size={40} className="text-[var(--color-accent)]" />;
     }
   };
 
@@ -89,8 +89,8 @@ export const TeamDetailContent = ({ data }: { data?: TeamMember }) => {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
               <div className="flex gap-4">
-                <div className="w-12 h-12 rounded-full bg-[var(--color-accent)]/10 flex items-center justify-center flex-shrink-0">
-                  <FaClock size={20} className="text-[var(--color-accent)]" />
+                <div className="w-14 h-14 rounded-full bg-[var(--color-accent)]/10 flex items-center justify-center flex-shrink-0">
+                  <FaClock size={28} className="text-[var(--color-accent)]" />
                 </div>
                 <div>
                   <h5 className="font-bold text-[#1a1a1a] mb-1">Experience</h5>
@@ -98,8 +98,8 @@ export const TeamDetailContent = ({ data }: { data?: TeamMember }) => {
                 </div>
               </div>
               <div className="flex gap-4">
-                <div className="w-12 h-12 rounded-full bg-[var(--color-accent)]/10 flex items-center justify-center flex-shrink-0">
-                  <FaCertificate size={20} className="text-[var(--color-accent)]" />
+                <div className="w-14 h-14 rounded-full bg-[var(--color-accent)]/10 flex items-center justify-center flex-shrink-0">
+                  <FaCertificate size={28} className="text-[var(--color-accent)]" />
                 </div>
                 <div>
                   <h5 className="font-bold text-[#1a1a1a] mb-1">Certification</h5>
@@ -107,8 +107,8 @@ export const TeamDetailContent = ({ data }: { data?: TeamMember }) => {
                 </div>
               </div>
               <div className="flex gap-4">
-                <div className="w-12 h-12 rounded-full bg-[var(--color-accent)]/10 flex items-center justify-center flex-shrink-0">
-                  <FaDumbbell size={20} className="text-[var(--color-accent)]" />
+                <div className="w-14 h-14 rounded-full bg-[var(--color-accent)]/10 flex items-center justify-center flex-shrink-0">
+                  <FaDumbbell size={28} className="text-[var(--color-accent)]" />
                 </div>
                 <div>
                   <h5 className="font-bold text-[#1a1a1a] mb-1">Specialization</h5>
@@ -116,8 +116,8 @@ export const TeamDetailContent = ({ data }: { data?: TeamMember }) => {
                 </div>
               </div>
               <div className="flex gap-4">
-                <div className="w-12 h-12 rounded-full bg-[var(--color-accent)]/10 flex items-center justify-center flex-shrink-0">
-                  <FaStar size={20} className="text-[var(--color-accent)]" />
+                <div className="w-14 h-14 rounded-full bg-[var(--color-accent)]/10 flex items-center justify-center flex-shrink-0">
+                  <FaStar size={28} className="text-[var(--color-accent)]" />
                 </div>
                 <div>
                   <h5 className="font-bold text-[#1a1a1a] mb-1">Training Style</h5>
@@ -136,35 +136,35 @@ export const TeamDetailContent = ({ data }: { data?: TeamMember }) => {
 
               <ul className="space-y-6 mb-8">
                 <li className="flex gap-4">
-                  <FaUser size={18} className="text-[var(--color-accent)] mt-1 flex-shrink-0" />
+                  <FaUser size={24} className="text-[var(--color-accent)] mt-1 flex-shrink-0" />
                   <div>
                     <h5 className="text-sm font-semibold text-[#1a1a1a]">Position</h5>
                     <p className="text-sm text-[#6b7280]">{data.quickInfo.position}</p>
                   </div>
                 </li>
                 <li className="flex gap-4">
-                  <FaClock size={18} className="text-[var(--color-accent)] mt-1 flex-shrink-0" />
+                  <FaClock size={24} className="text-[var(--color-accent)] mt-1 flex-shrink-0" />
                   <div>
                     <h5 className="text-sm font-semibold text-[#1a1a1a]">Experience</h5>
                     <p className="text-sm text-[#6b7280]">{data.quickInfo.experience}</p>
                   </div>
                 </li>
                 <li className="flex gap-4">
-                  <FaDumbbell size={18} className="text-[var(--color-accent)] mt-1 flex-shrink-0" />
+                  <FaDumbbell size={24} className="text-[var(--color-accent)] mt-1 flex-shrink-0" />
                   <div>
                     <h5 className="text-sm font-semibold text-[#1a1a1a]">Specialization</h5>
                     <p className="text-sm text-[#6b7280]">{data.quickInfo.specialization}</p>
                   </div>
                 </li>
                 <li className="flex gap-4">
-                  <FaCertificate size={18} className="text-[var(--color-accent)] mt-1 flex-shrink-0" />
+                  <FaCertificate size={24} className="text-[var(--color-accent)] mt-1 flex-shrink-0" />
                   <div>
                     <h5 className="text-sm font-semibold text-[#1a1a1a]">Certification</h5>
                     <p className="text-sm text-[#6b7280]">{data.quickInfo.certification}</p>
                   </div>
                 </li>
                 <li className="flex gap-4">
-                  <FaMapMarkerAlt size={18} className="text-[var(--color-accent)] mt-1 flex-shrink-0" />
+                  <FaMapMarkerAlt size={24} className="text-[var(--color-accent)] mt-1 flex-shrink-0" />
                   <div>
                     <h5 className="text-sm font-semibold text-[#1a1a1a]">Location</h5>
                     <p className="text-sm text-[#6b7280]">{data.quickInfo.location}</p>
